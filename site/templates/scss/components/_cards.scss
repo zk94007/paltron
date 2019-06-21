@@ -1,0 +1,63 @@
+/*---------------------------------------------------------
+ * Expertise
+ --------------------------------------------------------*/
+.expertise-cards {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: flex-start;
+}
+
+.expertise-card {
+	width: calc(25% - 1.6rem);
+	margin: $unit-4;
+
+	a {
+		display: block;
+		position: relative;
+		
+		overflow: hidden;
+
+		.overlay {
+			position: absolute;
+			bottom: 0;
+			right: 0;
+			left: 0;
+			background: rgba($black, 0.7);
+			// min-height: 35%;
+			border-left: 2px solid $primary-color;
+			padding: $unit-5;
+			z-index: 100;
+
+			h6 {
+				color: $light-color;
+				text-align: left;
+				margin: 0;
+			}
+		}
+
+		&:hover {
+			img {
+				filter: saturate(100%);
+
+				transform: scale(1.1);
+			}
+		}
+	}
+	img {
+		max-width: none;
+		width: 100%;
+		height: auto;
+		filter: saturate(0%);
+		z-index: 10;
+		transform: scale(1);
+		transition: $default-transition;
+	}
+}
+
+/*---------------------------------------------------------
+ * Offices
+ --------------------------------------------------------*/
+
+ .office-cards {
+
+ }

@@ -1,0 +1,35 @@
+html {
+	font-size: $html-font-size-mobile;
+	
+	@media (min-width: $size-sm) {
+		font-size: $html-font-size;
+	}
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	height: 100vh; /* 1 */
+}
+header,
+footer,
+.primary-header,
+.primary-footer {
+	flex-shrink: 0; /* 2 */
+}
+
+main {
+	margin-top: 60px;
+	flex: 1 0 auto; /* 2 */
+}
+
+.short-divider {
+	border: 0;
+	border-bottom: 1px solid $primary-color;
+	width: 100px;
+	margin-bottom: $unit-7;
+}
+
+b,strong {
+	font-weight: $font-weight-bold;
+}

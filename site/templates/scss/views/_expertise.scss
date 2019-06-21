@@ -1,0 +1,11 @@
+.expertise {
+	padding: $unit-20 0;
+	background: url("#{$img-path}/bg-squares-dark.jpg") center center no-repeat;
+    background-size: cover;
+    text-align: center;
+
+    h1 {
+    	color: $light-color;
+    	margin-bottom: $unit-10;
+    }
+}

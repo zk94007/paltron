@@ -1,0 +1,35 @@
+a {
+    color: $link-color;
+    outline: none;
+    text-decoration: none;
+  
+    &:focus {
+      @include control-shadow();
+    }
+  
+    &:focus,
+    &:hover,
+    &:active,
+    &.active {
+      color: $link-color-hover;
+      text-decoration: none;
+    }
+  
+    &:visited {
+      color: $link-color;
+    }
+
+    &.underlined {
+      border-bottom: 1px solid $primary-color;
+      text-decoration: none;
+      color: $body-font-color;
+
+      &:focus,
+      &:hover,
+      &:active,
+      &.active {
+        color: $link-color;
+        text-decoration: none;
+      }
+    }
+  }

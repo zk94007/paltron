@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 480">
+  <defs>
+    <style>
+      .a {
+        fill: #ed2939;
+      }
+
+      .b {
+        fill: #fff;
+      }
+
+      .c {
+        fill: #002395;
+      }
+    </style>
+  </defs>
+  <title>flag-fr</title>
+  <rect class="a" width="640" height="480"/>
+  <rect class="b" width="426.67" height="480"/>
+  <rect class="c" width="213.33" height="480"/>
+</svg>

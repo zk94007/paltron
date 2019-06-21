@@ -1,0 +1,68 @@
+.lang-switch-container {
+    display: flex;
+    align-items: center;
+    margin: 0 $unit-8 0 $unit-4;
+
+    .languages {
+        background-color: $light-color;
+        padding: 0;
+        margin: 0;
+        vertical-align: top;
+        display: none;
+        // width: 100%;
+        position: absolute;
+        z-index: 100;
+        top:60px;
+
+
+        li {
+            display: block;
+            margin: 0;
+            padding: $unit-2 $unit-4;
+            
+            a {
+                font-size: $font-size-sm;
+                text-transform: uppercase;
+
+                &:hover {
+                    
+                }
+            }
+
+            img {
+                margin-right: 5px;
+                margin-bottom: 4px;
+                width: 16px;
+                height: auto;
+            }
+        }
+    }
+
+    button {
+        border: 0;
+        background: none;
+        border-bottom: 1px solid $primary-color;
+        text-decoration: none;
+        color: $body-font-color;
+        padding: 0;
+        outline: none;
+        cursor: pointer;
+        text-transform: uppercase;
+        font-size: $font-size-sm;
+
+        &:focus,
+        &:hover,
+        &:active,
+        &.active {
+            color: $link-color;
+            text-decoration: none;
+            background: none;
+            outline: none;
+        }
+
+        ion-icon {
+            margin-bottom: -2px;
+            margin-right: 5px;
+        }
+    }
+}

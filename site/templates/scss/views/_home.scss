@@ -1,0 +1,23 @@
+.hero {
+    background: url("#{$img-path}/Home-Header.jpg") center center no-repeat;
+    background-size: cover;
+    min-height: calc(80vh - 60px);
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding: $unit-10 0;
+
+    .container {
+        padding-bottom: 200px;
+        max-width: 1440px;
+    }
+
+    h1 {
+        margin: 0 0 $unit-5 0;
+    }
+
+    h2 {
+        margin-top: $unit-20;
+    }
+
+}

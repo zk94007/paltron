@@ -1,0 +1,98 @@
+<?php
+
+/**
+ * ProcessWire Star Rating Fieldtype
+ *
+ * Fieldtype for star rating per page.
+ *
+ * by Raymond Geerts
+ * inspired by FieldtypeRate from @jonathandart
+ *
+ * ProcessWire 2.x
+ * Copyright (C) 2010 by Ryan Cramer
+ * Licensed under GNU/GPL v2, see LICENSE.TXT
+ *
+ * http://www.processwire.com
+ * http://www.ryancramer.com
+ *
+ */
+
+class InputfieldStarRating extends Inputfield {
+
+  public static function getModuleInfo() {
+    return array(
+      'title' => __('Star Rating Integer', __FILE__), // Module Title
+      'summary' => __('Star Rating Integer', __FILE__), // Module Summary
+      'version' => 100,
+    );
+  }
+
+  public function init() {
+    parent::init();
+    $this->set('inputType', 'text');
+    $this->attr('type', 'text');
+    $this->attr('size', '10');
+  }
+
+  public function ___render() {
+    if(!$this->attr('type')) $this->attr('type', 'text');
+    $attrs = $this->getAttributes();
+    $note = '';
+
+    // these attributes not valid for 'text' type
+    if($attrs['type'] == 'text') {
+      $attrs['type'] = 'hidden';
+      unset($attrs['step'], $attrs['min'], $attrs['max']);
+    }
+
+    $out = "<input " . $this->getAttributesString($attrs) . " />"; // . $note;
+    $out .= "<div class='rating'>";
+
+    for ($i=$this->star_count; $i > 0; $i--) {
+      $out .= "<span class='star";
+      $out .= $i === $attrs['value'] ? " active" : "";
+      $out .= "' data-rating='{$i}' title='{$i}'></span>";
+    }
+    $out .= "<span class='reset'></span>";
+    $out .= "</div>"; // .rating
+
+    return $out;
+  }
+
+  protected function sanitizeValue($value) {
+    $value = trim($value);
+    if(!strlen("$value")) return '';
+    $negative = substr($value, 0, 1) === '-';
+    if($negative) $value = substr($value, 1);
+    if(!ctype_digit("$value")) $value = preg_replace('/[^\d,.]/', '', $value); // remove non digits, like commas, etc.
+    if(!strlen("$value")) return '';
+    if(strpos($value, '.') !== false || strpos($value, ',') !== false) $value = round($value);
+    $value = (int) $value;
+    if($negative) $value = -1 * $value;
+    return $value;
+  }
+
+  public function isEmpty() {
+    return strlen("{$this->value}") === 0;
+  }
+
+  public function setAttribute($key, $value) {
+    if($key == 'value') {
+      $value = $this->sanitizeValue($value);
+    }
+    return parent::setAttribute($key, $value);
+  }
+
+  public function set($key, $value) {
+    if($key == 'inputType') {
+      $this->attr('type', $value);
+    }
+    return parent::set($key, $value);
+  }
+
+  public function getConfigInputfields() {
+    $inputfields = parent::getConfigInputfields();
+    return $inputfields;
+  }
+
+}

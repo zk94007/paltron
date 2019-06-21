@@ -1,0 +1,27 @@
+.accordion {
+	text-align: left;
+	
+	.accordion-header {
+		padding: $unit-2 $unit-6;
+		background-color: $gray-color-light;	
+		margin: $unit-2 0 0 0;
+		display: block;
+		cursor: pointer;
+
+		&:first-of-type {
+			margin: 0;
+		}
+
+		ion-icon {
+			margin-right: $unit-2;
+		}
+	}
+
+	.accordion-panel {
+		background-color: $gray-color-light;
+		border-top: 1px solid darken($gray-color-light, 10%);
+		margin: 0;
+		padding: $unit-2 $unit-6 $unit-2 calc(1.6rem + 16px);
+		// padding-left: calc({$unit-8} + 16px);
+	}
+}

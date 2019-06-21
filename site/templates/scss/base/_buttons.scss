@@ -1,0 +1,77 @@
+// Button Primary
+.btn {
+    padding: $control-padding-y $unit-6;
+
+    &.multiline {
+        height: auto;
+    }
+
+    &.btn-white {
+        background: $light-color;
+        border: 1px solid $light-color;
+        color: $body-font-color;
+        
+        &:focus,
+        &:hover,
+        &:active {
+            background: none;
+            border: 1px solid $light-color;
+            color: $light-color;
+        }
+    
+        &.loading {
+            &::after {
+            border-bottom-color: $body-font-color;
+            border-left-color: $body-font-color;
+            }
+        }
+    }
+    &.btn-primary {
+        background: $primary-color;
+        border: 1px solid $primary-color;
+        color: $light-color;
+
+        &:focus,
+        &:hover,
+        &:active {
+            background: darken($primary-color, 10%);
+            border: 1px solid darken($primary-color, 10%);
+            color: $light-color;
+        }
+    }
+
+    &.btn-secondary {
+        background: $secondary-color;
+        border: 1px solid $secondary-color;
+        color: $light-color;
+
+        &:focus,
+        &:hover,
+        &:active {
+            background: darken($secondary-color, 10%);
+            border: 1px solid darken($secondary-color, 10%);
+            color: $light-color;
+        }
+    }
+
+    &.btn-primary-outline {
+        background: none;
+        border: 1px solid $primary-color;
+        color: $primary-color;
+        
+        &:focus,
+        &:hover,
+        &:active {
+            background: $primary-color;
+            border: 1px solid $primary-color;
+            color: $light-color;
+        }
+    
+        &.loading {
+            &::after {
+            border-bottom-color: $light-color;
+            border-left-color: $light-color;
+            }
+        }
+    }
+}

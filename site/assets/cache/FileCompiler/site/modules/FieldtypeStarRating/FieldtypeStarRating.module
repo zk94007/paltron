@@ -1,0 +1,127 @@
+<?php
+
+/**
+ * ProcessWire Star Rating Fieldtype
+ *
+ * Fieldtype for star rating per page.
+ *
+ * by Raymond Geerts
+ * inspired by FieldtypeRate from @jonathandart
+ *
+ * ProcessWire 2.x
+ * Copyright (C) 2010 by Ryan Cramer
+ * Licensed under GNU/GPL v2, see LICENSE.TXT
+ *
+ * http://www.processwire.com
+ * http://www.ryancramer.com
+ *
+ */
+
+class FieldtypeStarRating extends \ProcessWire\Fieldtype {
+
+  public static function getModuleInfo() {
+    return array(
+      'title' => 'Star Rating Integer',
+      'version' => 100,
+      'summary' => 'Field that stores ratings as integer',
+      'installs' => array('InputfieldStarRating')
+    );
+  }
+
+  public function ___getCompatibleFieldtypes(\ProcessWire\Field $field) {
+    // there are no other fieldtypes compatible with this one
+    return null;
+  }
+
+  // public function isEmptyValue(\ProcessWire\Field $field, $value) {
+  //   // "0" is not a blank value
+  //   if(($value === "0" || $value === 0)) {
+  //     return false;
+  //   }
+  //   return empty($value);
+  // }
+
+  // public function getBlankValue(\ProcessWire\Page $page, \ProcessWire\Field $field) {
+  //   return '';
+  // }
+
+  public function sanitizeValue(\ProcessWire\Page $page, \ProcessWire\Field $field, $value) {
+
+    if(is_string($value) && strlen($value) && !ctype_digit(ltrim($value, '-'))) {
+      // string value with one or more non-digit characters
+      $value = trim($value);
+
+      if(preg_match('/^(\de\d|0x\d+|\+\d+)/', $value)) {
+        // likely a valid number, but in a non-native format to PW
+        // examples: 1e123213, 0x1234, +123 (intval handles these)
+        $value = intval($value);
+
+      } else if(preg_match('/^[^-+\d.]+/', $value)) {
+        // string starting with something we don't recognize, let PHP decide
+        // example: bd#79
+        $value = intval($value);
+        if($value === 0) $value = ''; // blank rather than zero
+
+      } else {
+        // string value that looks like a number but has some other stuff in it
+
+        // see if there are some definitely non-number chars in there, and truncate
+        // the string to that point if we find any
+        if(preg_match('/^(-?[\d,. ]+)([^\d,. ]+)/', $value, $matches)) {
+          $value = $matches[1];
+        }
+
+        // check to see if we're dealing with a potential float val or thousands separators
+        if(strpos($value, '.') !== false || strpos($value, ',') !== false || strpos($value, ' ') !== false) {
+          // convert float values to rounded integers
+          // also handles values with thousands separators
+          $value = round(\ProcessWire\FieldtypeFloat::strToFloat($value));
+
+        } else if(is_numeric($value)) {
+          // let PHP decide how to convert it
+          $value = intval($value);
+
+        } else {
+          // default: replace non numeric characters
+          $negative = substr(trim($value), 0, 1) == '-';
+          $value = preg_replace('/[^\d]/', '', $value);
+          $value = strlen($value) ? (int) $value : '';
+          if($negative && is_int($value)) $value = $value * -1;
+        }
+      }
+    }
+
+    $value = strlen("$value") ? (int) $value : '';
+
+    return $value;
+  }
+
+  public function getInputfield(\ProcessWire\Page $page, \ProcessWire\Field $field) {
+    $inputfield = $this->modules->get('InputfieldStarRating');
+    $inputfield->star_count = $field->star_count;
+    return $inputfield;
+  }
+
+  public function getDatabaseSchema(\ProcessWire\Field $field) {
+    $schema = parent::getDatabaseSchema($field);
+    $schema['data'] = 'int NOT NULL';
+    return $schema;
+  }
+
+  public function ___getConfigInputfields(\ProcessWire\Field $field) {
+    $inputfields = parent::___getConfigInputfields($field);
+
+    $f = $this->modules->get('InputfieldSelect');
+    $f->attr('name', 'star_count');
+    $f->attr('value', $field->star_count ? $field->star_count : 5);
+    $f->label = 'How many stars?';
+    $f->required = true;
+
+    for ($i = 1; $i <= 10; $i++) $f->addOption($i, $i);
+
+    $inputfields->append($f);
+
+    return $inputfields;
+  }
+
+}

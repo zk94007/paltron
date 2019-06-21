@@ -1,0 +1,173 @@
+2019-06-06 17:07:38	?	?	Saved module 'SystemUpdater' config data
+2019-06-06 17:07:39	?	?	Saved module info caches
+2019-06-06 17:07:39	guest	http://localhost/http404/	Saved module info caches
+2019-06-06 17:07:39	guest	http://localhost/http404/	Installed module 'ProcessRecentPages'
+2019-06-06 17:07:40	guest	http://localhost/http404/	Saved module info caches
+2019-06-06 17:07:40	guest	http://localhost/http404/	Saved module 'SystemUpdater' config data
+2019-06-06 17:07:40	guest	http://localhost/http404/	Saved module info caches
+2019-06-06 17:07:40	guest	http://localhost/http404/	Installed module 'AdminThemeUikit'
+2019-06-06 17:07:40	guest	http://localhost/http404/	Saved module info caches
+2019-06-06 17:07:47	guest	http://localhost/	Saved module info caches
+2019-06-06 17:07:47	guest	http://localhost/	Installed module 'ProcessLogger'
+2019-06-06 17:07:47	guest	http://localhost/	Saved module info caches
+2019-06-06 17:07:47	guest	http://localhost/	Installed module 'InputfieldIcon'
+2019-06-06 17:07:47	guest	http://localhost/	Saved module info caches
+2019-06-06 17:07:47	guest	http://localhost/	Saved module 'SystemUpdater' config data
+2019-06-06 17:07:58	guest	http://localhost/admin/login/	Saved module 'ProcessProfile' config data
+2019-06-06 17:07:58	guest	http://localhost/admin/login/	Saved module 'SystemUpdater' config data
+2019-06-06 17:08:05	?	?	Saved module 'SystemUpdater' config data
+2019-06-06 17:08:06	?	?	Saved module info caches
+2019-06-06 17:08:06	guest	http://localhost/admin/login/	Saved module 'SystemUpdater' config data
+2019-06-06 17:08:06	admin	http://localhost/admin/?login=1	Saved module 'SystemUpdater' config data
+2019-06-06 17:08:07	?	?	Saved module info caches
+2019-06-06 17:08:07	?	?	Saved module 'SystemUpdater' config data
+2019-06-06 17:08:07	?	?	Saved module info caches
+2019-06-06 17:08:07	admin	http://localhost/admin/page/?login=1	Saved module 'SystemUpdater' config data
+2019-06-06 18:05:29	admin	http://localhost/admin/module/?reset=1	Saved module info caches
+2019-06-06 18:32:00	admin	http://localhost/admin/module/?reset=1	Saved module info caches
+2019-06-06 18:32:08	admin	http://localhost/admin/module/	Installed module 'AllInOneMinify'
+2019-06-06 18:32:08	admin	http://localhost/admin/module/	Saved module info caches
+2019-06-06 18:32:11	admin	http://localhost/admin/module/edit?name=AllInOneMinify	Saved module 'AllInOneMinify' config data
+2019-06-06 18:32:35	admin	http://localhost/admin/module/	Installed module 'MarkupBrowserUpdate'
+2019-06-06 18:32:35	admin	http://localhost/admin/module/	Saved module info caches
+2019-06-06 18:32:37	admin	http://localhost/admin/module/edit?name=MarkupBrowserUpdate	Saved module 'MarkupBrowserUpdate' config data
+2019-06-06 18:32:41	admin	http://localhost/admin/module/edit?name=MarkupBrowserUpdate&collapse_info=1	Saved module 'MarkupBrowserUpdate' config data
+2019-06-06 20:51:19	admin	http://localhost/admin/module/	Saved module 'FieldtypeRepeater' config data
+2019-06-06 20:51:19	admin	http://localhost/admin/module/	Installed module 'InputfieldRepeater'
+2019-06-06 20:51:19	admin	http://localhost/admin/module/	Installed module 'FieldtypeRepeater'
+2019-06-06 20:51:20	admin	http://localhost/admin/module/	Saved module info caches
+2019-06-06 20:51:25	admin	http://localhost/admin/module/edit?name=FieldtypeRepeater	Saved module 'FieldtypeRepeater' config data
+2019-06-07 08:15:06	admin	http://localhost/admin/module/	Installed module 'MarkupCache'
+2019-06-07 08:15:08	admin	http://localhost/admin/module/	Saved module info caches
+2019-06-07 08:15:16	admin	http://localhost/admin/module/edit?name=MarkupCache	Saved module 'MarkupCache' config data
+2019-06-07 08:18:24	admin	http://localhost/admin/module/edit?name=MarkupBrowserUpdate&collapse_info=1	Saved module 'MarkupBrowserUpdate' config data
+2019-06-07 08:49:59	admin	http://localhost/admin/module/edit?name=MarkupCache	Saved module 'MarkupCache' config data
+2019-06-07 08:50:03	admin	http://localhost/admin/module/edit?name=MarkupCache&collapse_info=1	Uninstalled module 'MarkupCache'
+2019-06-07 08:50:05	admin	http://localhost/admin/module/edit?name=MarkupCache&collapse_info=1	Saved module info caches
+2019-06-07 08:50:29	admin	http://localhost/admin/module/	Installed module 'MarkupCache'
+2019-06-07 08:50:29	admin	http://localhost/admin/module/	Saved module info caches
+2019-06-07 08:50:41	admin	http://localhost/admin/module/edit?name=MarkupCache	Saved module 'MarkupCache' config data
+2019-06-07 08:51:03	admin	http://localhost/admin/module/edit?name=MarkupCache&collapse_info=1	Saved module 'MarkupCache' config data
+2019-06-07 08:57:02	admin	http://localhost/admin/module/edit?name=MarkupCache&collapse_info=1	Saved module 'MarkupCache' config data
+2019-06-07 17:39:23	admin	http://localhost/admin/module/	Installed module 'ProcessLanguage'
+2019-06-07 17:39:26	admin	http://localhost/admin/module/	Saved module info caches
+2019-06-07 17:39:26	admin	http://localhost/admin/module/	Installed module 'ProcessLanguageTranslator'
+2019-06-07 17:39:26	admin	http://localhost/admin/module/	Saved module info caches
+2019-06-07 17:39:26	admin	http://localhost/admin/module/	Saved module 'LanguageSupport' config data
+2019-06-07 17:39:26	admin	http://localhost/admin/module/	Saved module 'ProcessProfile' config data
+2019-06-07 17:39:26	admin	http://localhost/admin/module/	Installed module 'LanguageSupport'
+2019-06-07 17:39:26	admin	http://localhost/admin/module/	Installed module 'FieldtypeTextLanguage'
+2019-06-07 17:39:26	admin	http://localhost/admin/module/	Saved module info caches
+2019-06-07 17:39:26	admin	http://localhost/admin/module/	Installed module 'FieldtypePageTitleLanguage'
+2019-06-07 17:39:26	admin	http://localhost/admin/module/	Installed module 'FieldtypeTextareaLanguage'
+2019-06-07 17:39:26	admin	http://localhost/admin/module/	Installed module 'LanguageSupportFields'
+2019-06-07 17:40:16	admin	http://localhost/admin/module/	Installed module 'LanguageTabs'
+2019-06-07 17:40:16	admin	http://localhost/admin/module/	Saved module info caches
+2019-06-07 17:40:20	admin	http://localhost/admin/module/edit?name=LanguageTabs	Saved module 'LanguageTabs' config data
+2019-06-07 17:41:06	admin	http://localhost/admin/module/	Installed module 'LanguageSupportPageNames'
+2019-06-07 17:41:07	admin	http://localhost/admin/module/	Saved module info caches
+2019-06-07 17:41:07	admin	http://localhost/admin/module/edit?name=LanguageSupportPageNames	Saved module 'LanguageSupportPageNames' config data
+2019-06-07 17:47:30	admin	http://localhost/admin/setup/languages/add/	Saved module 'LanguageSupport' config data
+2019-06-07 20:08:17	admin	http://localhost/admin/module/edit?name=LanguageSupportPageNames&collapse_info=1	Saved module 'LanguageSupportPageNames' config data
+2019-06-07 20:08:22	admin	http://localhost/admin/module/edit?name=LanguageSupportPageNames&collapse_info=1	Saved module 'LanguageSupportPageNames' config data
+2019-06-07 20:34:22	admin	http://localhost/admin/module/?reset=1	Saved module info caches
+2019-06-07 20:59:19	admin	http://localhost/admin/setup/languages/add/	Saved module 'LanguageSupport' config data
+2019-06-07 20:59:48	admin	http://localhost/admin/setup/languages/edit/?id=1068	Saved module 'LanguageSupport' config data
+2019-06-07 21:38:51	admin	http://localhost/admin/module/edit?name=LanguageSupportPageNames&collapse_info=1	Saved module 'LanguageSupportPageNames' config data
+2019-06-09 00:12:58	admin	http://localhost/admin/module/edit?name=AllInOneMinify&collapse_info=1	Saved module 'AllInOneMinify' config data
+2019-06-11 20:16:18	guest	http://localhost/	Installed module 'MarkupCache'
+2019-06-11 20:16:20	guest	http://localhost/	Saved module info caches
+2019-06-12 17:54:42	admin	http://localhost/admin/module/edit?name=FieldtypePageTitleLanguage	Uninstalled module 'FieldtypePageTitleLanguage'
+2019-06-12 17:54:43	admin	http://localhost/admin/module/edit?name=FieldtypePageTitleLanguage	Saved module info caches
+2019-06-12 17:55:00	admin	http://localhost/admin/module/edit?name=FieldtypeTextLanguage	Uninstalled module 'FieldtypeTextLanguage'
+2019-06-12 17:55:00	admin	http://localhost/admin/module/edit?name=FieldtypeTextLanguage	Saved module info caches
+2019-06-12 17:55:09	admin	http://localhost/admin/module/edit?name=FieldtypeTextareaLanguage	Uninstalled module 'FieldtypeTextareaLanguage'
+2019-06-12 17:55:09	admin	http://localhost/admin/module/edit?name=FieldtypeTextareaLanguage	Saved module info caches
+2019-06-12 17:55:30	admin	http://localhost/admin/module/edit?name=LanguageSupportFields	Uninstalled module 'LanguageSupportFields'
+2019-06-12 17:55:30	admin	http://localhost/admin/module/edit?name=LanguageSupportFields	Saved module info caches
+2019-06-12 17:55:48	admin	http://localhost/admin/module/edit?name=LanguageSupport	Uninstalled module 'ProcessLanguageTranslator'
+2019-06-12 17:55:48	admin	http://localhost/admin/module/edit?name=LanguageSupport	Saved module info caches
+2019-06-12 17:55:48	admin	http://localhost/admin/module/edit?name=LanguageSupport	Saved module 'LanguageSupport' config data
+2019-06-12 17:55:48	admin	http://localhost/admin/module/edit?name=LanguageSupport	Uninstalled module 'LanguageSupport'
+2019-06-12 17:55:48	admin	http://localhost/admin/module/edit?name=LanguageSupport	Saved module info caches
+2019-06-13 16:56:34	admin	http://localhost/admin/module/download/	Saved module info caches
+2019-06-13 16:56:38	admin	http://localhost/admin/module/download/	Saved module info caches
+2019-06-13 16:56:40	admin	http://localhost/admin/module/	Installed module 'InputfieldMapMarker'
+2019-06-13 16:56:40	admin	http://localhost/admin/module/	Installed module 'FieldtypeMapMarker'
+2019-06-13 16:56:41	admin	http://localhost/admin/module/	Saved module info caches
+2019-06-13 16:56:44	admin	http://localhost/admin/module/edit?name=FieldtypeMapMarker	Saved module 'FieldtypeMapMarker' config data
+2019-06-13 17:02:29	admin	http://localhost/admin/module/edit?name=FieldtypeMapMarker&collapse_info=1	Saved module 'FieldtypeMapMarker' config data
+2019-06-13 17:02:34	admin	http://localhost/admin/module/edit?name=FieldtypeMapMarker&collapse_info=1	Saved module 'FieldtypeMapMarker' config data
+2019-06-17 09:58:38	admin	http://localhost/admin/page/link/?id=1105&modal=1	Saved module 'InputfieldPage' config data
+2019-06-17 09:58:38	admin	http://localhost/admin/page/link/?id=1105&modal=1	Installed module 'InputfieldPageAutocomplete'
+2019-06-17 09:58:40	admin	http://localhost/admin/page/link/?id=1105&modal=1	Saved module info caches
+2019-06-18 15:38:23	admin	http://localhost/admin/page/add/bookmarks/?role=0	Saved module 'ProcessPageAdd' config data
+2019-06-18 15:39:59	admin	http://localhost/admin/page/add/bookmarks/?role=0	Saved module 'ProcessPageAdd' config data
+2019-06-18 15:40:02	admin	http://localhost/admin/page/add/bookmarks/?role=0	Saved module 'ProcessPageAdd' config data
+2019-06-18 15:41:08	admin	http://localhost/admin/page/add/bookmarks/?role=0	Saved module 'ProcessPageAdd' config data
+2019-06-18 15:41:21	admin	http://localhost/admin/page/add/bookmarks/?role=0	Saved module 'ProcessPageAdd' config data
+2019-06-18 15:41:53	admin	http://localhost/admin/page/add/bookmarks/?role=0	Saved module 'ProcessPageAdd' config data
+2019-06-19 11:00:24	admin	http://localhost/job/detail/	Installed module 'MarkupGoogleMap'
+2019-06-19 11:00:27	admin	http://localhost/job/detail/	Saved module info caches
+2019-06-19 12:08:17	admin	http://localhost/admin/module/?reset=1	Saved module info caches
+2019-06-19 12:08:23	admin	http://localhost/admin/module/	Installed module 'PageRatings'
+2019-06-19 12:08:24	admin	http://localhost/admin/module/	Saved module info caches
+2019-06-19 12:08:26	admin	http://localhost/admin/module/edit?name=PageRatings	Saved module 'PageRatings' config data
+2019-06-19 12:08:28	admin	http://localhost/admin/module/edit?name=PageRatings&collapse_info=1	Saved module 'PageRatings' config data
+2019-06-19 12:24:23	admin	http://localhost/admin/module/edit?name=PageRatings	Uninstalled module 'PageRatings'
+2019-06-19 12:24:24	admin	http://localhost/admin/module/edit?name=PageRatings	Saved module info caches
+2019-06-19 12:38:39	admin	http://localhost/admin/module/?reset=1	Saved module info caches
+2019-06-19 12:39:06	admin	http://localhost/admin/module/	Installed module 'InputfieldCommentsRatingAdmin'
+2019-06-19 12:39:06	admin	http://localhost/admin/module/	Installed module 'FieldtypeCommentsRating'
+2019-06-19 12:39:07	admin	http://localhost/admin/module/	Saved module info caches
+2019-06-19 12:39:34	admin	http://localhost/admin/module/edit?name=FieldtypeCommentsRating	Saved module 'FieldtypeCommentsRating' config data
+2019-06-19 12:39:36	admin	http://localhost/admin/module/edit?name=FieldtypeCommentsRating&collapse_info=1	Saved module 'FieldtypeCommentsRating' config data
+2019-06-19 12:39:56	admin	http://localhost/admin/module/	Failed to remove directory: C:/My workspace/processwire-dev/site/modules/PageRatings
+2019-06-19 12:39:56	admin	http://localhost/admin/module/	Failed to delete module 'PageRatings'
+2019-06-19 12:51:29	admin	http://localhost/admin/module/edit?name=FieldtypeCommentsRating	Uninstalled module 'InputfieldCommentsRatingAdmin'
+2019-06-19 12:51:30	admin	http://localhost/admin/module/edit?name=FieldtypeCommentsRating	Saved module info caches
+2019-06-19 12:51:30	admin	http://localhost/admin/module/edit?name=FieldtypeCommentsRating	Uninstalled module 'FieldtypeCommentsRating'
+2019-06-19 12:51:30	admin	http://localhost/admin/module/edit?name=FieldtypeCommentsRating	Saved module info caches
+2019-06-19 12:51:59	admin	http://localhost/admin/module/?reset=1	Saved module info caches
+2019-06-19 12:52:38	admin	http://localhost/admin/module/	Installed module 'InputfieldRate'
+2019-06-19 12:52:38	admin	http://localhost/admin/module/	Installed module 'FieldtypeRate'
+2019-06-19 12:52:38	admin	http://localhost/admin/module/	Saved module info caches
+2019-06-19 12:52:41	admin	http://localhost/admin/module/edit?name=FieldtypeRate	Saved module 'FieldtypeRate' config data
+2019-06-19 12:52:43	admin	http://localhost/admin/module/edit?name=FieldtypeRate&collapse_info=1	Saved module 'FieldtypeRate' config data
+2019-06-19 12:53:00	admin	http://localhost/admin/module/edit?name=InputfieldRate	Saved module 'InputfieldRate' config data
+2019-06-19 12:56:56	admin	http://localhost/admin/module/edit?name=FieldtypeRate	Uninstalled module 'FieldtypeRate'
+2019-06-19 12:56:56	admin	http://localhost/admin/module/edit?name=FieldtypeRate	Saved module info caches
+2019-06-19 12:57:21	admin	http://localhost/admin/module/?reset=1	Saved module info caches
+2019-06-19 12:57:23	admin	http://localhost/admin/module/	Installed module 'InputfieldCommentsRatingAdmin'
+2019-06-19 12:57:23	admin	http://localhost/admin/module/	Installed module 'FieldtypeCommentsRating'
+2019-06-19 12:57:24	admin	http://localhost/admin/module/	Saved module info caches
+2019-06-19 12:57:26	admin	http://localhost/admin/module/edit?name=FieldtypeCommentsRating	Saved module 'FieldtypeCommentsRating' config data
+2019-06-19 12:57:28	admin	http://localhost/admin/module/edit?name=FieldtypeCommentsRating&collapse_info=1	Saved module 'FieldtypeCommentsRating' config data
+2019-06-19 12:57:34	admin	http://localhost/admin/module/edit?name=InputfieldCommentsRatingAdmin	Saved module 'InputfieldCommentsRatingAdmin' config data
+2019-06-19 12:57:36	admin	http://localhost/admin/module/edit?name=InputfieldCommentsRatingAdmin&collapse_info=1	Saved module 'InputfieldCommentsRatingAdmin' config data
+2019-06-19 12:58:33	admin	http://localhost/admin/module/edit?name=FieldtypeCommentsRating	Uninstalled module 'InputfieldCommentsRatingAdmin'
+2019-06-19 12:58:33	admin	http://localhost/admin/module/edit?name=FieldtypeCommentsRating	Saved module info caches
+2019-06-19 12:58:33	admin	http://localhost/admin/module/edit?name=FieldtypeCommentsRating	Uninstalled module 'FieldtypeCommentsRating'
+2019-06-19 12:58:33	admin	http://localhost/admin/module/edit?name=FieldtypeCommentsRating	Saved module info caches
+2019-06-19 13:04:23	admin	http://localhost/admin/module/?reset=1	Saved module info caches
+2019-06-19 13:04:34	admin	http://localhost/admin/module/	Installed module 'InputfieldCommentsRatingAdmin'
+2019-06-19 13:04:34	admin	http://localhost/admin/module/	Installed module 'FieldtypeCommentsRating'
+2019-06-19 13:04:34	admin	http://localhost/admin/module/	Saved module info caches
+2019-06-19 13:04:36	admin	http://localhost/admin/module/edit?name=FieldtypeCommentsRating	Saved module 'FieldtypeCommentsRating' config data
+2019-06-19 13:04:39	admin	http://localhost/admin/module/edit?name=FieldtypeCommentsRating&collapse_info=1	Saved module 'FieldtypeCommentsRating' config data
+2019-06-19 13:04:54	admin	http://localhost/admin/module/edit?name=InputfieldCommentsRatingAdmin	Saved module 'InputfieldCommentsRatingAdmin' config data
+2019-06-19 13:04:56	admin	http://localhost/admin/module/edit?name=InputfieldCommentsRatingAdmin&collapse_info=1	Saved module 'InputfieldCommentsRatingAdmin' config data
+2019-06-19 13:05:02	admin	http://localhost/admin/module/edit?name=FieldtypeCommentsRating	Saved module 'FieldtypeCommentsRating' config data
+2019-06-19 13:05:04	admin	http://localhost/admin/module/edit?name=FieldtypeCommentsRating&collapse_info=1	Saved module 'FieldtypeCommentsRating' config data
+2019-06-19 13:10:07	admin	http://localhost/admin/module/edit?name=FieldtypeCommentsRating	Uninstalled module 'InputfieldCommentsRatingAdmin'
+2019-06-19 13:10:08	admin	http://localhost/admin/module/edit?name=FieldtypeCommentsRating	Saved module info caches
+2019-06-19 13:10:08	admin	http://localhost/admin/module/edit?name=FieldtypeCommentsRating	Uninstalled module 'FieldtypeCommentsRating'
+2019-06-19 13:10:08	admin	http://localhost/admin/module/edit?name=FieldtypeCommentsRating	Saved module info caches
+2019-06-19 13:13:27	admin	http://localhost/admin/module/?reset=1	Saved module info caches
+2019-06-19 13:13:31	admin	http://localhost/admin/module/	Installed module 'InputfieldStarRating'
+2019-06-19 13:13:31	admin	http://localhost/admin/module/	Installed module 'FieldtypeStarRating'
+2019-06-19 13:13:31	admin	http://localhost/admin/module/	Saved module info caches
+2019-06-19 13:13:33	admin	http://localhost/admin/module/edit?name=FieldtypeStarRating	Saved module 'FieldtypeStarRating' config data
+2019-06-19 13:13:35	admin	http://localhost/admin/module/edit?name=FieldtypeStarRating&collapse_info=1	Saved module 'FieldtypeStarRating' config data
+2019-06-19 15:36:57	admin	http://localhost/admin/module/edit?name=FieldtypeStarRating	Uninstalled module 'FieldtypeStarRating'
+2019-06-19 15:36:59	admin	http://localhost/admin/module/edit?name=FieldtypeStarRating	Saved module info caches

@@ -1,0 +1,25 @@
+.offices {
+
+	.office-card {
+		
+		.office-address {
+			padding: $unit-5;
+			h6 {
+				font-weight: $font-weight-bold;
+				// color: $primary-color;
+			}
+		}
+	}
+
+	.column .office-card {
+		border-right: 1px dotted $gray-color;
+	}
+
+	.column {
+		&:last-of-type {
+			.office-card {		
+				border: 0;
+			}
+		}
+	}
+}

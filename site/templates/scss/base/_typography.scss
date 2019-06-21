@@ -1,0 +1,30 @@
+body {
+    font-weight: $font-weight-reg;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: $heading-font-family;
+}
+
+h1,.h1 {
+	font-size: 1.8rem;
+	font-weight: $font-weight-heading;
+	margin-bottom: $unit-7;
+}
+
+h6,.h6 {
+	font-weight: $font-weight-reg;
+}
+
+// Slightly larger text for lead lines
+
+.lead {
+    font-size: $font-size-lg;
+}
+
+.section-heading {
+    position: relative;
+    color: $primary-color;
+    text-align: center;
+    margin: 0 0 $unit-15 0;
+}

@@ -1,0 +1,42 @@
+.testimonials {
+	padding: $unit-20 0;
+	background: $gray-color-light;
+
+	.testimonial-person {
+		border-right: 1px solid $gray-color;
+		display: flex;
+		align-items: flex-start;
+
+		.testimonial-image {
+			margin-right: $unit-5;
+		}
+
+		.testimonial-person-details {
+			h6 {
+				margin-bottom: $unit-2;
+
+				&:last-of-type {
+					margin: 0;
+				}
+			}
+			.name {
+				color: $primary-color;
+				font-weight: $font-weight-bold;
+			}
+
+			.position,
+			.company {
+				color: $gray-color;
+				font-weight: $font-weight-reg;
+			}
+		}
+	}
+
+	.testimonial-body {
+		padding-left: $unit-10;
+
+		p {
+			font-style: italic;
+		}
+	}
+}

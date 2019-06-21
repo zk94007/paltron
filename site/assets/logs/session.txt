@@ -1,0 +1,50 @@
+2019-06-06 17:08:06	admin	http://localhost/admin/login/	Successful login for 'admin'
+2019-06-07 08:14:39	guest	http://localhost/admin/login/	Error: Failed login for 'dmytro.kiselov-outlook.com' - Unknown user
+2019-06-07 08:14:46	admin	http://localhost/admin/login/	Successful login for 'admin'
+2019-06-07 17:39:08	admin	http://localhost/admin/login/	Successful login for 'admin'
+2019-06-08 23:13:03	admin	http://localhost/admin/login/	Successful login for 'admin'
+2019-06-11 20:16:51	guest	http://localhost/admin/login/	Error: Failed login for 'admin' - Invalid password
+2019-06-11 20:16:58	guest	http://localhost/admin/login/	Error: Failed login for 'admin' - Invalid password
+2019-06-11 20:17:05	guest	http://localhost/admin/login/	Error: Failed login for 'admin' - Invalid password
+2019-06-11 20:17:18	guest	http://localhost/admin/login/	Error: Failed login for 'admin' - Invalid password
+2019-06-11 20:17:24	guest	http://localhost/admin/login/	Error: Failed login for 'admin' - Blocked login attempt
+2019-06-11 20:17:36	guest	http://localhost/admin/login/	Error: Failed login for 'admin' - Blocked login attempt
+2019-06-12 15:55:03	guest	http://localhost/admin/login/	Error: Failed login for 'admin' - Invalid password
+2019-06-12 15:55:07	admin	http://localhost/admin/login/	Successful login for 'admin'
+2019-06-13 11:23:47	admin	http://localhost/admin/login/	Successful login for 'admin'
+2019-06-13 16:16:35	admin	http://localhost/admin/login/	Successful login for 'admin'
+2019-06-15 20:38:53	guest	http://localhost/admin/login/	Error: Failed login for 'admin' - Invalid password
+2019-06-15 20:38:58	admin	http://localhost/admin/login/	Successful login for 'admin'
+2019-06-17 03:14:34	guest	http://localhost/admin/login/	Error: Failed login for 'admin' - Invalid password
+2019-06-17 03:14:39	guest	http://localhost/admin/login/	Error: Failed login for 'admin' - Invalid password
+2019-06-17 03:14:42	guest	http://localhost/admin/login/	Error: Failed login for 'admin' - Blocked login attempt
+2019-06-17 03:14:48	guest	http://localhost/admin/login/	Error: Failed login for 'admin' - Blocked login attempt
+2019-06-17 03:15:12	guest	http://localhost/admin/login/	Error: Failed login for 'admin' - Invalid password
+2019-06-17 03:15:19	guest	http://localhost/admin/login/	Error: Failed login for 'admin' - Blocked login attempt
+2019-06-17 03:15:49	admin	http://localhost/admin/login/	Successful login for 'admin'
+2019-06-17 09:52:33	admin	http://localhost/admin/login/	Successful login for 'admin'
+2019-06-18 03:24:29	admin	http://localhost/admin/login/	Successful login for 'admin'
+2019-06-18 15:38:06	admin	http://localhost/admin/login/	Successful login for 'admin'
+2019-06-18 17:02:42	admin	http://localhost/admin/login/	Successful login for 'admin'
+2019-06-18 19:44:50	guest	http://localhost/admin/login/	Error: Failed login for 'admin' - Invalid password
+2019-06-18 19:44:55	admin	http://localhost/admin/login/	Successful login for 'admin'
+2019-06-18 20:08:05	admin	http://localhost/admin/login/	Successful login for 'admin'
+2019-06-19 10:20:54	admin	http://localhost/admin/login/	Successful login for 'admin'
+2019-06-19 10:25:37	?	?	User 'admin' - Error: Session fingerprint changed (IP address or useragent) (IP: 0.0.0.0)
+2019-06-19 10:30:10	admin	http://localhost/admin/login/	Successful login for 'admin'
+2019-06-19 16:20:30	?	?	User 'admin' - Error: Session fingerprint changed (IP address or useragent) (IP: 0.0.0.0)
+2019-06-19 17:11:30	guest	http://localhost/admin/login/?id=1124	Error: Failed login for 'admin' - Invalid password
+2019-06-19 17:11:35	admin	http://localhost/admin/login/?id=1124	Successful login for 'admin'
+2019-06-19 18:12:01	admin	http://localhost/admin/login/	Successful login for 'admin'
+2019-06-19 20:06:44	admin	http://localhost/admin/login/	Successful login for 'admin'
+2019-06-20 23:41:57	admin	http://localhost/admin/login/	Successful login for 'admin'
+2019-06-20 23:51:53	admin	http://localhost/admin/login/	Successful login for 'admin'
+2019-06-21 00:01:30	?	?	User 'admin' - Error: Session fingerprint changed (IP address or useragent) (IP: 0.0.0.0)
+2019-06-21 00:38:23	admin	http://localhost/admin/login/?id=1095	Successful login for 'admin'
+2019-06-21 10:54:39	admin	http://localhost/admin/login/	Successful login for 'admin'
+2019-06-21 12:11:15	admin	http://localhost/admin/login/?id=1	Successful login for 'admin'
+2019-06-21 12:37:50	?	?	User 'admin' - Error: Session fingerprint changed (IP address or useragent) (IP: 0.0.0.0)
+2019-06-21 13:14:21	admin	http://localhost/admin/login/	Successful login for 'admin'
+2019-06-21 15:23:57	admin	http://localhost/admin/login/	Successful login for 'admin'
+2019-06-21 16:29:03	admin	http://localhost/admin/login/	Successful login for 'admin'
+2019-06-21 16:57:58	admin	http://localhost/admin/login/?id=1130	Successful login for 'admin'

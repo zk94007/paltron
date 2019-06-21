@@ -1,0 +1,19 @@
+label {
+	font-size: $font-size-sm;
+}
+
+.form-label {
+	display: inline-block;
+	padding: 0 0 4px 0;
+}
+
+.form-group {
+	@include clearfix;
+}
+
+.optional {
+	font-size: $font-size-sm;
+	color: $gray-color;
+	font-style: italic;
+	float: right;
+}

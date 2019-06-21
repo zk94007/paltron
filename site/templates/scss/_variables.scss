@@ -1,0 +1,55 @@
+// Colors
+$primary-color: #af0101;
+$secondary-color: #409b9b;
+
+$white: #fff;
+$black: #000;
+
+// Gray colors
+$light-color: $white;
+$gray-color: #bcbcbc;
+$gray-color-dark: darken($gray-color, 25%) !default;
+$gray-color-light: lighten($gray-color, 21%) !default;
+
+$body-font-color: #333;
+$body-font-color-alt: $light-color;
+
+$link-color: $primary-color;
+$link-color-hover: $body-font-color;
+
+// Fonts
+@include font-face("IBM Plex", "../fonts/ibm-plex/ibm-plex-sans-v2-latin-300", 300, normal, true);
+@include font-face("IBM Plex", "../fonts/ibm-plex/ibm-plex-sans-v2-latin-300italic", 300, italic, true);
+@include font-face("IBM Plex", "../fonts/ibm-plex/ibm-plex-sans-v2-latin-regular", 400, normal, true);
+@include font-face("IBM Plex", "../fonts/ibm-plex/ibm-plex-sans-v2-latin-500", 500, normal, true);
+@include font-face("IBM Plex", "../fonts/ibm-plex/ibm-plex-sans-v2-latin-600", 600, normal, true);
+
+$system-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+$base-font-family: "IBM Plex", $system-font-family;
+$heading-font-family:$base-font-family;
+
+// Font sizes
+$html-font-size: 20px;
+$html-font-size-mobile: 18px;
+$html-line-height: 1.7;
+
+// Font weights
+// $font-weight-light: 300;
+$font-weight-reg: 300;
+$font-weight-med: 500;
+$font-weight-bold: 600;
+$font-weight-heading: $font-weight-med;
+
+// Sizes
+$layout-spacing: 1rem;
+$unit-15: 3rem;
+$unit-20: 4rem;
+$unit-30: 6rem;
+$unit-40: 8rem;
+$border-radius: 0;
+$border-width: 0;
+
+// various:
+$default-transition: all 200ms ease-in-out;
+$img-path: "../images"; // Usage: background: url('#{$img-path}/img.jpg') 0 0 no-repeat;
+$root: "../../../..";

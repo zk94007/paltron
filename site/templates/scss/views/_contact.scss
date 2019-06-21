@@ -1,0 +1,23 @@
+.contact {
+	padding: $unit-20 0 $unit-30 0;
+
+	.contact-form-container {
+
+	}
+
+	.contact-form {
+		background-color: $gray-color-light;
+		padding: $unit-10;
+	}
+
+	.contact-person {
+
+		.contact-person-image {
+			margin-bottom: $unit-10;
+		}
+
+		h6 {
+			color: $gray-color;
+		}
+	}
+}
