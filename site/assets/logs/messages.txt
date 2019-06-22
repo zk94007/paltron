@@ -206,3 +206,5 @@
 2019-06-19 13:09:27	admin	http://localhost/admin/setup/template/removeFields	Deleted field &quot;rating&quot; data in 0 row(s) from 0 page(s) using template &quot;job&quot;. [page-by-page]
 2019-06-19 15:13:12	admin	http://localhost/admin/setup/template/removeFields	Deleted field &quot;rating&quot; data in 1 row(s) from 1 page(s) using template &quot;job&quot;. [page-by-page]
 2019-06-21 15:31:25	admin	http://localhost/admin/setup/template/removeFields	Deleted field &quot;header_title&quot; data in 0 row(s) from 0 page(s) using template &quot;aboutus&quot;. [page-by-page]
+2019-06-21 19:47:45	admin	http://localhost/admin/setup/template/removeFields	Deleted field &quot;partners_image&quot; data in 0 row(s) from 0 page(s) using template &quot;aboutus&quot;. [page-by-page]
+2019-06-22 12:40:06	admin	http://localhost/admin/setup/template/removeFields	Deleted field &quot;header_description&quot; data in 0 row(s) from 0 page(s) using template &quot;find_job&quot;. [page-by-page]

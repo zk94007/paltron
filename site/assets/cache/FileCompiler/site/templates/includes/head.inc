@@ -79,6 +79,23 @@
                 min-height: 420px;
             }
 
+            #news-feed-header {
+                background: url(<?php echo $td.'images/'.$page->header_image.') center center no-repeat !important'?>;
+                background-size:cover!important;
+                min-height: 420px;
+            }
+
+            #news-header {
+                background: url(<?php echo $td.'images/'.$page->header_image.') center center no-repeat !important'?>;
+                background-size:cover!important;
+                min-height: 420px;
+            }
+            
+            #job-find-header {
+                background: url(<?php echo $td.'images/'.$page->header_image.') center center no-repeat !important'?>;
+                background-size:cover!important;
+                min-height: 210px;
+            }
         </style>
 
 
