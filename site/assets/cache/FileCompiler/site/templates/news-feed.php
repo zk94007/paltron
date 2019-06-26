@@ -27,42 +27,69 @@
                 <?php foreach($page->news_tabs as $tab) : ?>
                     <div class="news-tab-item">
                         <a href="<?php echo $tab->link_url ?>">
-                            <img src="<?php echo $td.'images/news/tabs/'.$tab->images ?>" alt="<?php echo $tab->title ?>" >
+                            <img src="<?php echo $tab->image->url ?>" alt="<?php echo $tab->title ?>" >
                         </a>
                     </div>
                 <?php endforeach ?>
             </div>
         </div>
     </section>
+    <?php
+        $q = $sanitizer->selectorValue($input->get->q);           
+        $input->whitelist('q', $q);
+    ?>    
     <section class="search-box">
         <div class="container">
-            <input type="text">
+            <form id="search-news" action="/news-feed/" method="get">
+                <input type="text" id="search-news-input" name ="q" placeholder="Search" value="<?php echo $q; ?>">
+            </form>
             <img src="<?php echo $td.'images/search.svg' ?>" alt="search">
         </div>
     </section>
     <section class="news-list">
         <div class="container">
             <div class="row">
-                <?php foreach($page->news_list as $news) : ?>
+                <?php
+                    if(isset($_REQUEST["limit"])) {
+                        $news_limit = $_REQUEST["limit"];
+                    }
+                    else {
+                        $news_limit = 8;
+                    }
+                    $news_feed = $pages->get("/news-feed/");
+                    $news_list = $pages->find("parent=/news-feed/, template=news, title|header_title|header_description|content_text|author|news_summary%=$q");
+                    $total_count = $news_list->count();
+                    $news_list = $pages->find("parent=/news-feed/, template=news, sort=-date, limit=$news_limit, title|header_title|header_description|content_text|author|news_summary%=$q");
+                ?>
+                <?php foreach($news_list as $news) : ?>
                     <div class="col-lg-3 col-md-6 col-sm-12 news-list-item">
-                        <a href="<?php echo $news->link_url ?>">
-                            <img src="<?php echo $td.'images/news/'.$news->images ?>" alt="<?php echo $news->title ?>" >
+                        <a href="/news-feed/<?php echo $news->name ?>">
+                            <div class="image">
+                                <img src="<?php echo $news->list_image->url; ?>" alt="<?php echo $news->title ?>" >
+                                <div class="overlay">
+                                </div>
+                                <span class="overlay-text">Read More</span>
+                            </div>
                             <span class="date"><?php echo $news->date ?></span>
                             <h6 class="title"><?php echo $news->title ?></h6>
-                            <?php echo $news->content_text ?>
+                            <p><?php echo $news->news_summary ?></p>
                         </a>
                     </div>
                 <?php endforeach ?>
             </div>
+            <?php
+             if($total_count > $news_limit) : ?>
             <div class="button-group">
-                <a class="col-lg-4 col-md-12 btn btn-primary">
+                <a class="col-lg-4 col-md-12 btn btn-primary" onclick="javascript: show_more_news()">
                     <?php echo \ProcessWire\__("Mehr anzeigen"); ?>
                     <ion-icon name="ios-arrow-forward"></ion-icon>
                 </a>
             </div>
+            <?php endif ?>
         </div>
     </section>
-    
+
+     
     <section class="contact" id="contact">
         <div class="container">
             <div class="contact-wrapper">
@@ -91,7 +118,7 @@
                 </form>
             </div>
             <div class="contact-person">
-                <img class="contact-person-image" src="<?php echo $config->urls->templates?>images/gf-josef-guenthner.jpg" alt="">
+                <img class="contact-person-image" src="<?php echo $td; ?>images/gf-josef-guenthner.jpg" alt="">
                 <div class="info">
                     <strong><?php echo \ProcessWire\__('Ihr Ansprechpartner'); ?></strong>
                     <p>Josef Günthner</p>
@@ -106,5 +133,24 @@
     </section>  
 
 </main>
+
+<script>
+    var news_limit = 8;
+
+    function show_more_news() {
+        <?php if(isset($_REQUEST["limit"])) : ?>
+            news_limit += 8;
+        <?php else : ?>
+            news_limit = 16;
+        <?php endif ?>
+
+        <?php if(isset($_REQUEST["q"])) : ?>
+            search_key = '<?php echo $_REQUEST["q"] ?>';
+            window.location.href="?q=" + search_key + "&limit=" + news_limit;
+        <?php else : ?>
+            window.location.href="?limit=" + news_limit;
+        <?php endif ?>
+    }
+</script>
 <?php
  include(\ProcessWire\wire('files')->compile(\ProcessWire\wire("config")->paths->root . "site/templates/includes/foot.inc",array('includes'=>true,'namespace'=>true,'modules'=>true,'skipIfNamespace'=>true)));

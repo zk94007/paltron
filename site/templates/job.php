@@ -42,18 +42,18 @@ include("./includes/head.inc");
                     <?php echo $page->job_benefit ?>
                 </div>
                 <div class="job-action">
-                    <a href="" class="btn btn-primary">
+                    <a href="/apply-job" class="btn btn-primary">
                         <ion-icon name="clipboard"></ion-icon>
                         <?php echo __("Jetzt bewerben"); ?>
                     </a>
-                    <a href="" class="btn btn-black">
+                    <a href="/find-job" class="btn btn-black">
                         <ion-icon name="arrow-round-up"></ion-icon>
                         <?php echo __("Zurikk zur Obersicht"); ?>
                     </a>
                 </div>
                 <div class="note">
                     <p>Gemifl Art. 14 DSGVO informieten win tinter Ziffer 9 unserer Datenschutzerklanmg Ube, die Einzelheiten der dutch Korrespondenz mit potenziellen Kandidaten generierten Oaten: </p>
-                    <a href="www.careerteam.de/datenschutz">www.careerteam.de/datenschutz</a>
+                    <a href="/data-policy">www.careerteam.de/datenschutz</a>
                 </div>
             </section>
             <section class="col-lg-4 col-md-12 job-contact-section">
@@ -61,7 +61,7 @@ include("./includes/head.inc");
                     <div class="contact-info">
                         <h3><?php echo __("Ansprechpartner"); ?></h3>
                         <div class="contact-image">
-                            <img src="<?php echo $td.'images/'.$page->contact_image ?>" alt="">
+                            <img src="<?php echo $page->contact_image->url ?>" alt="">
                         </div>
                         <div class="contact-name">
                             <h6><?php echo $page->contact_name ?></h6>
@@ -70,7 +70,7 @@ include("./includes/head.inc");
                             <?php echo $page->contact_description ?>
                         </div>
                         <div class="job-action">
-                            <a href="" class="btn btn-primary">
+                            <a href="/apply-job" class="btn btn-primary">
                                 <ion-icon name="clipboard"></ion-icon>
                                 <?php echo __("Jetzt bewerben"); ?>
                             </a>
@@ -115,7 +115,7 @@ include("./includes/head.inc");
                 </div>
             </div>
             <div class="careerteam-image">
-                <img src="<?php echo $td.'images/'.$page->careerteam_image ?>" alt="">
+                <img src="<?php echo $page->careerteam_image->url ?>" alt="">
             </div>
         </section>
     </div>

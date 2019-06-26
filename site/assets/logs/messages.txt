@@ -208,3 +208,23 @@
 2019-06-21 15:31:25	admin	http://localhost/admin/setup/template/removeFields	Deleted field &quot;header_title&quot; data in 0 row(s) from 0 page(s) using template &quot;aboutus&quot;. [page-by-page]
 2019-06-21 19:47:45	admin	http://localhost/admin/setup/template/removeFields	Deleted field &quot;partners_image&quot; data in 0 row(s) from 0 page(s) using template &quot;aboutus&quot;. [page-by-page]
 2019-06-22 12:40:06	admin	http://localhost/admin/setup/template/removeFields	Deleted field &quot;header_description&quot; data in 0 row(s) from 0 page(s) using template &quot;find_job&quot;. [page-by-page]
+2019-06-23 23:31:33	admin	http://localhost/admin/setup/template/removeFields	Deleted field &quot;learn_more_title&quot; data in 0 row(s) from 0 page(s) using template &quot;expertise-level-2&quot;. [page-by-page]
+2019-06-23 23:31:33	admin	http://localhost/admin/setup/template/removeFields	Deleted field &quot;sub_expertise&quot; data in 0 row(s) from 0 page(s) using template &quot;expertise-level-2&quot;. [page-by-page]
+2019-06-23 23:32:01	admin	http://localhost/admin/setup/template/removeFields	Deleted field &quot;jobs&quot; data in 1 row(s) from 1 page(s) using template &quot;expertise-level-1&quot;. [page-by-page]
+2019-06-23 23:57:46	admin	http://localhost/admin/page/sort/	Updated sort for 7 pages
+2019-06-23 23:58:49	admin	http://localhost/admin/page/sort/	Updated sort for 2 pages
+2019-06-23 23:59:21	admin	http://localhost/admin/page/sort/	Updated sort for 2 pages
+2019-06-24 00:00:43	admin	http://localhost/admin/page/sort/	Updated sort for 9 pages
+2019-06-24 00:00:50	admin	http://localhost/admin/page/sort/	Updated sort for 7 pages
+2019-06-24 00:00:59	admin	http://localhost/admin/page/sort/	Updated sort for 3 pages
+2019-06-24 18:53:28	admin	http://localhost/admin/setup/template/removeFields	Deleted field &quot;advantages&quot; data in 3 row(s) from 3 page(s) using template &quot;expertise-level-1&quot;. [page-by-page]
+2019-06-24 19:07:30	admin	http://localhost/admin/setup/template/removeFields	Deleted field &quot;advantages&quot; data in 2 row(s) from 2 page(s) using template &quot;expertise-level-2&quot;. [page-by-page]
+2019-06-24 21:28:12	admin	http://localhost/admin/setup/template/removeFields	Deleted field &quot;job_classify_item&quot; data in 2 row(s) from 2 page(s) using template &quot;job_overview&quot;. [page-by-page]
+2019-06-25 11:11:26	admin	http://localhost/admin/setup/template/removeFields	Deleted field &quot;news_list&quot; data in 1 row(s) from 1 page(s) using template &quot;news-feed&quot;. [page-by-page]
+2019-06-25 11:37:22	admin	http://localhost/admin/setup/template/removeFields	Deleted field &quot;summary&quot; data in 1 row(s) from 1 page(s) using template &quot;news&quot;. [page-by-page]
+2019-06-25 13:28:01	admin	http://localhost/admin/setup/template/removeFields	Deleted field &quot;news_post_info&quot; data in 10 row(s) from 10 page(s) using template &quot;news&quot;. [page-by-page]
+2019-06-25 18:00:02	admin	http://localhost/admin/setup/template/removeFields	Deleted field &quot;link_url&quot; data in 0 row(s) from 0 page(s) using template &quot;news&quot;. [page-by-page]
+2019-06-25 18:00:28	admin	http://localhost/admin/setup/template/removeFields	Deleted field &quot;news_tabs&quot; data in 1 row(s) from 1 page(s) using template &quot;news-feed&quot;. [page-by-page]
+2019-06-25 19:18:56	admin	http://localhost/admin/setup/field/save	Deleted field &quot;images&quot; data in 10 row(s) from 10 page(s) using template &quot;repeater_news_tabs&quot;. [page-by-page]
+2019-06-25 19:18:56	admin	http://localhost/admin/setup/field/save	Deleted field &quot;link_url&quot; data in 0 row(s) from 0 page(s) using template &quot;repeater_news_tabs&quot;. [page-by-page]
+2019-06-25 19:23:35	admin	http://localhost/admin/setup/field/save	Deleted field &quot;images&quot; data in 4 row(s) from 4 page(s) using template &quot;repeater_status_quo&quot;. [page-by-page]

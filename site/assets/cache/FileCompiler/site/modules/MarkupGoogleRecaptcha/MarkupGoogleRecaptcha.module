@@ -1,0 +1,331 @@
+<?php
+
+class MarkupGoogleRecaptcha extends \ProcessWire\WireData implements \ProcessWire\Module, \ProcessWire\ConfigurableModule {
+
+    static function getModuleInfo() {
+        return [
+            'title'   => 'Markup Google reCAPTCHA',
+            'summary' => 'Google reCAPTCHA for ProcessWire',
+            'version' => '2.0.0',
+            'author'  => 'flydev',
+            'href'    => 'https://processwire.com/talk/topic/13738-markup-google-recaptcha/',
+            'icon'    => 'puzzle-piece',
+            'autoload'=> false,
+            'singular'=> false
+        ];
+    }
+
+    const SITE_RECAPTCHA_API_URL = "https://www.google.com/recaptcha/api.js";
+    const SITE_VERIFY_URL = "https://www.google.com/recaptcha/api/siteverify";
+
+    protected static $defaultSettings = [
+        'site_key'   => '',
+        'secret_key' => '',
+        'data_theme' => '0',
+        'data_type'  => '0',
+        'data_size'  => '0',
+        'data_index' => '0',
+        'data_recaptcha_type' => 'recaptchav2'
+    ];
+
+    public function __construct()
+    {
+        $this->setArray(self::$defaultSettings);
+    }
+
+
+    public function render($form = null, $lang = "")
+    {
+        if(!$form instanceof \ProcessWire\InputfieldForm)
+        {
+            $out = $this->buildGoogleDiv($lang);
+            return $out;
+        }
+        else
+        {
+            $inputfield = $this->modules->get("InputfieldMarkup");
+            $inputfield->value = $this->buildGoogleDiv($lang);
+
+            return $form->add($inputfield);
+        }
+    }
+
+    protected function buildGoogleDiv($lang = "")
+    {
+        $reCaptchaClass = "g-recaptcha";
+        $reCaptchaID = $reCaptchaClass . "-" . uniqid();
+
+        $attributes = array(
+            'id'           => $reCaptchaID,
+            'class'        => $reCaptchaClass,
+            'data-id'      => $reCaptchaID,
+            'data-hl'      => $lang,
+            'data-sitekey' => $this->site_key,
+            'data-theme'   => ($this->data_theme) ? 'dark' : 'light',
+            'data-type'    => ($this->data_type)  ? 'audio' : 'image',
+            'data-size'    => ($this->data_size)  ? 'compact' : 'normal',
+            'data-index'   => ($this->data_index) ? $this->data_index : '0',
+
+        );
+        if($this->data_recaptcha_type == 'invisible') {
+            $attributes['data-size'] = 'invisible';
+            $attributes['data-badge'] = ($this->data_badge) ? $this->data_badge : 'bottomright';
+        }
+
+        $div = '<div '.join(' ', array_map(function($key) use ($attributes)
+            {
+                if(is_bool($attributes[$key]))
+                    return $attributes[$key] ? $key : '';
+                return $key.'="'.$attributes[$key].'"';
+            }, array_keys($attributes))).' ></div>';
+
+        /*if(isset($this->data_recaptcha_type) && $this->data_recaptcha_type == 'invisible') {
+            $div .= "
+                <script>
+                    var renderInvisibleCallback = function() {
+                    for (var i = 0; i < document.forms.length; ++i) {
+                      var form = document.forms[i];
+                      var div = form.querySelector('.g-recaptcha');
+                      if (null === div){
+                        continue;
+                      }
+                
+                      (function(f){
+                
+                        var divId = grecaptcha.render(div,{
+                          'sitekey': '" . $attributes['data-sitekey'] . "',
+                          'size': '" . $attributes['data-size'] . "',
+                          'badge' : '" . $attributes['data-badge'] . "',
+                          'callback' : function (recaptchaToken) {
+                            HTMLFormElement.prototype.submit.call(f);
+                          }
+                        });
+                
+                        f.onsubmit = function (e){
+                          e.preventDefault();
+                          grecaptcha.execute(divId);
+                        };
+                
+                      })(form);
+                    }
+                  };
+                </script>";
+        }*/
+
+        return $div;
+    }
+
+    public function getScript()
+    {
+        $params = '';
+        if(isset($this->data_recaptcha_type) && $this->data_recaptcha_type == 'invisible') {
+            $params = '?onload=renderInvisibleCallback&render=explicit';
+            $return = "
+                <script>
+                    var renderInvisibleCallback = function() {
+                    for (var i = 0; i < document.forms.length; ++i) {
+                      var form = document.forms[i];
+                      var div = form.querySelector('.g-recaptcha');
+                      if (null === div){
+                        continue;
+                      }
+                
+                      (function(f){
+                
+                        var divId = grecaptcha.render(div, {
+                          'sitekey': div.getAttribute('data-sitekey'),
+                          'size': div.getAttribute('data-size'),
+                          'badge' : div.getAttribute('data-badge'),
+                          'callback' : function (recaptchaToken) {
+                            HTMLFormElement.prototype.submit.call(f);
+                          }
+                        });
+                
+                        f.onsubmit = function (e){
+                          e.preventDefault();
+                          grecaptcha.execute(divId);
+                        };
+                
+                      })(form);
+                    }
+                  };
+                </script>";
+            $return .= "<script src='".self::SITE_RECAPTCHA_API_URL."$params' async defer></script>";
+        }
+        elseif(isset($this->data_recaptcha_type) && $this->data_recaptcha_type == 'recaptchav2') {
+            $return = "<script src='".self::SITE_RECAPTCHA_API_URL."' async defer></script>";
+        }
+        return $return;
+    }
+
+    public function getScriptMulti() {
+        $return = "<script type='text/javascript'>
+                    var onloadReCaptchaCallback = function(){
+                        jQuery('.g-recaptcha').each(function() {
+                            var _this = jQuery(this);
+                            var recaptchaID = _this.data('id'),
+                                hl = _this.data('hl'),
+                                sitekey = _this.data('sitekey'),
+                                theme = _this.data('theme'),
+                                type = _this.data('type'),
+                                size = _this.data('size'),
+                                index = _this.data('index');
+                            if(recaptchaID !== undefined) {
+                                var recaptchaWidget = grecaptcha.render(recaptchaID, {
+                                    'hl' : hl,
+                                    'sitekey' : sitekey,
+                                    'theme' : theme,
+                                    'type' : type,
+                                    'size' : size,
+                                    'index' : index
+                                });
+                                grecaptcha.getResponse(recaptchaWidget);
+                                // grecaptcha.reset(recaptchaWidget);
+                            }
+                        });
+                    };
+                </script>";
+        $return .= "<script src='".self::SITE_RECAPTCHA_API_URL."?onload=onloadReCaptchaCallback&render=explicit' async defer></script>";
+
+        return $return;
+    }
+
+    public function verifyResponse()
+    {
+        if (!\ProcessWire\wire('input')->post['g-recaptcha-response'])
+            return false;
+
+        $data = [
+            'remoteip' => $_SERVER["REMOTE_ADDR"],
+            'secret' => $this->secret_key,
+            'response' => \ProcessWire\wire('input')->post['g-recaptcha-response']
+        ];
+
+        $http = new \ProcessWire\WireHttp();
+        $query = http_build_query($data);
+        $response = $http->get(self::SITE_VERIFY_URL."?{$query}");
+        $response = json_decode($response, true);
+
+        return ($response['success'] === true) ? true : false;
+    }
+
+    public static function getModuleConfigInputfields(array $data)
+    {
+        $wrap = new \ProcessWire\InputfieldWrapper();
+        /*
+         * api settings
+         */
+        $form = \ProcessWire\wire('modules')->get('InputfieldFieldset');
+        $form->label = \ProcessWire\__('Google reCAPTCHA API Settings');
+        $form->notes = \ProcessWire\__('You can obtain the above information by creating an API key at [http://www.google.com/recaptcha/admin](http://www.google.com/recaptcha/admin)');
+        $form->collapsed = \ProcessWire\Inputfield::collapsedYes;
+
+        $inputfields = [
+            'site_key'   => \ProcessWire\__('Site key'),
+            'secret_key' => \ProcessWire\__('Secret key')
+        ];
+        foreach($inputfields as $name => $label) {
+            $f = \ProcessWire\wire('modules')->get('InputfieldText');
+            $f->attr('name', $name);
+            $f->label = $label;
+            $f->required = true;
+            $f->columnWidth = 50;
+            if(isset($data[$name])) $f->attr('value', $data[$name]);
+            $form->add($f);
+        }
+        $wrap->add($form);
+
+        /*
+         * mode
+         */
+        $form = \ProcessWire\wire('modules')->get('InputfieldFieldset');
+        $form->label = \ProcessWire\__('Widget Mode');
+
+        $f = \ProcessWire\wire('modules')->get("InputfieldRadios");
+        $options = array('recaptchav2' => 'reCaptcha V2', 'invisible' => 'Invisible');
+        $f->name = 'data_recaptcha_type';
+        $f->label = \ProcessWire\__("Type of reCaptcha");
+        $f->description = \ProcessWire\__("Choose the type of reCaptcha.");
+        $f->addOptions($options);
+        isset($data['data_recaptcha_type']) ? $f->attr('value', $data['data_recaptcha_type']) : $f->attr('value', 'recaptchav2');
+        $f->columnWidth = 100;
+        $form->add($f);
+
+        $wrap->add($form);
+
+        /*
+         * recapatcha invisible settings
+         */
+        $form = \ProcessWire\wire('modules')->get('InputfieldFieldset');
+        $form->label = \ProcessWire\__('Invisible Widget Settings');
+        $form->showIf = "data_recaptcha_type=invisible";
+
+        $f = \ProcessWire\wire('modules')->get("InputfieldSelect");
+        $options = array('bottomright' => 'bottomright', 'bottomleft' => 'bottomleft' , 'inline' => 'inline');
+        $f->name = 'data_badge';
+        $f->label = \ProcessWire\__("Badge");
+        $f->description = \ProcessWire\__("Reposition the reCAPTCHA badge. 'inline' allows you to control the CSS.");
+        $f->addOptions($options);
+        if($data['data_badge']) $f->attr('value', $data['data_badge']);
+        $f->columnWidth = 100;
+        $form->add($f);
+        $wrap->add($form);
+
+        /*
+         * recapatcha v2 settings
+         */
+        $form = \ProcessWire\wire('modules')->get('InputfieldFieldset');
+        $form->label = \ProcessWire\__('reCapatcha V2 Widget Settings');
+        $form->showIf = "data_recaptcha_type=recaptchav2";
+
+        $inputfields = [
+            'data_theme' => ['label' => \ProcessWire\__("Use dark theme"),     'description' => \ProcessWire\__('The color theme of the widget. Default: light') ],
+            'data_size'  => ['label' => \ProcessWire\__('Use compact widget'), 'description' => \ProcessWire\__('The size of the widget. Default: normal') ]
+        ];
+        foreach($inputfields as $name => $value) {
+            $f = \ProcessWire\wire('modules')->get("InputfieldCheckbox");
+            $f->name = $name;
+            $f->label = $value['label'];
+            $f->description = $value['description'];
+            $f->value = 0;
+            $f->attr('checked', empty($data[$name]) ? '' : 'checked');
+            $f->columnWidth = 50;
+            $form->add($f);
+        }
+        $wrap->add($form);
+
+        /*
+         * global settings
+         */
+        $form = \ProcessWire\wire('modules')->get('InputfieldFieldset');
+        $form->label = \ProcessWire\__('Global Widget Settings');
+
+        $inputfields = [
+            'data_type'  => ['label' => \ProcessWire\__('Use audio type'),     'description' => \ProcessWire\__('The type of CAPTCHA to serve. Default: image') ],
+            'data_index' => ['name' => 'data_index', 'label' => \ProcessWire\__('Tabindex '), 'description' => \ProcessWire\__('The tabindex of the widget and challenge. Default: 0') ]
+        ];
+        $f = \ProcessWire\wire('modules')->get('InputfieldText');
+        $f->name = $inputfields['data_index']['name'];
+        $f->label = $inputfields['data_index']['label'];
+        $f->description = $inputfields['data_index']['description'];
+        $f->value = (isset($data['data_index'])) ? $data['data_index'] : '0';
+        $f->columnWidth = 50;
+        $form->add($f);
+
+        $f = \ProcessWire\wire('modules')->get("InputfieldCheckbox");
+        $f->name = 'data_type';
+        $f->label = $inputfields['data_type']['label'];
+        $f->description = $inputfields['data_type']['description'];
+        $f->attr('checked', empty($data['data_type']) ? '' : 'checked');
+        $f->columnWidth = 50;
+        $form->add($f);
+
+        $wrap->add($form);
+
+
+
+        return $wrap;
+    }
+}
+
+

@@ -1,15 +1,60 @@
-    <section class="paltron-news">
+<section class="recent-news">
+    <div class="news-list">
         <div class="container">
-            <h2><?php echo __("PALTRON News"); ?></h2>
             <div class="row">
-                <?php foreach($page->paltron_news as $news) : ?>
-                    <div class="col-lg-4 col-sm-12">
-                        <div class="news-item">
-                            <img src="<?php echo $td.'images/news/'.$news->images ?>" alt="news" >
-                            <?php echo $news->content_text ?>
+                <div class="col-lg-3 col-md-6 col-sm-12 news-list-item">
+                    <a href="#">
+                        <div class="image">
+                            <img src="<?php echo $td.'images/news/news3.jpg' ?>" alt="recent-news" >
+                            <div class="overlay">
+                            </div>
+                            <span class="overlay-text">Read More</span>
                         </div>
-                    </div>
-                <?php endforeach ?>
+                        <span class="date">17, Juli 2019</span>
+                        <h6 class="title">Lorem ipsum dolor sit amet, consectetur adipiscing elit</h6>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 news-list-item">
+                    <a href="#">
+                        <div class="image">
+                            <img src="<?php echo $td.'images/news/news2.jpg' ?>" alt="recent-news" >
+                            <div class="overlay">
+                            </div>
+                            <span class="overlay-text">Read More</span>
+                        </div>
+                        <span class="date">17, Juli 2019</span>
+                        <h6 class="title">Lorem ipsum dolor sit amet, consectetur adipiscing elit</h6>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 news-list-item">
+                    <a href="#">
+                        <div class="image">
+                            <img src="<?php echo $td.'images/news/news3.jpg' ?>" alt="recent-news" >
+                            <div class="overlay">
+                            </div>
+                            <span class="overlay-text">Read More</span>
+                        </div>
+                        <span class="date">17, Juli 2019</span>
+                        <h6 class="title">Lorem ipsum dolor sit amet, consectetur adipiscing elit</h6>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 news-list-item">
+                    <a href="#">
+                        <div class="image">
+                            <img src="<?php echo $td.'images/news/news2.jpg' ?>" alt="recent-news" >
+                            <div class="overlay">
+                            </div>
+                            <span class="overlay-text">Read More</span>
+                        </div>
+                        <span class="date">17, Juli 2019</span>
+                        <h6 class="title">Lorem ipsum dolor sit amet, consectetur adipiscing elit</h6>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </a>
+                </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>

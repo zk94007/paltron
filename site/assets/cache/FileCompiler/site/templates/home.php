@@ -23,7 +23,7 @@
             $data .= '<hr class="short-divider">';
             $data .= $page->header_description;
             $data .= '<div class="button-container">';
-            $data .= '<a href="" class="btn btn-primary" role="button">So finden wir Ihr Personal</a>';
+            $data .= '<a href="#about" class="btn btn-primary" role="button">So finden wir Ihr Personal</a>';
             $data .= '</div> </div> </div> </div> </section>';
         }
         echo $data;
@@ -41,7 +41,7 @@
                 <div class="classify-card col-lg-3 col-md-6 col-sm-12">
                     <a href="#">
                         <div class="overlay"><h6><strong><?php echo $item->job_classify_title ?></strong></h6></div>
-                        <img src="<?php echo $config->urls->templates.'images/job-classify/'.$item->job_classify_image ?>" alt="">
+                        <img src="<?php echo $item->job_classify_image->url ?>" alt="">
                     </a>
                     <div class="content">
                         <strong><?php echo $item->job_classify_content ?></strong>
@@ -54,8 +54,8 @@
 
     <section class="fuer-bewerber-overview" id="fuer-bewerber">
         <div class="row">
-            <div class="col-lg-6 col-md-12 col-sm-12 is-background"></div>
-            <div class="col-lg-6 col-md-12 col-sm-12 is-content">
+            <div class="col-lg-6 col-md-11 col-sm-12 is-background"></div>
+            <div class="col-lg-6 col-md-11 col-sm-12 is-content">
                 <h1><?php echo $page->find_job_title ?></h1>
                 <hr class="short-divider">
                 <?php echo $page->find_job_description; ?>
@@ -75,7 +75,7 @@
                     <hr class="short-divider">
                     <?php echo $page->about_description; ?>
                     <div class="button-container">
-                        <a href="" class="btn btn-primary multiline" role="button">In welchem Bereich benötigen<br /> Sie Unterstützung?</a>
+                        <a href="#contact" class="btn btn-primary multiline" role="button">In welchem Bereich benötigen<br /> Sie Unterstützung?</a>
                     </div>
                 </div>
                 <div class="col-lg-7 offset-lg-1 col-md-12 col-sm-12">
@@ -97,7 +97,7 @@
                 $data .= '<h1>'.$block->besetzung_title.'</h1>';
                 $data .= '<hr class="short-divider">';
                 $data .= '<p>'.$block->besetzung_description.'</p>';
-                $data .= '<img src="'.$config->urls->templates.'images/'.$block->besetzung_image.'" alt="">';
+                $data .= '<img src="'.$block->besetzung_image->url.'" alt="">';
                 $data .= '</div>';
             }
             $data .= '</div> </div> </section>';
@@ -145,7 +145,7 @@
                 $data .= '<div class="col-lg-3 col-md-6 col-sm-12 col-sm-auto expertise-card">';
                 $data .= '<a href="'.$card->expertise_card_link.'">';
                 $data .= '<div class="overlay"><h6>'.$card->title.'</h6></div>';
-                $data .= '<img src="'.$config->urls->templates.'images/expertise/'.$card->expertise_card_image.'" alt="">'; 
+                $data .= '<img src="'.$card->expertise_card_image->url.'" alt="">'; 
                 $data .= '</a> </div>';
             }
             $data .= '</div> </div> </section>';
@@ -162,7 +162,7 @@
             <div class="column col-2 col-xl-4 col-md-6">
                 <div class="office-card">
                     <div class="office-image">
-                        <img src="<?php echo $config->urls->templates."images/offices/".$office->office_image ?>" alt="">
+                        <img src="<?php echo $office->office_image->url ?>" alt="">
                     </div>
                     <div class="office-address">
                         <h6><?php echo $office->office_city ?></h6>

@@ -166,6 +166,36 @@ $(document).ready(function(){
 		autoplayTimeout: 3000,
 		navText: ["<ion-icon name='ios-arrow-dropleft-circle'></ion-icon>","<ion-icon name='ios-arrow-dropright-circle'></ion-icon>"]
 	});
+	
+	$(".testimonials-carousel").owlCarousel({
+		items: 1,
+		margin: 25,
+		loop: true,
+		nav: true,
+		dots: false,
+		autoplay: true,
+		autoplayTimeout: 30000,
+		navText: ["<ion-icon name='ios-arrow-dropleft-circle'></ion-icon>","<ion-icon name='ios-arrow-dropright-circle'></ion-icon>"]
+	});
+	
+
+
+	$(".job-find-page .filtered-job").hover(function() {
+		$(this).find('.go-to-job').show();
+	});
+
+	$(".job-find-page .filtered-job").mouseleave(function() {
+		$(this).find('.go-to-job').hide();
+	});
+
+	$(".current-vacancies .recommended-job").hover(function() {
+		$(this).find('.go-to-job').show();
+	});
+
+	$(".current-vacancies .recommended-job").mouseleave(function() {
+		$(this).find('.go-to-job').hide();
+	});
+
 });
 
 // ===== Scroll to Top ==== 
@@ -182,3 +212,8 @@ $('#return-to-top').click(function() {      // When arrow is clicked
 		scrollTop : 0                       // Scroll to top of body
 	}, 500);
 });
+
+function func_listItemClick()
+{
+	alert(1);
+}

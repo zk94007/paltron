@@ -14,7 +14,7 @@
 ?>
 
 <!DOCTYPE html>
-<html lang="de">
+<html lang="<?php echo _x('de', 'HTML language code'); ?>">
     <head>
 
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
@@ -96,9 +96,19 @@
                 background-size:cover!important;
                 min-height: 210px;
             }
+            
+            #apply-job-header {
+                background: url(<?php echo $td.'images/'.$page->header_image.') center center no-repeat !important'?>;
+                background-size:cover!important;
+                min-height: 420px;
+            }
+            
+            #expertise-header {
+                background: url(<?php echo $td.'images/'.$page->header_image.') center center no-repeat !important'?>;
+                background-size:cover!important;
+                min-height: 420px;
+            }
         </style>
-
-
     </head>
     <body>
         <!--[if lte IE 10]>
@@ -108,129 +118,135 @@
     <header class="primary-header">
         <div class="container">
             <div class="site-logo">
-                <a href="/" title="Paltron"><img src="<?php echo $td ?>images/logo-paltron.svg" title="Paltron"
+                <a href="/" title="Paltron"><img src="<?php echo $td ?>images/logo-paltron.png" title="Paltron"
                         alt="Logo Paltron"></a>
             </div>
             <div class="lang-switch-container">
                 <button id="language-trigger" class="btn language-trigger">
-                    <img src="<?php echo $td ?>images/flag/flag-de.svg" alt="deutsch"> Deutsch
+                    <img src="<?php echo $td ?>images/flag/<?php echo $user->language->title ?>.svg" alt="<?php echo $user->language->title ?>"> <?php echo $user->language->title ?>
                 </button>
                 <ul id="languages" class="languages">
-                    <li>
-                        <a href="/" title="Paltron - Deutsch" class="external active">
-                            <img src="<?php echo $td ?>images/flag/flag-de.svg" alt="Paltron - Deutsch">Deutsch
-                        </a>
-                    </li>
-                    <li>
-                        <a href="/en/" title="Paltron - English" class="external">
-                            <img src="<?php echo $td ?>images/flag/flag-en.svg" alt="Paltron - English">English
-                        </a>
-                    </li>
+                <?php
+                    foreach($languages as $language) {
+                        if(!$page->viewable($language)) continue; // is page viewable in this language?
+                        if($language->id == $user->language->id) {
+                            echo "<li class='current'>";
+                        } else {
+                            echo "<li>";
+                        }
+                        $url = $page->localUrl($language); 
+                        $hreflang = $homepage->getLanguageValue($language, 'name'); 
+                        echo "<a hreflang='$hreflang' href='$url'>";
+                        echo "<img src='";
+                        echo $td."images/flag/".$language->title.".svg'";
+                        echo "alt='Paltron - $language->title'>";
+                        echo $language->title;
+                        echo "</a></li>";
+                    }
+                ?>
                 </ul>
             </div>
             <nav class="primary-nav-container" role="navigation">
                 <ul class="primary-nav">
                     <li class="active">
-                        <a href="https://www.paltron.com/#home" title="Paltron | PALTRON"
-                            onclick="dataLayer.push({'event': 'virtualPageView', 'virtualPageTitle': 'PALTRON', 'virtualPageUrl': '#home' });">PALTRON
-                        </a>
+                        <a href="/" title="Paltron | PALTRON">PALTRON</a>
                     </li>
                     <li>
-                        <a href="https://www.paltron.com/#leistungen" title="Paltron | Leistungen"
-                            onclick="dataLayer.push({'event': 'virtualPageView', 'virtualPageTitle': 'Leistungen', 'virtualPageUrl': '#leistungen' });">Leistungen
-                        </a>
+                        <a href="#leistungen" title="Paltron | Leistungen">Leistungen</a>
                     </li>
                     <li class="has-subnav ">
-                        <a href="https://www.paltron.com/#expertise" title="Paltron | Expertise"
-                            onclick="dataLayer.push({'event': 'virtualPageView', 'virtualPageTitle': 'Expertise', 'virtualPageUrl': '#expertise' });">Expertise
+                        <a href="#expertise" title="Paltron | Expertise">Expertise
                             <i class="fa fa-caret-down" aria-hidden="true"></i></a>
                         <ul class="subnav">
                             <li>
-                                <a href="/expertise/big-data-&amp;-business-intelligence"
-                                    title="Big Data &amp; Business Intelligence">Big Data &amp; Business Intelligence</a>
+                                <a href="/expertise/blockchain" title="Blockchain"><?php echo __("Blockchain"); ?></a>
                             </li>
 
                             <li>
-                                <a href="/expertise/iot-&amp;-cloud" title="IoT &amp; Cloud">IoT &amp; Cloud</a>
+                                <a href="/expertise/cloud" title="Cloud"><?php echo __("Cloud"); ?></a>
                             </li>
 
                             <li>
-                                <a href="/expertise/cyber-&amp;-it-security" title="Cyber- &amp; IT-Security">Cyber- &amp;
-                                    IT-Security</a>
+                                <a href="/expertise/cyber-security" title="Cyber Security"><?php echo __("Cyber Security"); ?></a>
                             </li>
 
                             <li>
-                                <a href="/expertise/erp-&amp;-sap" title="ERP &amp; SAP">ERP &amp; SAP</a>
+                                <a href="/expertise/data-science" title="Data Science"><?php echo __("Data Science"); ?></a>
                             </li>
 
                             <li>
-                                <a href="/expertise/data-science-&amp;-analytics" title="Data Science &amp; Analytics">Data
-                                    Science &amp; Analytics</a>
+                                <a href="/expertise/energy-tech" title="Energy Tech"><?php echo __("Energy-Tech"); ?></a>
                             </li>
 
                             <li>
-                                <a href="/expertise/ai-&amp;-machine-learning" title="AI &amp; Machine Learning">AI &amp;
-                                    Machine Learning</a>
+                                <a href="/expertise/erp" title="ERP"><?php echo __("ERP"); ?></a>
                             </li>
 
                             <li>
-                                <a href="/expertise/it-architecture-&amp;-infrastructure"
-                                    title="IT-Architecture &amp; Infrastructure">IT-Architecture &amp; Infrastructure</a>
+                                <a href="/expertise/geospatial-tech" title="Geospatial-Tech"><?php echo __("Geospatial-Tech"); ?></a>
                             </li>
 
                             <li>
-                                <a href="/expertise/it-consulting-&amp;-sales" title="IT-Consulting &amp; Sales">IT-Consulting
-                                    &amp; Sales</a>
+                                <a href="/expertise/immersive-media" title="Immersive Media">Immersive Media</a>
                             </li>
 
                             <li>
-                                <a href="/expertise/it-qualitaetsmanagement"
-                                    title="IT-Qualitätsmanagement">IT-Qualitätsmanagement</a>
+                                <a href="/expertise/it-architektur" title="IT-Architektur">IT-Architektur</a>
                             </li>
 
                             <li>
-                                <a href="/expertise/it-projectmanager" title="IT-Projektmanager">IT-Projektmanager</a>
+                                <a href="/expertise/it-consulting" title="IT-Consulting">IT-Consulting</a>
                             </li>
 
                             <li>
-                                <a href="/expertise/it-leadership-governance"
-                                    title="IT-Leadership &amp; IT-Governance">IT-Leadership &amp; IT-Governance</a>
+                                <a href="/expertise/it-infrastruktur" title="IT-Infrastruktur">IT-Infrastruktur</a>
                             </li>
 
                             <li>
-                                <a href="/expertise/blockchain-technologies" title="Blockchain Technologies">Blockchain
-                                    Technologies</a>
+                                <a href="/expertise/it-leadership" title="IT-Leadership">IT-Leadership</a>
+                            </li>
+                            
+                            <li>
+                                <a href="/expertise/internet-of-things" title="Internet of Things">Internet of Things</a>
+                            </li>
+                            
+                            <li>
+                                <a href="/expertise/maschine-learning" title="Maschine Learning">Maschine Learning</a>
+                            </li>
+                            
+                            <li>
+                                <a href="/expertise/mobile-internet" title="Mobile Internet">Mobile Internet</a>
+                            </li>
+                            
+                            <li>
+                                <a href="/expertise/mobile-technologies" title="Mobile Technologies">Mobile Technologies</a>
+                            </li>
+                            
+                            <li>
+                                <a href="/expertise/robots" title="Robots">Robots</a>
                             </li>
                         </ul>
                     </li>
                     <li>
-                        <a href="https://www.paltron.com/#referenzen" title="Paltron | Referenzen"
-                            onclick="dataLayer.push({'event': 'virtualPageView', 'virtualPageTitle': 'Referenzen', 'virtualPageUrl': '#referenzen' });">Referenzen
-                        </a>
+                        <a href="#testimonials" title="Paltron | Referenzen">Referenzen</a>
                     </li>
                     <li>
-                        <a href="https://www.paltron.com/#team" title="Paltron | Team"
-                            onclick="dataLayer.push({'event': 'virtualPageView', 'virtualPageTitle': 'Team', 'virtualPageUrl': '#team' });">Team
-                        </a>
+                        <a href="/about-us" title="Paltron | About Us">Über Uns</a>
                     </li>
                     <li class="has-subnav">
-                        <a href="https://www.paltron.com/#jobs" title="Paltron | Jobs"
-                            onclick="dataLayer.push({'event': 'virtualPageView', 'virtualPageTitle': 'Jobs', 'virtualPageUrl': '#jobs' });">Jobs
+                        <a href="https://www.paltron.com/#jobs" title="Paltron | Jobs">Jobs
                             <i class="fa fa-caret-down" aria-hidden="true"></i></a>
                         <ul class="subnav">
                             <li>
-                                <a href="/jobs/gefunden-werden" title="Gefunden werden">Gefunden werden</a>
+                                <a href="/find-job" title="Job finden">Job finden</a>
                             </li>
-
                             <li>
-                                <a href="/jobs/job-finden" title="Job finden">Job finden</a>
+                                <a href="/apply-job" title="Gefunden werden">Gefunden werden</a>
                             </li>
                         </ul>
                     </li>
                     <li>
-                        <a href="https://www.paltron.com/#kontakt" title="Paltron | Kontakt"
-                            onclick="dataLayer.push({'event': 'virtualPageView', 'virtualPageTitle': 'Kontakt', 'virtualPageUrl': '#kontakt' });">Kontakt
-                        </a>
+                        <a href="/#contact" title="Paltron | Kontakt">Kontakt</a>
                     </li>
                 </ul>
             </nav>
@@ -238,99 +254,104 @@
             <nav class="mobile-nav-container">
                 <ul class="primary-nav mobile">
                     <li>
-                        <a href="https://www.paltron.com/#home" title="Paltron | PALTRON"
-                            onclick="dataLayer.push({'event': 'virtualPageView', 'virtualPageTitle': 'PALTRON', 'virtualPageUrl': '#home' });">PALTRON
-                        </a>
+                        <a href="/" title="Paltron | PALTRON">PALTRON</a>
                     </li>
                     <li class="">
-                        <a href="https://www.paltron.com/#leistungen" title="Paltron | Leistungen"
-                            onclick="dataLayer.push({'event': 'virtualPageView', 'virtualPageTitle': 'Leistungen', 'virtualPageUrl': '#leistungen' });">Leistungen
-                        </a>
+                        <a href="#leistungen" title="Paltron | Leistungen">Leistungen</a>
                     </li>
                     <li class="has-subnav">
-                        <a href="https://www.paltron.com/#expertise" title="Paltron | Expertise"
-                            onclick="dataLayer.push({'event': 'virtualPageView', 'virtualPageTitle': 'Expertise', 'virtualPageUrl': '#expertise' });">Expertise
+                        <a href="#expertise" title="Paltron | Expertise">Expertise
                             <i class="fa fa-caret-down" aria-hidden="true"></i></a>
                         <ul class="subnav">
-
                             <li>
-                                <a href="/expertise/big-data-&amp;-business-intelligence"
-                                    title="Big Data &amp; Business Intelligence">Big Data &amp; Business Intelligence</a>
+                                <a href="/expertise/blockchain" title="Blockchain"><?php echo __("Blockchain"); ?></a>
                             </li>
 
                             <li>
-                                <a href="/expertise/iot-&amp;-cloud" title="IoT &amp; Cloud">IoT &amp; Cloud</a>
+                                <a href="/expertise/cloud" title="Cloud"><?php echo __("Cloud"); ?></a>
                             </li>
 
                             <li>
-                                <a href="/expertise/cyber-&amp;-it-security" title="Cyber- &amp; IT-Security">Cyber- &amp;
-                                    IT-Security</a>
+                                <a href="/expertise/cyber-security" title="Cyber Security"><?php echo __("Cyber Security"); ?></a>
                             </li>
+
                             <li>
-                                <a href="/expertise/erp-&amp;-sap" title="ERP &amp; SAP">ERP &amp; SAP</a>
+                                <a href="/expertise/data-science" title="Data Science"><?php echo __("Data Science"); ?></a>
                             </li>
+
                             <li>
-                                <a href="/expertise/data-science-&amp;-analytics" title="Data Science &amp; Analytics">Data
-                                    Science &amp; Analytics</a>
+                                <a href="/expertise/energy-tech" title="Energy Tech"><?php echo __("Energy-Tech"); ?></a>
                             </li>
+
                             <li>
-                                <a href="/expertise/ai-&amp;-machine-learning" title="AI &amp; Machine Learning">AI &amp;
-                                    Machine Learning</a>
+                                <a href="/expertise/erp" title="ERP"><?php echo __("ERP"); ?></a>
                             </li>
+
                             <li>
-                                <a href="/expertise/it-architecture-&amp;-infrastructure"
-                                    title="IT-Architecture &amp; Infrastructure">IT-Architecture &amp; Infrastructure</a>
+                                <a href="/expertise/geospatial-tech" title="Geospatial-Tech"><?php echo __("Geospatial-Tech"); ?></a>
                             </li>
+
                             <li>
-                                <a href="/expertise/it-consulting-&amp;-sales" title="IT-Consulting &amp; Sales">IT-Consulting
-                                    &amp; Sales</a>
+                                <a href="/expertise/immersive-media" title="Immersive Media">Immersive Media</a>
                             </li>
+
                             <li>
-                                <a href="/expertise/it-qualitaetsmanagement"
-                                    title="IT-Qualitätsmanagement">IT-Qualitätsmanagement</a>
+                                <a href="/expertise/it-architektur" title="IT-Architektur">IT-Architektur</a>
                             </li>
+
                             <li>
-                                <a href="/expertise/it-projectmanager" title="IT-Projektmanager">IT-Projektmanager</a>
+                                <a href="/expertise/it-consulting" title="IT-Consulting">IT-Consulting</a>
                             </li>
+
                             <li>
-                                <a href="/expertise/it-leadership-governance"
-                                    title="IT-Leadership &amp; IT-Governance">IT-Leadership &amp; IT-Governance</a>
+                                <a href="/expertise/it-infrastruktur" title="IT-Infrastruktur">IT-Infrastruktur</a>
                             </li>
+
                             <li>
-                                <a href="/expertise/blockchain-technologies" title="Blockchain Technologies">Blockchain
-                                    Technologies</a>
+                                <a href="/expertise/it-leadership" title="IT-Leadership">IT-Leadership</a>
+                            </li>
+                            
+                            <li>
+                                <a href="/expertise/internet-of-things" title="Internet of Things">Internet of Things</a>
+                            </li>
+                            
+                            <li>
+                                <a href="/expertise/maschine-learning" title="Maschine Learning">Maschine Learning</a>
+                            </li>
+                            
+                            <li>
+                                <a href="/expertise/mobile-internet" title="Mobile Internet">Mobile Internet</a>
+                            </li>
+                            
+                            <li>
+                                <a href="/expertise/mobile-technologies" title="Mobile Technologies">Mobile Technologies</a>
+                            </li>
+                            
+                            <li>
+                                <a href="/expertise/robots" title="Robots">Robots</a>
                             </li>
                         </ul>
                     </li>
                     <li class="active">
-                        <a href="https://www.paltron.com/#referenzen" title="Paltron | Referenzen"
-                            onclick="dataLayer.push({'event': 'virtualPageView', 'virtualPageTitle': 'Referenzen', 'virtualPageUrl': '#referenzen' });">Referenzen
-                        </a>
+                        <a href="#testimonials" title="Paltron | Referenzen">Referenzen</a>
                     </li>
-                    <li class="">
-                        <a href="https://www.paltron.com/#team" title="Paltron | Team"
-                            onclick="dataLayer.push({'event': 'virtualPageView', 'virtualPageTitle': 'Team', 'virtualPageUrl': '#team' });">Team
-                        </a>
+                    <li >
+                        <a href="/about-us" title="Paltron | Team">Team</a>
                     </li>
                     <li class="has-subnav">
-                        <a href="https://www.paltron.com/#jobs" title="Paltron | Jobs"
-                            onclick="dataLayer.push({'event': 'virtualPageView', 'virtualPageTitle': 'Jobs', 'virtualPageUrl': '#jobs' });">Jobs
+                        <a href="https://www.paltron.com/#jobs" title="Paltron | Jobs">Jobs
                             <i class="fa fa-caret-down" aria-hidden="true"></i></a>
                         <ul class="subnav">
-
                             <li>
-                                <a href="/jobs/gefunden-werden" title="Gefunden werden">Gefunden werden</a>
+                                <a href="/find-job" title="Job finden">Job finden</a>
                             </li>
-
                             <li>
-                                <a href="/jobs/job-finden" title="Job finden">Job finden</a>
+                                <a href="/apply-job" title="Gefunden werden">Gefunden werden</a>
                             </li>
                         </ul>
                     </li>
                     <li>
-                        <a href="https://www.paltron.com/#kontakt" title="Paltron | Kontakt"
-                            onclick="dataLayer.push({'event': 'virtualPageView', 'virtualPageTitle': 'Kontakt', 'virtualPageUrl': '#kontakt' });">Kontakt
-                        </a>
+                        <a href="/#contact" title="Paltron | Kontakt">Kontakt</a>
                     </li>
                 </ul>
             </nav>

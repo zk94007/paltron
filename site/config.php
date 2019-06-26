@@ -108,6 +108,6 @@ $config->installed = 1559833633;
  * Installer: HTTP Hosts Whitelist
  * 
  */
-$config->httpHosts = array('localhost');
+$config->httpHosts = array('');
 
 

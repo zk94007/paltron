@@ -21,7 +21,8 @@
         </div>
     </section>
     <section class="news-post-info">
-        <?php echo $page->news_post_info; ?>
+        <p><?php echo $page->author; ?></p>
+        <p><?php echo $page->date; ?></p>
         <?php include(\ProcessWire\wire('files')->compile(\ProcessWire\wire("config")->paths->root . "site/templates/includes/social-links.inc",array('includes'=>true,'namespace'=>true,'modules'=>true,'skipIfNamespace'=>true)));  ?>
     </section>
     <section class="news-content">
@@ -34,7 +35,7 @@
                     <p><?php echo \ProcessWire\__("Wenn Ihnen unser Beitrag gefallen hat, freuen wir uns,wenn Sie diesen weiterempfehlen!"); ?></p>
                     <?php include(\ProcessWire\wire('files')->compile(\ProcessWire\wire("config")->paths->root . "site/templates/includes/social-links.inc",array('includes'=>true,'namespace'=>true,'modules'=>true,'skipIfNamespace'=>true)));  ?>
                     <div class="button-group">
-                        <a class="col-lg-12 btn btn-primary">
+                        <a class="col-lg-12 btn btn-primary" href="javascript: window.history.back();">
                             <?php echo \ProcessWire\__("Zuruck zur Ubersicht"); ?>
                             <ion-icon name="ios-arrow-forward"></ion-icon>
                         </a>
@@ -52,20 +53,68 @@
             </div>
         </div>
     </section>
-    <section class="related-news">
-        <div class="container">
-            <div class="row">
-                <?php foreach($page->paltron_news as $news) : ?>
-                    <div class="col-lg-3 col-md-6 col-sm-12">
-                        <div class="news-item">
-                            <img src="<?php echo $td.'images/news/'.$news->images ?>" alt="news" >
-                            <?php echo $news->content_text ?>
-                        </div>
+
+    <section class="recent-news">
+        <div class="news-list">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 col-sm-12 news-list-item">
+                        <a href="#">
+                            <div class="image">
+                                <img src="<?php echo $td.'images/news/news3.jpg' ?>" alt="recent-news" >
+                                <div class="overlay">
+                                </div>
+                                <span class="overlay-text">Read More</span>
+                            </div>
+                            <span class="date">17, Juli 2019</span>
+                            <h6 class="title">Lorem ipsum dolor sit amet, consectetur adipiscing elit</h6>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </a>
                     </div>
-                <?php endforeach ?>
+                    <div class="col-lg-3 col-md-6 col-sm-12 news-list-item">
+                        <a href="#">
+                            <div class="image">
+                                <img src="<?php echo $td.'images/news/news2.jpg' ?>" alt="recent-news" >
+                                <div class="overlay">
+                                </div>
+                                <span class="overlay-text">Read More</span>
+                            </div>
+                            <span class="date">17, Juli 2019</span>
+                            <h6 class="title">Lorem ipsum dolor sit amet, consectetur adipiscing elit</h6>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12 news-list-item">
+                        <a href="#">
+                            <div class="image">
+                                <img src="<?php echo $td.'images/news/news3.jpg' ?>" alt="recent-news" >
+                                <div class="overlay">
+                                </div>
+                                <span class="overlay-text">Read More</span>
+                            </div>
+                            <span class="date">17, Juli 2019</span>
+                            <h6 class="title">Lorem ipsum dolor sit amet, consectetur adipiscing elit</h6>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12 news-list-item">
+                        <a href="#">
+                            <div class="image">
+                                <img src="<?php echo $td.'images/news/news2.jpg' ?>" alt="recent-news" >
+                                <div class="overlay">
+                                </div>
+                                <span class="overlay-text">Read More</span>
+                            </div>
+                            <span class="date">17, Juli 2019</span>
+                            <h6 class="title">Lorem ipsum dolor sit amet, consectetur adipiscing elit</h6>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
+
 </main>
 <?php
  include(\ProcessWire\wire('files')->compile(\ProcessWire\wire("config")->paths->root . "site/templates/includes/foot.inc",array('includes'=>true,'namespace'=>true,'modules'=>true,'skipIfNamespace'=>true)));

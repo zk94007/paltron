@@ -21,7 +21,8 @@ include("./includes/head.inc");
         </div>
     </section>
     <section class="news-post-info">
-        <?php echo $page->news_post_info; ?>
+        <p><?php echo $page->author; ?></p>
+        <p><?php echo $page->date; ?></p>
         <?php include("./includes/social-links.inc");  ?>
     </section>
     <section class="news-content">
@@ -34,7 +35,7 @@ include("./includes/head.inc");
                     <p><?php echo __("Wenn Ihnen unser Beitrag gefallen hat, freuen wir uns,wenn Sie diesen weiterempfehlen!"); ?></p>
                     <?php include("./includes/social-links.inc");  ?>
                     <div class="button-group">
-                        <a class="col-lg-12 btn btn-primary">
+                        <a class="col-lg-12 btn btn-primary" href="javascript: window.history.back();">
                             <?php echo __("Zuruck zur Ubersicht"); ?>
                             <ion-icon name="ios-arrow-forward"></ion-icon>
                         </a>
@@ -52,20 +53,8 @@ include("./includes/head.inc");
             </div>
         </div>
     </section>
-    <section class="related-news">
-        <div class="container">
-            <div class="row">
-                <?php foreach($page->paltron_news as $news) : ?>
-                    <div class="col-lg-3 col-md-6 col-sm-12">
-                        <div class="news-item">
-                            <img src="<?php echo $td.'images/news/'.$news->images ?>" alt="news" >
-                            <?php echo $news->content_text ?>
-                        </div>
-                    </div>
-                <?php endforeach ?>
-            </div>
-        </div>
-    </section>
+
+    <?php include("./includes/related_new.inc"); ?>
 </main>
 <?php
 include("./includes/foot.inc");

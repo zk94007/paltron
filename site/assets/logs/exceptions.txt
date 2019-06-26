@@ -23,3 +23,7 @@
 2019-06-22 10:38:40	guest	http://localhost/admin/login/	This request was aborted because it appears to be forged. (in C:\My workspace\processwire-dev\wire\core\SessionCSRF.php line 191)
 2019-06-22 10:40:53	guest	http://localhost/admin/login/	This request was aborted because it appears to be forged. (in C:\My workspace\processwire-dev\wire\core\SessionCSRF.php line 191)
 2019-06-22 11:33:36	admin	http://localhost/admin/setup/template/save	This request was aborted because it appears to be forged. (in C:\My workspace\processwire-dev\wire\core\SessionCSRF.php line 191)
+2019-06-23 10:30:34	guest	http://localhost/admin/login/	This request was aborted because it appears to be forged. (in C:\My workspace\processwire-dev\wire\core\SessionCSRF.php line 191)
+2019-06-24 19:12:33	admin	http://localhost/admin/module/installConfirm?name=LanguageSupportFields	Module is not currently installable (in C:\My workspace\processwire-dev\wire\modules\Process\ProcessModule\ProcessModule.module line 1474)
+2019-06-25 13:27:38	admin	http://localhost/admin/setup/template/save	This request was aborted because it appears to be forged. (in C:\My workspace\processwire-dev\wire\core\SessionCSRF.php line 191)
+2019-06-25 13:27:44	admin	http://localhost/admin/setup/template/save	This request was aborted because it appears to be forged. (in C:\My workspace\processwire-dev\wire\core\SessionCSRF.php line 191)

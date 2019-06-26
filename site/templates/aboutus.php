@@ -39,12 +39,12 @@ include("./includes/head.inc");
                 <div class="col-lg-3 offset-lg-1 col-md-12 image-list">
                     <div class="row">
                         <div class="col-lg-12 col-md-5 col-sm-12 image-list-item">
-                            <img src="<?php echo $td.'images/Josef.jpg' ?>" alt="Josef">
+                            <img src="<?php echo $td.'images/josef.jpg' ?>" alt="Josef">
                             <h6 class="name">Josef Günthner</h6>
                             <span>Co-founder & Managing Director</span>
                         </div>
                         <div class="col-lg-12 col-md-5 col-sm-12 image-list-item">
-                            <img src="<?php echo $td.'images/Daniel.jpg' ?>" alt="Daniel">
+                            <img src="<?php echo $td.'images/daniel.jpg' ?>" alt="Daniel">
                             <h6 class="name">Daniel Wernicke</h6>
                             <span>Managing Director</span>
                         </div>
@@ -59,7 +59,7 @@ include("./includes/head.inc");
             <div class="row">
                 <?php foreach($page->status_quo as $status) : ?>
                     <div class="col-lg-3 col-md-6 col-sm-12 status-item">
-                        <img src="<?php echo $td.'images/status/'.$status->images ?>" alt="status quo" >
+                        <img src="<?php echo $status->image->url ?>" alt="status quo" >
                         <p><?php echo $status->title ?></p>
                     </div>
                 <?php endforeach ?>
