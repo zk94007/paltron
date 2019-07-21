@@ -1,5 +1,15 @@
 {
-    "file": "site\\templates\\aboutus.php",
+    "file": "site\/templates\/aboutus.php",
     "textdomain": "site--templates--aboutus-php",
-    "translations": []
+    "translations": {
+        "0ce153a97554d7ab6f1ac5aac789468d": {
+            "text": "Our success story"
+        },
+        "3db19dd7f844098caff7cfa6b510096b": {
+            "text": "Status quo"
+        },
+        "9ab4dd6a9e04302dbb3c8d104512d89c": {
+            "text": "PALTRON news"
+        }
+    }
 }

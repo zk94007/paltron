@@ -1,0 +1,39 @@
+{
+    "file": "site\/templates\/job_overview.php",
+    "textdomain": "site--templates--job_overview-php",
+    "translations": {
+        "a75a8edb17c734a281c2521bb06f9f62": {
+            "text": "REGISTER NOW FOR FREE!"
+        },
+        "2c57d9c61d79ac5a6175363a2550e8d1": {
+            "text": "What characterizes us"
+        },
+        "b33c55c7aca1c969895430c37548979f": {
+            "text": "Exclusive access to numerous leadership and expert positions in the digital world"
+        },
+        "b0ca1a26979a1f539ec835086115015b": {
+            "text": "The \"perfect fit\" of personalized job offers customized to your profile"
+        },
+        "cc92d05fe5bcdf3b90319183b941c4d1": {
+            "text": "Job offers from an annual salary of 70,000 EUR to 300,000 EUR."
+        },
+        "53914cecded033a6b9afeb3fe1c6adbf": {
+            "text": "100% confidential and in compliance with EU data protection regulations"
+        },
+        "61db0f0c5d789931a15fc3c605bf4114": {
+            "text": "Attractive employer"
+        },
+        "d64584d095f379e00eff9bce57e7860c": {
+            "text": "To our job portal"
+        },
+        "ae23c9da3baa898c75d9e015dcf042b7": {
+            "text": "In our job portal you will find daily updated vacancies. Find your dream job now."
+        },
+        "d69b55c56ec0a266b6c516a001f86410": {
+            "text": "Send unsolicited application"
+        },
+        "ee770e04b74c2501fa323144cdf38793": {
+            "text": "Couldn't find a suitable position? Please send us an unsolicited application and become part of our network."
+        }
+    }
+}

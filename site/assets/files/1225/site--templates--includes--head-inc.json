@@ -1,5 +1,24 @@
 {
-    "file": "site\\templates\\includes\\head.inc",
+    "file": "site\/templates\/includes\/head.inc",
     "textdomain": "site--templates--includes--head-inc",
-    "translations": []
+    "translations": {
+        "dcb860db8fdd496f5cbb4b80335f6750": {
+            "text": "Services"
+        },
+        "ff00176e65528d7e0346122b9f7a954c": {
+            "text": "References"
+        },
+        "eff573fca3e0ceb395421dcec1c113d2": {
+            "text": "About Us"
+        },
+        "d4d9183f49d4f1fc142aec7b9da0fea5": {
+            "text": "Find a Job"
+        },
+        "2c23f6d766ae075fc10eff6e92a2e775": {
+            "text": "Apply a Job"
+        },
+        "92316d41c56daf9140fc04509aecaaca": {
+            "text": "Contact"
+        }
+    }
 }

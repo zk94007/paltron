@@ -1,5 +1,27 @@
 {
-    "file": "site\\templates\\news-feed.php",
+    "file": "site\/templates\/news-feed.php",
     "textdomain": "site--templates--news-feed-php",
-    "translations": []
+    "translations": {
+        "4f02abcd0236148c6fe91ca67cca6b4c": {
+            "text": "Show more"
+        },
+        "b40149f764b4df42f2dbcb0fa6caacc5": {
+            "text": "How can we support you best?"
+        },
+        "0975cf6baccb3862c31522c2b5b8fabc": {
+            "text": "Phone"
+        },
+        "c2032399993b02e2262402187bd6b40b": {
+            "text": "Your message"
+        },
+        "835fa50f2ec0534ff436a484bf001db5": {
+            "text": "Send"
+        },
+        "501bcd6a97e56617357d61b8b25339fd": {
+            "text": "Your contact person"
+        },
+        "2451a5a6ec6030444124472b4a30b550": {
+            "text": "Managing Director"
+        }
+    }
 }

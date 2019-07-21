@@ -23,11 +23,15 @@ include("./includes/head.inc");
     </section>
     <section class="news-tabs">
         <div class="container">
-            <div class="news-tab-wrapper">
+            <div class="news-tab-wrapper row">
                 <?php foreach($page->news_tabs as $tab) : ?>
                     <div class="news-tab-item">
-                        <a href="<?php echo $tab->link_url ?>">
-                            <img src="<?php echo $tab->image->url ?>" alt="<?php echo $tab->title ?>" >
+                        <a href="<?php echo $lang_url.$tab->link_url ?>">
+                            <img src="<?php echo $tab->image->url ?>" alt="<?php echo $tab->title; ?>" >
+                            <div class="overlay"></div>
+                            <div class="overlay-text">
+                                <p><?php echo $tab->title; ?></p>
+                            </div>
                         </a>
                     </div>
                 <?php endforeach ?>
@@ -41,7 +45,7 @@ include("./includes/head.inc");
     <section class="search-box">
         <div class="container">
             <form id="search-news" action="/news-feed/" method="get">
-                <input type="text" id="search-news-input" name ="q" placeholder="Search" value="<?php echo $q; ?>">
+                <input type="text" id="search-news-input" name ="q" placeholder="Search" value="<?php echo $_REQUEST["q"]; ?>">
             </form>
             <img src="<?php echo $td.'images/search.svg' ?>" alt="search">
         </div>
@@ -57,13 +61,37 @@ include("./includes/head.inc");
                         $news_limit = 8;
                     }
                     $news_feed = $pages->get("/news-feed/");
-                    $news_list = $pages->find("parent=/news-feed/, template=news, title|header_title|header_description|content_text|author|news_summary%=$q");
-                    $total_count = $news_list->count();
-                    $news_list = $pages->find("parent=/news-feed/, template=news, sort=-date, limit=$news_limit, title|header_title|header_description|content_text|author|news_summary%=$q");
+                    $filtered_news = array();
+                    $news_all = $pages->find("parent=/news-feed/, template=news");
+                    $total_count = 0;
+
+                    if (isset($_REQUEST["category"])) {
+                        foreach($news_all as $news) {
+                            if($news->news_categories->last()->name == $_REQUEST["category"]) {
+                                $total_count ++;
+                                if($total_count <= $news_limit) array_push($filtered_news, $news);
+                            }
+                        }
+                        $news_list = $filtered_news;
+                    }
+                    else if(isset($_REQUEST["author"])) {
+                        foreach($news_all as $news) {
+                            if($news->author->last()->name == $_REQUEST["author"]) {
+                                $total_count ++;
+                                if($total_count <= $news_limit) array_push($filtered_news, $news);
+                            }
+                        }
+                        $news_list = $filtered_news;
+                    }
+                    else {
+                        $news_list = $pages->find("parent=/news-feed/, template=news, title|header_title|header_description|content_text|news_summary%=$q");
+                        $total_count = $news_list->count();
+                        $news_list = $pages->find("parent=/news-feed/, template=news, sort=-date, limit=$news_limit, title|header_title|header_description|content_text|news_summary%=$q");    
+                    }
                 ?>
                 <?php foreach($news_list as $news) : ?>
                     <div class="col-lg-3 col-md-6 col-sm-12 news-list-item">
-                        <a href="/news-feed/<?php echo $news->name ?>">
+                        <a href="<?php echo $lang_url; ?>/news-feed/<?php echo $news->name ?>">
                             <div class="image">
                                 <img src="<?php echo $news->list_image->url; ?>" alt="<?php echo $news->title ?>" >
                                 <div class="overlay">
@@ -89,49 +117,8 @@ include("./includes/head.inc");
         </div>
     </section>
 
+    <?php include("./includes/contact.inc"); ?>
      
-    <section class="contact" id="contact">
-        <div class="container">
-            <div class="contact-wrapper">
-                <h1><?php echo __('Bei welchem Thema können wir Sie am besten unterstützen?'); ?></h1>
-                <hr class="short-divider">
-                <form action="" class="contact-form">
-                    <div class="form-group">
-                        <label class="form-label" for="name">Name</label>
-                        <input class="form-input" id="name" name="name" type="text">
-                    </div>
-                    <div class="form-group">
-                        <label class="form-label" for="email">Email</label>
-                        <input class="form-input" id="email" name="email" type="email">
-                    </div>
-                    <div class="form-group">
-                        <label class="form-label" for="phone"><?php echo __('Telefon'); ?></label>
-                        <input class="form-input" id="phone" name="phone" type="text">
-                    </div>
-                    <div class="form-group">
-                        <label class="form-label float-left" for="message"><?php echo __('Ihre Nachricht'); ?></label><span class="optional">optional</span>
-                        <textarea class="form-input" name="message" id="message"></textarea>
-                    </div>
-                    <div class="button-group">
-                        <input class="btn btn-primary" type="button" name="send_form" value="<?php echo __('Absenden'); ?>">
-                    </div>
-                </form>
-            </div>
-            <div class="contact-person">
-                <img class="contact-person-image" src="<?php echo $td; ?>images/gf-josef-guenthner.jpg" alt="">
-                <div class="info">
-                    <strong><?php echo __('Ihr Ansprechpartner'); ?></strong>
-                    <p>Josef Günthner</p>
-                    <p>
-                        <?php echo __('Geschäftsführer'); ?><br />
-                        <span><ion-icon name="call"></ion-icon> 040 180 241 180</span><br />
-                        <span>partners@paltron.com</span><br />
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>  
-
 </main>
 
 <script>
@@ -144,11 +131,22 @@ include("./includes/head.inc");
             news_limit = 16;
         <?php endif ?>
 
-        <?php if(isset($_REQUEST["q"])) : ?>
-            search_key = '<?php echo $_REQUEST["q"] ?>';
-            window.location.href="?q=" + search_key + "&limit=" + news_limit;
+        <?php if(isset($_REQUEST["category"])) : ?>
+            category = '<?php echo $_REQUEST["category"]; ?>';
+            
+            <?php if(isset($_REQUEST["q"])) : ?>
+                search_key = '<?php echo $_REQUEST["q"]; ?>';
+                window.location.href="?category=" + category + "&q=" + search_key + "&limit=" + news_limit;
+            <?php else : ?>
+                window.location.href="?category=" + category + "&limit=" + news_limit;
+            <?php endif ?>
         <?php else : ?>
-            window.location.href="?limit=" + news_limit;
+            <?php if(isset($_REQUEST["q"])) : ?>
+                search_key = '<?php echo $_REQUEST["q"]; ?>';
+                window.location.href="?q=" + search_key + "&limit=" + news_limit;
+            <?php else : ?>
+                window.location.href="?limit=" + news_limit;
+            <?php endif ?>
         <?php endif ?>
     }
 </script>

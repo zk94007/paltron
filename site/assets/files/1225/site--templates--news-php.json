@@ -1,5 +1,15 @@
 {
-    "file": "site\\templates\\news.php",
+    "file": "site\/templates\/news.php",
     "textdomain": "site--templates--news-php",
-    "translations": []
+    "translations": {
+        "560cc074491026097351fe3942586148": {
+            "text": "If you like this post, we would be pleased if you recommend it to others!"
+        },
+        "d10705e1facfab5e37db037f54d97761": {
+            "text": "Contact Person"
+        },
+        "8579c5af459b0cd9c9c42adebacb690c": {
+            "text": "Back to Overview"
+        }
+    }
 }

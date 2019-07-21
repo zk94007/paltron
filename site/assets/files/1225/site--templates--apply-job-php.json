@@ -1,5 +1,5 @@
 {
-    "file": "site\\templates\\apply-job.php",
+    "file": "site\/templates\/apply-job.php",
     "textdomain": "site--templates--apply-job-php",
     "translations": []
 }

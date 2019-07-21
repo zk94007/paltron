@@ -1,0 +1,9 @@
+{
+    "file": "site\/templates\/send-mail.php",
+    "textdomain": "site--templates--send-mail-php",
+    "translations": {
+        "b9f4686e99001246b8b8d70645f22d97": {
+            "text": "Thank you. Your message has been successfully transmitted to us."
+        }
+    }
+}

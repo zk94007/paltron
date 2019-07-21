@@ -1,5 +1,24 @@
 {
-    "file": "site\\templates\\includes\\contact.inc",
+    "file": "site\/templates\/includes\/contact.inc",
     "textdomain": "site--templates--includes--contact-inc",
-    "translations": []
+    "translations": {
+        "f0609df97bb6300943d70219231bd37e": {
+            "text": "How can we support you best?"
+        },
+        "0975cf6baccb3862c31522c2b5b8fabc": {
+            "text": "Phone"
+        },
+        "c2032399993b02e2262402187bd6b40b": {
+            "text": "Your message"
+        },
+        "835fa50f2ec0534ff436a484bf001db5": {
+            "text": "Send"
+        },
+        "501bcd6a97e56617357d61b8b25339fd": {
+            "text": "Your contact person"
+        },
+        "2451a5a6ec6030444124472b4a30b550": {
+            "text": "Managing Director"
+        }
+    }
 }

@@ -1,5 +1,24 @@
 {
-    "file": "site\\templates\\job.php",
+    "file": "site\/templates\/job.php",
     "textdomain": "site--templates--job-php",
-    "translations": []
+    "translations": {
+        "beb9b04b074264e57371afb084382e82": {
+            "text": "Apply now"
+        },
+        "08e0c186eec9edea2c89ff5629a30737": {
+            "text": "Back to overview"
+        },
+        "d10705e1facfab5e37db037f54d97761": {
+            "text": "Contact person"
+        },
+        "91aa3dc3623d3b2f30ba788f70299275": {
+            "text": "Location"
+        },
+        "5a95a425f74314a96f13a2f136992178": {
+            "text": "Share"
+        },
+        "5c21e491dd2207c1914fc4cdf66a6aa6": {
+            "text": "Recommend"
+        }
+    }
 }

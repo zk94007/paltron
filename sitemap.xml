@@ -1,0 +1,1235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+    <url>
+        <loc>http://localhost/</loc>
+        <lastmod>2019-07-11T17:54:18+02:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+        <xhtml:link rel="alternate" hreflang="de" href="http://localhost/"/>
+        <xhtml:link rel="alternate" hreflang="english" href="http://localhost/en/"/>
+    </url>
+    <url>
+        <loc>http://localhost/en/</loc>
+        <lastmod>2019-07-11T17:54:18+02:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+        <xhtml:link rel="alternate" hreflang="de" href="http://localhost/"/>
+        <xhtml:link rel="alternate" hreflang="english" href="http://localhost/en/"/>
+    </url>
+    <url>
+        <loc>http://localhost/datenschutz/</loc>
+        <lastmod>2019-07-02T17:55:41+02:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+        <xhtml:link rel="alternate" hreflang="de" href="http://localhost/datenschutz/"/>
+        <xhtml:link rel="alternate" hreflang="english" href="http://localhost/en/privacy-policy/"/>
+    </url>
+    <url>
+        <loc>http://localhost/en/privacy-policy/</loc>
+        <lastmod>2019-07-02T17:55:41+02:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+        <xhtml:link rel="alternate" hreflang="de" href="http://localhost/datenschutz/"/>
+        <xhtml:link rel="alternate" hreflang="english" href="http://localhost/en/privacy-policy/"/>
+    </url>
+    <url>
+        <loc>http://localhost/impressum/</loc>
+        <lastmod>2019-07-02T19:12:41+02:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+        <xhtml:link rel="alternate" hreflang="de" href="http://localhost/impressum/"/>
+        <xhtml:link rel="alternate" hreflang="english" href="http://localhost/en/legal/"/>
+    </url>
+    <url>
+        <loc>http://localhost/en/legal/</loc>
+        <lastmod>2019-07-02T19:12:41+02:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+        <xhtml:link rel="alternate" hreflang="de" href="http://localhost/impressum/"/>
+        <xhtml:link rel="alternate" hreflang="english" href="http://localhost/en/legal/"/>
+    </url>
+    <url>
+        <loc>http://localhost/news-feed/</loc>
+        <lastmod>2019-07-03T11:51:55+02:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+        <xhtml:link rel="alternate" hreflang="de" href="http://localhost/news-feed/"/>
+        <xhtml:link rel="alternate" hreflang="english" href="http://localhost/en/news-feed/"/>
+    </url>
+    <url>
+        <loc>http://localhost/en/news-feed/</loc>
+        <lastmod>2019-07-03T11:51:55+02:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+        <xhtml:link rel="alternate" hreflang="de" href="http://localhost/news-feed/"/>
+        <xhtml:link rel="alternate" hreflang="english" href="http://localhost/en/news-feed/"/>
+    </url>
+    <url>
+        <loc>http://localhost/news-feed/uebernahme-durch-neuen-investor/</loc>
+        <lastmod>2019-07-03T09:10:05+02:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+        <xhtml:link rel="alternate" hreflang="de" href="http://localhost/news-feed/uebernahme-durch-neuen-investor/"/>
+        <xhtml:link rel="alternate" hreflang="english" href="http://localhost/en/news-feed/uebernahme-durch-neuen-investor/"/>
+    </url>
+    <url>
+        <loc>http://localhost/en/news-feed/uebernahme-durch-neuen-investor/</loc>
+        <lastmod>2019-07-03T09:10:05+02:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+        <xhtml:link rel="alternate" hreflang="de" href="http://localhost/news-feed/uebernahme-durch-neuen-investor/"/>
+        <xhtml:link rel="alternate" hreflang="english" href="http://localhost/en/news-feed/uebernahme-durch-neuen-investor/"/>
+    </url>
+    <url>
+        <loc>http://localhost/about-us/</loc>
+        <lastmod>2019-07-04T13:00:04+02:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+        <xhtml:link rel="alternate" hreflang="de" href="http://localhost/about-us/"/>
+        <xhtml:link rel="alternate" hreflang="english" href="http://localhost/en/about-us/"/>
+    </url>
+    <url>
+        <loc>http://localhost/en/about-us/</loc>
+        <lastmod>2019-07-04T13:00:04+02:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+        <xhtml:link rel="alternate" hreflang="de" href="http://localhost/about-us/"/>
+        <xhtml:link rel="alternate" hreflang="english" href="http://localhost/en/about-us/"/>
+    </url>
+    <url>
+        <loc>http://localhost/jobs/</loc>
+        <lastmod>2019-07-02T17:53:41+02:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+        <xhtml:link rel="alternate" hreflang="de" href="http://localhost/jobs/"/>
+        <xhtml:link rel="alternate" hreflang="english" href="http://localhost/en/jobs/"/>
+    </url>
+    <url>
+        <loc>http://localhost/en/jobs/</loc>
+        <lastmod>2019-07-02T17:53:41+02:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+        <xhtml:link rel="alternate" hreflang="de" href="http://localhost/jobs/"/>
+        <xhtml:link rel="alternate" hreflang="english" href="http://localhost/en/jobs/"/>
+    </url>
+    <url>
+        <loc>http://localhost/expertise/architektur/</loc>
+        <lastmod>2019-07-12T01:39:15+02:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+        <xhtml:link rel="alternate" hreflang="de" href="http://localhost/expertise/architektur/"/>
+        <xhtml:link rel="alternate" hreflang="english" href="http://localhost/en/expertise/architecture/"/>
+    </url>
+    <url>
+        <loc>http://localhost/en/expertise/architecture/</loc>
+        <lastmod>2019-07-12T01:39:15+02:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+        <xhtml:link rel="alternate" hreflang="de" href="http://localhost/expertise/architektur/"/>
+        <xhtml:link rel="alternate" hreflang="english" href="http://localhost/en/expertise/architecture/"/>
+    </url>
+    <url>
+        <loc>http://localhost/expertise/architektur/it-architekt/</loc>
+        <lastmod>2019-07-02T19:43:40+02:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+        <xhtml:link rel="alternate" hreflang="de" href="http://localhost/expertise/architektur/it-architekt/"/>
+        <xhtml:link rel="alternate" hreflang="english" href="http://localhost/en/expertise/architecture/it-architect/"/>
+    </url>
+    <url>
+        <loc>http://localhost/en/expertise/architecture/it-architect/</loc>
+        <lastmod>2019-07-02T19:43:40+02:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+        <xhtml:link rel="alternate" hreflang="de" href="http://localhost/expertise/architektur/it-architekt/"/>
+        <xhtml:link rel="alternate" hreflang="english" href="http://localhost/en/expertise/architecture/it-architect/"/>
+    </url>
+    <url>
+        <loc>http://localhost/news-feed/milliarden-schaeden-durch-cybercrime/</loc>
+        <lastmod>2019-07-03T09:11:31+02:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+        <xhtml:link rel="alternate" hreflang="de" href="http://localhost/news-feed/milliarden-schaeden-durch-cybercrime/"/>
+        <xhtml:link rel="alternate" hreflang="english" href="http://localhost/en/news-feed/milliarden-schaeden-durch-cybercrime/"/>
+    </url>
+    <url>
+        <loc>http://localhost/en/news-feed/milliarden-schaeden-durch-cybercrime/</loc>
+        <lastmod>2019-07-03T09:11:31+02:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+        <xhtml:link rel="alternate" hreflang="de" href="http://localhost/news-feed/milliarden-schaeden-durch-cybercrime/"/>
+        <xhtml:link rel="alternate" hreflang="english" href="http://localhost/en/news-feed/milliarden-schaeden-durch-cybercrime/"/>
+    </url>
+    <url>
+        <loc>http://localhost/news-feed/talentiertes-tech-personal-ist-die-basis-einer-jeden-digitalisierungsstrategie/</loc>
+        <lastmod>2019-07-03T09:23:11+02:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+        <xhtml:link rel="alternate" hreflang="de" href="http://localhost/news-feed/talentiertes-tech-personal-ist-die-basis-einer-jeden-digitalisierungsstrategie/"/>
+        <xhtml:link rel="alternate" hreflang="english" href="http://localhost/en/news-feed/talentiertes-tech-personal-ist-die-basis-einer-jeden-digitalisierungsstrategie/"/>
+    </url>
+    <url>
+        <loc>http://localhost/en/news-feed/talentiertes-tech-personal-ist-die-basis-einer-jeden-digitalisierungsstrategie/</loc>
+        <lastmod>2019-07-03T09:23:11+02:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+        <xhtml:link rel="alternate" hreflang="de" href="http://localhost/news-feed/talentiertes-tech-personal-ist-die-basis-einer-jeden-digitalisierungsstrategie/"/>
+        <xhtml:link rel="alternate" hreflang="english" href="http://localhost/en/news-feed/talentiertes-tech-personal-ist-die-basis-einer-jeden-digitalisierungsstrategie/"/>
+    </url>
+    <url>
+        <loc>http://localhost/news-feed/personaler-in-die-fuehrungsebene/</loc>
+        <lastmod>2019-07-03T09:33:25+02:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+        <xhtml:link rel="alternate" hreflang="de" href="http://localhost/news-feed/personaler-in-die-fuehrungsebene/"/>
+        <xhtml:link rel="alternate" hreflang="english" href="http://localhost/en/news-feed/personaler-in-die-fuehrungsebene/"/>
+    </url>
+    <url>
+        <loc>http://localhost/en/news-feed/personaler-in-die-fuehrungsebene/</loc>
+        <lastmod>2019-07-03T09:33:25+02:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+        <xhtml:link rel="alternate" hreflang="de" href="http://localhost/news-feed/personaler-in-die-fuehrungsebene/"/>
+        <xhtml:link rel="alternate" hreflang="english" href="http://localhost/en/news-feed/personaler-in-die-fuehrungsebene/"/>
+    </url>
+    <url>
+        <loc>http://localhost/expertise/it-consulting/</loc>
+        <lastmod>2019-07-02T17:14:51+02:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+        <xhtml:link rel="alternate" hreflang="de" href="http://localhost/expertise/it-consulting/"/>
+        <xhtml:link rel="alternate" hreflang="english" href="http://localhost/en/expertise/it-consulting/"/>
+    </url>
+    <url>
+        <loc>http://localhost/en/expertise/it-consulting/</loc>
+        <lastmod>2019-07-02T17:14:51+02:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+        <xhtml:link rel="alternate" hreflang="de" href="http://localhost/expertise/it-consulting/"/>
+        <xhtml:link rel="alternate" hreflang="english" href="http://localhost/en/expertise/it-consulting/"/>
+    </url>
+    <url>
+        <loc>http://localhost/expertise/cyber-security/</loc>
+        <lastmod>2019-07-02T18:51:47+02:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+        <xhtml:link rel="alternate" hreflang="de" href="http://localhost/expertise/cyber-security/"/>
+        <xhtml:link rel="alternate" hreflang="english" href="http://localhost/en/expertise/cyber-security/"/>
+    </url>
+    <url>
+        <loc>http://localhost/en/expertise/cyber-security/</loc>
+        <lastmod>2019-07-02T18:51:47+02:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+        <xhtml:link rel="alternate" hreflang="de" href="http://localhost/expertise/cyber-security/"/>
+        <xhtml:link rel="alternate" hreflang="english" href="http://localhost/en/expertise/cyber-security/"/>
+    </url>
+    <url>
+        <loc>http://localhost/expertise/architektur/solution-architekt/</loc>
+        <lastmod>2019-07-02T19:43:57+02:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+        <xhtml:link rel="alternate" hreflang="de" href="http://localhost/expertise/architektur/solution-architekt/"/>
+        <xhtml:link rel="alternate" hreflang="english" href="http://localhost/en/expertise/architecture/solution-architect/"/>
+    </url>
+    <url>
+        <loc>http://localhost/en/expertise/architecture/solution-architect/</loc>
+        <lastmod>2019-07-02T19:43:57+02:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+        <xhtml:link rel="alternate" hreflang="de" href="http://localhost/expertise/architektur/solution-architekt/"/>
+        <xhtml:link rel="alternate" hreflang="english" href="http://localhost/en/expertise/architecture/solution-architect/"/>
+    </url>
+    <url>
+        <loc>http://localhost/expertise/architektur/enterprise-architekt/</loc>
+        <lastmod>2019-07-02T19:44:10+02:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+        <xhtml:link rel="alternate" hreflang="de" href="http://localhost/expertise/architektur/enterprise-architekt/"/>
+        <xhtml:link rel="alternate" hreflang="english" href="http://localhost/en/expertise/architecture/enterprise-architect/"/>
+    </url>
+    <url>
+        <loc>http://localhost/en/expertise/architecture/enterprise-architect/</loc>
+        <lastmod>2019-07-02T19:44:10+02:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+        <xhtml:link rel="alternate" hreflang="de" href="http://localhost/expertise/architektur/enterprise-architekt/"/>
+        <xhtml:link rel="alternate" hreflang="english" href="http://localhost/en/expertise/architecture/enterprise-architect/"/>
+    </url>
+    <url>
+        <loc>http://localhost/expertise/architektur/software-architekt/</loc>
+        <lastmod>2019-07-02T17:14:17+02:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+        <xhtml:link rel="alternate" hreflang="de" href="http://localhost/expertise/architektur/software-architekt/"/>
+        <xhtml:link rel="alternate" hreflang="english" href="http://localhost/en/expertise/architecture/software-architect/"/>
+    </url>
+    <url>
+        <loc>http://localhost/en/expertise/architecture/software-architect/</loc>
+        <lastmod>2019-07-02T17:14:17+02:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+        <xhtml:link rel="alternate" hreflang="de" href="http://localhost/expertise/architektur/software-architekt/"/>
+        <xhtml:link rel="alternate" hreflang="english" href="http://localhost/en/expertise/architecture/software-architect/"/>
+    </url>
+    <url>
+        <loc>http://localhost/expertise/it-consulting/it-consultant/</loc>
+        <lastmod>2019-07-02T17:15:27+02:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+        <xhtml:link rel="alternate" hreflang="de" href="http://localhost/expertise/it-consulting/it-consultant/"/>
+        <xhtml:link rel="alternate" hreflang="english" href="http://localhost/en/expertise/it-consulting/it-consultant/"/>
+    </url>
+    <url>
+        <loc>http://localhost/en/expertise/it-consulting/it-consultant/</loc>
+        <lastmod>2019-07-02T17:15:27+02:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+        <xhtml:link rel="alternate" hreflang="de" href="http://localhost/expertise/it-consulting/it-consultant/"/>
+        <xhtml:link rel="alternate" hreflang="english" href="http://localhost/en/expertise/it-consulting/it-consultant/"/>
+    </url>
+    <url>
+        <loc>http://localhost/expertise/it-consulting/it-projektleiter/</loc>
+        <lastmod>2019-07-02T17:15:52+02:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+        <xhtml:link rel="alternate" hreflang="de" href="http://localhost/expertise/it-consulting/it-projektleiter/"/>
+        <xhtml:link rel="alternate" hreflang="english" href="http://localhost/en/expertise/it-consulting/it-project-manager/"/>
+    </url>
+    <url>
+        <loc>http://localhost/en/expertise/it-consulting/it-project-manager/</loc>
+        <lastmod>2019-07-02T17:15:52+02:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+        <xhtml:link rel="alternate" hreflang="de" href="http://localhost/expertise/it-consulting/it-projektleiter/"/>
+        <xhtml:link rel="alternate" hreflang="english" href="http://localhost/en/expertise/it-consulting/it-project-manager/"/>
+    </url>
+    <url>
+        <loc>http://localhost/expertise/it-consulting/pre-sales-consultant/</loc>
+        <lastmod>2019-07-02T17:16:41+02:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+        <xhtml:link rel="alternate" hreflang="de" href="http://localhost/expertise/it-consulting/pre-sales-consultant/"/>
+        <xhtml:link rel="alternate" hreflang="english" href="http://localhost/en/expertise/it-consulting/pre-sales-consultant/"/>
+    </url>
+    <url>
+        <loc>http://localhost/en/expertise/it-consulting/pre-sales-consultant/</loc>
+        <lastmod>2019-07-02T17:16:41+02:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+        <xhtml:link rel="alternate" hreflang="de" href="http://localhost/expertise/it-consulting/pre-sales-consultant/"/>
+        <xhtml:link rel="alternate" hreflang="english" href="http://localhost/en/expertise/it-consulting/pre-sales-consultant/"/>
+    </url>
+    <url>
+        <loc>http://localhost/expertise/it-infrastruktur/</loc>
+        <lastmod>2019-07-02T17:17:20+02:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+        <xhtml:link rel="alternate" hreflang="de" href="http://localhost/expertise/it-infrastruktur/"/>
+        <xhtml:link rel="alternate" hreflang="english" href="http://localhost/en/expertise/it-infrastructure/"/>
+    </url>
+    <url>
+        <loc>http://localhost/en/expertise/it-infrastructure/</loc>
+        <lastmod>2019-07-02T17:17:20+02:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+        <xhtml:link rel="alternate" hreflang="de" href="http://localhost/expertise/it-infrastruktur/"/>
+        <xhtml:link rel="alternate" hreflang="english" href="http://localhost/en/expertise/it-infrastructure/"/>
+    </url>
+    <url>
+        <loc>http://localhost/expertise/it-infrastruktur/devops-experte/</loc>
+        <lastmod>2019-07-02T17:17:50+02:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+        <xhtml:link rel="alternate" hreflang="de" href="http://localhost/expertise/it-infrastruktur/devops-experte/"/>
+        <xhtml:link rel="alternate" hreflang="english" href="http://localhost/en/expertise/it-infrastructure/devops-expert/"/>
+    </url>
+    <url>
+        <loc>http://localhost/en/expertise/it-infrastructure/devops-expert/</loc>
+        <lastmod>2019-07-02T17:17:50+02:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+        <xhtml:link rel="alternate" hreflang="de" href="http://localhost/expertise/it-infrastruktur/devops-experte/"/>
+        <xhtml:link rel="alternate" hreflang="english" href="http://localhost/en/expertise/it-infrastructure/devops-expert/"/>
+    </url>
+    <url>
+        <loc>http://localhost/expertise/it-infrastruktur/devops-engineer/</loc>
+        <lastmod>2019-07-02T17:18:29+02:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+        <xhtml:link rel="alternate" hreflang="de" href="http://localhost/expertise/it-infrastruktur/devops-engineer/"/>
+        <xhtml:link rel="alternate" hreflang="english" href="http://localhost/en/expertise/it-infrastructure/devops-engineer/"/>
+    </url>
+    <url>
+        <loc>http://localhost/en/expertise/it-infrastructure/devops-engineer/</loc>
+        <lastmod>2019-07-02T17:18:29+02:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+        <xhtml:link rel="alternate" hreflang="de" href="http://localhost/expertise/it-infrastruktur/devops-engineer/"/>
+        <xhtml:link rel="alternate" hreflang="english" href="http://localhost/en/expertise/it-infrastructure/devops-engineer/"/>
+    </url>
+    <url>
+        <loc>http://localhost/expertise/it-infrastruktur/netzwerk-experte/</loc>
+        <lastmod>2019-07-02T18:06:25+02:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+        <xhtml:link rel="alternate" hreflang="de" href="http://localhost/expertise/it-infrastruktur/netzwerk-experte/"/>
+        <xhtml:link rel="alternate" hreflang="english" href="http://localhost/en/expertise/it-infrastructure/network-expert/"/>
+    </url>
+    <url>
+        <loc>http://localhost/en/expertise/it-infrastructure/network-expert/</loc>
+        <lastmod>2019-07-02T18:06:25+02:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+        <xhtml:link rel="alternate" hreflang="de" href="http://localhost/expertise/it-infrastruktur/netzwerk-experte/"/>
+        <xhtml:link rel="alternate" hreflang="english" href="http://localhost/en/expertise/it-infrastructure/network-expert/"/>
+    </url>
+    <url>
+        <loc>http://localhost/expertise/it-infrastruktur/netzwerk-administrator/</loc>
+        <lastmod>2019-07-02T18:10:57+02:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+        <xhtml:link rel="alternate" hreflang="de" href="http://localhost/expertise/it-infrastruktur/netzwerk-administrator/"/>
+        <xhtml:link rel="alternate" hreflang="english" href="http://localhost/en/expertise/it-infrastructure/network-administrator/"/>
+    </url>
+    <url>
+        <loc>http://localhost/en/expertise/it-infrastructure/network-administrator/</loc>
+        <lastmod>2019-07-02T18:10:57+02:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+        <xhtml:link rel="alternate" hreflang="de" href="http://localhost/expertise/it-infrastruktur/netzwerk-administrator/"/>
+        <xhtml:link rel="alternate" hreflang="english" href="http://localhost/en/expertise/it-infrastructure/network-administrator/"/>
+    </url>
+    <url>
+        <loc>http://localhost/expertise/it-infrastruktur/datenbank-experte/</loc>
+        <lastmod>2019-07-02T18:12:50+02:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+        <xhtml:link rel="alternate" hreflang="de" href="http://localhost/expertise/it-infrastruktur/datenbank-experte/"/>
+        <xhtml:link rel="alternate" hreflang="english" href="http://localhost/en/expertise/it-infrastructure/database-expert/"/>
+    </url>
+    <url>
+        <loc>http://localhost/en/expertise/it-infrastructure/database-expert/</loc>
+        <lastmod>2019-07-02T18:12:50+02:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+        <xhtml:link rel="alternate" hreflang="de" href="http://localhost/expertise/it-infrastruktur/datenbank-experte/"/>
+        <xhtml:link rel="alternate" hreflang="english" href="http://localhost/en/expertise/it-infrastructure/database-expert/"/>
+    </url>
+    <url>
+        <loc>http://localhost/expertise/it-infrastruktur/datenbank-administrator/</loc>
+        <lastmod>2019-07-02T18:14:39+02:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+        <xhtml:link rel="alternate" hreflang="de" href="http://localhost/expertise/it-infrastruktur/datenbank-administrator/"/>
+        <xhtml:link rel="alternate" hreflang="english" href="http://localhost/en/expertise/it-infrastructure/database-administrator/"/>
+    </url>
+    <url>
+        <loc>http://localhost/en/expertise/it-infrastructure/database-administrator/</loc>
+        <lastmod>2019-07-02T18:14:39+02:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+        <xhtml:link rel="alternate" hreflang="de" href="http://localhost/expertise/it-infrastruktur/datenbank-administrator/"/>
+        <xhtml:link rel="alternate" hreflang="english" href="http://localhost/en/expertise/it-infrastructure/database-administrator/"/>
+    </url>
+    <url>
+        <loc>http://localhost/expertise/it-leadership/</loc>
+        <lastmod>2019-07-02T17:21:10+02:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+        <xhtml:link rel="alternate" hreflang="de" href="http://localhost/expertise/it-leadership/"/>
+        <xhtml:link rel="alternate" hreflang="english" href="http://localhost/en/expertise/it-leadership/"/>
+    </url>
+    <url>
+        <loc>http://localhost/en/expertise/it-leadership/</loc>
+        <lastmod>2019-07-02T17:21:10+02:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+        <xhtml:link rel="alternate" hreflang="de" href="http://localhost/expertise/it-leadership/"/>
+        <xhtml:link rel="alternate" hreflang="english" href="http://localhost/en/expertise/it-leadership/"/>
+    </url>
+    <url>
+        <loc>http://localhost/expertise/it-leadership/it-leiter/</loc>
+        <lastmod>2019-07-02T17:21:39+02:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+        <xhtml:link rel="alternate" hreflang="de" href="http://localhost/expertise/it-leadership/it-leiter/"/>
+        <xhtml:link rel="alternate" hreflang="english" href="http://localhost/en/expertise/it-leadership/it-manager/"/>
+    </url>
+    <url>
+        <loc>http://localhost/en/expertise/it-leadership/it-manager/</loc>
+        <lastmod>2019-07-02T17:21:39+02:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+        <xhtml:link rel="alternate" hreflang="de" href="http://localhost/expertise/it-leadership/it-leiter/"/>
+        <xhtml:link rel="alternate" hreflang="english" href="http://localhost/en/expertise/it-leadership/it-manager/"/>
+    </url>
+    <url>
+        <loc>http://localhost/expertise/it-leadership/chief-information-officer/</loc>
+        <lastmod>2019-07-02T18:16:34+02:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+        <xhtml:link rel="alternate" hreflang="de" href="http://localhost/expertise/it-leadership/chief-information-officer/"/>
+        <xhtml:link rel="alternate" hreflang="english" href="http://localhost/en/expertise/it-leadership/chief-information-officer/"/>
+    </url>
+    <url>
+        <loc>http://localhost/en/expertise/it-leadership/chief-information-officer/</loc>
+        <lastmod>2019-07-02T18:16:34+02:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+        <xhtml:link rel="alternate" hreflang="de" href="http://localhost/expertise/it-leadership/chief-information-officer/"/>
+        <xhtml:link rel="alternate" hreflang="english" href="http://localhost/en/expertise/it-leadership/chief-information-officer/"/>
+    </url>
+    <url>
+        <loc>http://localhost/expertise/it-leadership/chief-technology-officer/</loc>
+        <lastmod>2019-07-02T18:23:37+02:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+        <xhtml:link rel="alternate" hreflang="de" href="http://localhost/expertise/it-leadership/chief-technology-officer/"/>
+        <xhtml:link rel="alternate" hreflang="english" href="http://localhost/en/expertise/it-leadership/chief-technology-officer/"/>
+    </url>
+    <url>
+        <loc>http://localhost/en/expertise/it-leadership/chief-technology-officer/</loc>
+        <lastmod>2019-07-02T18:23:37+02:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+        <xhtml:link rel="alternate" hreflang="de" href="http://localhost/expertise/it-leadership/chief-technology-officer/"/>
+        <xhtml:link rel="alternate" hreflang="english" href="http://localhost/en/expertise/it-leadership/chief-technology-officer/"/>
+    </url>
+    <url>
+        <loc>http://localhost/expertise/it-leadership/head-of-engineering/</loc>
+        <lastmod>2019-07-02T18:25:10+02:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+        <xhtml:link rel="alternate" hreflang="de" href="http://localhost/expertise/it-leadership/head-of-engineering/"/>
+        <xhtml:link rel="alternate" hreflang="english" href="http://localhost/en/expertise/it-leadership/head-of-engineering/"/>
+    </url>
+    <url>
+        <loc>http://localhost/en/expertise/it-leadership/head-of-engineering/</loc>
+        <lastmod>2019-07-02T18:25:10+02:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+        <xhtml:link rel="alternate" hreflang="de" href="http://localhost/expertise/it-leadership/head-of-engineering/"/>
+        <xhtml:link rel="alternate" hreflang="english" href="http://localhost/en/expertise/it-leadership/head-of-engineering/"/>
+    </url>
+    <url>
+        <loc>http://localhost/expertise/it-leadership/lead-developer/</loc>
+        <lastmod>2019-07-02T17:23:41+02:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+        <xhtml:link rel="alternate" hreflang="de" href="http://localhost/expertise/it-leadership/lead-developer/"/>
+        <xhtml:link rel="alternate" hreflang="english" href="http://localhost/en/expertise/it-leadership/lead-developer/"/>
+    </url>
+    <url>
+        <loc>http://localhost/en/expertise/it-leadership/lead-developer/</loc>
+        <lastmod>2019-07-02T17:23:41+02:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+        <xhtml:link rel="alternate" hreflang="de" href="http://localhost/expertise/it-leadership/lead-developer/"/>
+        <xhtml:link rel="alternate" hreflang="english" href="http://localhost/en/expertise/it-leadership/lead-developer/"/>
+    </url>
+    <url>
+        <loc>http://localhost/expertise/it-leadership/chief-software-architekt/</loc>
+        <lastmod>2019-07-02T18:26:28+02:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+        <xhtml:link rel="alternate" hreflang="de" href="http://localhost/expertise/it-leadership/chief-software-architekt/"/>
+        <xhtml:link rel="alternate" hreflang="english" href="http://localhost/en/expertise/it-leadership/chief-software-architect/"/>
+    </url>
+    <url>
+        <loc>http://localhost/en/expertise/it-leadership/chief-software-architect/</loc>
+        <lastmod>2019-07-02T18:26:28+02:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+        <xhtml:link rel="alternate" hreflang="de" href="http://localhost/expertise/it-leadership/chief-software-architekt/"/>
+        <xhtml:link rel="alternate" hreflang="english" href="http://localhost/en/expertise/it-leadership/chief-software-architect/"/>
+    </url>
+    <url>
+        <loc>http://localhost/expertise/it-leadership/it-application-manager/</loc>
+        <lastmod>2019-07-02T18:29:38+02:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+        <xhtml:link rel="alternate" hreflang="de" href="http://localhost/expertise/it-leadership/it-application-manager/"/>
+        <xhtml:link rel="alternate" hreflang="english" href="http://localhost/en/expertise/it-leadership/it-application-manager/"/>
+    </url>
+    <url>
+        <loc>http://localhost/en/expertise/it-leadership/it-application-manager/</loc>
+        <lastmod>2019-07-02T18:29:38+02:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+        <xhtml:link rel="alternate" hreflang="de" href="http://localhost/expertise/it-leadership/it-application-manager/"/>
+        <xhtml:link rel="alternate" hreflang="english" href="http://localhost/en/expertise/it-leadership/it-application-manager/"/>
+    </url>
+    <url>
+        <loc>http://localhost/expertise/erp/</loc>
+        <lastmod>2019-07-02T18:32:54+02:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+        <xhtml:link rel="alternate" hreflang="de" href="http://localhost/expertise/erp/"/>
+        <xhtml:link rel="alternate" hreflang="english" href="http://localhost/en/expertise/erp/"/>
+    </url>
+    <url>
+        <loc>http://localhost/en/expertise/erp/</loc>
+        <lastmod>2019-07-02T18:32:54+02:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+        <xhtml:link rel="alternate" hreflang="de" href="http://localhost/expertise/erp/"/>
+        <xhtml:link rel="alternate" hreflang="english" href="http://localhost/en/expertise/erp/"/>
+    </url>
+    <url>
+        <loc>http://localhost/expertise/erp/sap-erp-experte/</loc>
+        <lastmod>2019-07-02T17:26:53+02:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+        <xhtml:link rel="alternate" hreflang="de" href="http://localhost/expertise/erp/sap-erp-experte/"/>
+        <xhtml:link rel="alternate" hreflang="english" href="http://localhost/en/expertise/erp/sap-erp-expert/"/>
+    </url>
+    <url>
+        <loc>http://localhost/en/expertise/erp/sap-erp-expert/</loc>
+        <lastmod>2019-07-02T17:26:53+02:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+        <xhtml:link rel="alternate" hreflang="de" href="http://localhost/expertise/erp/sap-erp-experte/"/>
+        <xhtml:link rel="alternate" hreflang="english" href="http://localhost/en/expertise/erp/sap-erp-expert/"/>
+    </url>
+    <url>
+        <loc>http://localhost/expertise/erp/sap-consultant/</loc>
+        <lastmod>2019-07-02T17:28:08+02:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+        <xhtml:link rel="alternate" hreflang="de" href="http://localhost/expertise/erp/sap-consultant/"/>
+        <xhtml:link rel="alternate" hreflang="english" href="http://localhost/en/expertise/erp/sap-consultant/"/>
+    </url>
+    <url>
+        <loc>http://localhost/en/expertise/erp/sap-consultant/</loc>
+        <lastmod>2019-07-02T17:28:08+02:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+        <xhtml:link rel="alternate" hreflang="de" href="http://localhost/expertise/erp/sap-consultant/"/>
+        <xhtml:link rel="alternate" hreflang="english" href="http://localhost/en/expertise/erp/sap-consultant/"/>
+    </url>
+    <url>
+        <loc>http://localhost/expertise/erp/erp-consultant/</loc>
+        <lastmod>2019-07-02T18:34:30+02:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+        <xhtml:link rel="alternate" hreflang="de" href="http://localhost/expertise/erp/erp-consultant/"/>
+        <xhtml:link rel="alternate" hreflang="english" href="http://localhost/en/expertise/erp/erp-consultant/"/>
+    </url>
+    <url>
+        <loc>http://localhost/en/expertise/erp/erp-consultant/</loc>
+        <lastmod>2019-07-02T18:34:30+02:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+        <xhtml:link rel="alternate" hreflang="de" href="http://localhost/expertise/erp/erp-consultant/"/>
+        <xhtml:link rel="alternate" hreflang="english" href="http://localhost/en/expertise/erp/erp-consultant/"/>
+    </url>
+    <url>
+        <loc>http://localhost/expertise/it-projektmanagement/</loc>
+        <lastmod>2019-07-02T18:36:42+02:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+        <xhtml:link rel="alternate" hreflang="de" href="http://localhost/expertise/it-projektmanagement/"/>
+        <xhtml:link rel="alternate" hreflang="english" href="http://localhost/en/expertise/it-project-management/"/>
+    </url>
+    <url>
+        <loc>http://localhost/en/expertise/it-project-management/</loc>
+        <lastmod>2019-07-02T18:36:42+02:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+        <xhtml:link rel="alternate" hreflang="de" href="http://localhost/expertise/it-projektmanagement/"/>
+        <xhtml:link rel="alternate" hreflang="english" href="http://localhost/en/expertise/it-project-management/"/>
+    </url>
+    <url>
+        <loc>http://localhost/expertise/it-projektmanagement/prozessmanager/</loc>
+        <lastmod>2019-07-02T18:38:37+02:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+        <xhtml:link rel="alternate" hreflang="de" href="http://localhost/expertise/it-projektmanagement/prozessmanager/"/>
+        <xhtml:link rel="alternate" hreflang="english" href="http://localhost/en/expertise/it-project-management/process-manager/"/>
+    </url>
+    <url>
+        <loc>http://localhost/en/expertise/it-project-management/process-manager/</loc>
+        <lastmod>2019-07-02T18:38:37+02:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+        <xhtml:link rel="alternate" hreflang="de" href="http://localhost/expertise/it-projektmanagement/prozessmanager/"/>
+        <xhtml:link rel="alternate" hreflang="english" href="http://localhost/en/expertise/it-project-management/process-manager/"/>
+    </url>
+    <url>
+        <loc>http://localhost/expertise/cloud/</loc>
+        <lastmod>2019-07-02T18:41:39+02:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+        <xhtml:link rel="alternate" hreflang="de" href="http://localhost/expertise/cloud/"/>
+        <xhtml:link rel="alternate" hreflang="english" href="http://localhost/en/expertise/cloud/"/>
+    </url>
+    <url>
+        <loc>http://localhost/en/expertise/cloud/</loc>
+        <lastmod>2019-07-02T18:41:39+02:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+        <xhtml:link rel="alternate" hreflang="de" href="http://localhost/expertise/cloud/"/>
+        <xhtml:link rel="alternate" hreflang="english" href="http://localhost/en/expertise/cloud/"/>
+    </url>
+    <url>
+        <loc>http://localhost/expertise/cloud/microsoft-azure-consultant/</loc>
+        <lastmod>2019-07-02T18:43:39+02:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+        <xhtml:link rel="alternate" hreflang="de" href="http://localhost/expertise/cloud/microsoft-azure-consultant/"/>
+        <xhtml:link rel="alternate" hreflang="english" href="http://localhost/en/expertise/cloud/microsoft-azure-consultant/"/>
+    </url>
+    <url>
+        <loc>http://localhost/en/expertise/cloud/microsoft-azure-consultant/</loc>
+        <lastmod>2019-07-02T18:43:39+02:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+        <xhtml:link rel="alternate" hreflang="de" href="http://localhost/expertise/cloud/microsoft-azure-consultant/"/>
+        <xhtml:link rel="alternate" hreflang="english" href="http://localhost/en/expertise/cloud/microsoft-azure-consultant/"/>
+    </url>
+    <url>
+        <loc>http://localhost/expertise/cloud/cloud-architekt/</loc>
+        <lastmod>2019-07-02T18:45:15+02:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+        <xhtml:link rel="alternate" hreflang="de" href="http://localhost/expertise/cloud/cloud-architekt/"/>
+        <xhtml:link rel="alternate" hreflang="english" href="http://localhost/en/expertise/cloud/cloud-architect/"/>
+    </url>
+    <url>
+        <loc>http://localhost/en/expertise/cloud/cloud-architect/</loc>
+        <lastmod>2019-07-02T18:45:15+02:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+        <xhtml:link rel="alternate" hreflang="de" href="http://localhost/expertise/cloud/cloud-architekt/"/>
+        <xhtml:link rel="alternate" hreflang="english" href="http://localhost/en/expertise/cloud/cloud-architect/"/>
+    </url>
+    <url>
+        <loc>http://localhost/expertise/cloud/cloud-security-engineer/</loc>
+        <lastmod>2019-07-02T18:47:19+02:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+        <xhtml:link rel="alternate" hreflang="de" href="http://localhost/expertise/cloud/cloud-security-engineer/"/>
+        <xhtml:link rel="alternate" hreflang="english" href="http://localhost/en/expertise/cloud/cloud-security-engineer/"/>
+    </url>
+    <url>
+        <loc>http://localhost/en/expertise/cloud/cloud-security-engineer/</loc>
+        <lastmod>2019-07-02T18:47:19+02:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+        <xhtml:link rel="alternate" hreflang="de" href="http://localhost/expertise/cloud/cloud-security-engineer/"/>
+        <xhtml:link rel="alternate" hreflang="english" href="http://localhost/en/expertise/cloud/cloud-security-engineer/"/>
+    </url>
+    <url>
+        <loc>http://localhost/expertise/cloud/aws-engineer/</loc>
+        <lastmod>2019-07-02T18:49:23+02:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+        <xhtml:link rel="alternate" hreflang="de" href="http://localhost/expertise/cloud/aws-engineer/"/>
+        <xhtml:link rel="alternate" hreflang="english" href="http://localhost/en/expertise/cloud/aws-engineer/"/>
+    </url>
+    <url>
+        <loc>http://localhost/en/expertise/cloud/aws-engineer/</loc>
+        <lastmod>2019-07-02T18:49:23+02:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+        <xhtml:link rel="alternate" hreflang="de" href="http://localhost/expertise/cloud/aws-engineer/"/>
+        <xhtml:link rel="alternate" hreflang="english" href="http://localhost/en/expertise/cloud/aws-engineer/"/>
+    </url>
+    <url>
+        <loc>http://localhost/expertise/data-science/</loc>
+        <lastmod>2019-07-02T17:33:24+02:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+        <xhtml:link rel="alternate" hreflang="de" href="http://localhost/expertise/data-science/"/>
+        <xhtml:link rel="alternate" hreflang="english" href="http://localhost/en/expertise/data-science/"/>
+    </url>
+    <url>
+        <loc>http://localhost/en/expertise/data-science/</loc>
+        <lastmod>2019-07-02T17:33:24+02:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+        <xhtml:link rel="alternate" hreflang="de" href="http://localhost/expertise/data-science/"/>
+        <xhtml:link rel="alternate" hreflang="english" href="http://localhost/en/expertise/data-science/"/>
+    </url>
+    <url>
+        <loc>http://localhost/expertise/data-science/data-scientist/</loc>
+        <lastmod>2019-07-02T17:33:47+02:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+        <xhtml:link rel="alternate" hreflang="de" href="http://localhost/expertise/data-science/data-scientist/"/>
+        <xhtml:link rel="alternate" hreflang="english" href="http://localhost/en/expertise/data-science/data-scientist/"/>
+    </url>
+    <url>
+        <loc>http://localhost/en/expertise/data-science/data-scientist/</loc>
+        <lastmod>2019-07-02T17:33:47+02:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+        <xhtml:link rel="alternate" hreflang="de" href="http://localhost/expertise/data-science/data-scientist/"/>
+        <xhtml:link rel="alternate" hreflang="english" href="http://localhost/en/expertise/data-science/data-scientist/"/>
+    </url>
+    <url>
+        <loc>http://localhost/expertise/data-science/lead-data-scientist/</loc>
+        <lastmod>2019-07-02T17:34:10+02:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+        <xhtml:link rel="alternate" hreflang="de" href="http://localhost/expertise/data-science/lead-data-scientist/"/>
+        <xhtml:link rel="alternate" hreflang="english" href="http://localhost/en/expertise/data-science/lead-data-scientist/"/>
+    </url>
+    <url>
+        <loc>http://localhost/en/expertise/data-science/lead-data-scientist/</loc>
+        <lastmod>2019-07-02T17:34:10+02:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+        <xhtml:link rel="alternate" hreflang="de" href="http://localhost/expertise/data-science/lead-data-scientist/"/>
+        <xhtml:link rel="alternate" hreflang="english" href="http://localhost/en/expertise/data-science/lead-data-scientist/"/>
+    </url>
+    <url>
+        <loc>http://localhost/expertise/data-science/business-intelligence-analyst/</loc>
+        <lastmod>2019-07-02T17:34:43+02:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+        <xhtml:link rel="alternate" hreflang="de" href="http://localhost/expertise/data-science/business-intelligence-analyst/"/>
+        <xhtml:link rel="alternate" hreflang="english" href="http://localhost/en/expertise/data-science/business-intelligence-analyst/"/>
+    </url>
+    <url>
+        <loc>http://localhost/en/expertise/data-science/business-intelligence-analyst/</loc>
+        <lastmod>2019-07-02T17:34:43+02:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+        <xhtml:link rel="alternate" hreflang="de" href="http://localhost/expertise/data-science/business-intelligence-analyst/"/>
+        <xhtml:link rel="alternate" hreflang="english" href="http://localhost/en/expertise/data-science/business-intelligence-analyst/"/>
+    </url>
+    <url>
+        <loc>http://localhost/expertise/machine-learning/</loc>
+        <lastmod>2019-07-02T17:35:29+02:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+        <xhtml:link rel="alternate" hreflang="de" href="http://localhost/expertise/machine-learning/"/>
+        <xhtml:link rel="alternate" hreflang="english" href="http://localhost/en/expertise/machine-learning/"/>
+    </url>
+    <url>
+        <loc>http://localhost/en/expertise/machine-learning/</loc>
+        <lastmod>2019-07-02T17:35:29+02:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+        <xhtml:link rel="alternate" hreflang="de" href="http://localhost/expertise/machine-learning/"/>
+        <xhtml:link rel="alternate" hreflang="english" href="http://localhost/en/expertise/machine-learning/"/>
+    </url>
+    <url>
+        <loc>http://localhost/expertise/machine-learning/artificial-intelligence-engineer/</loc>
+        <lastmod>2019-07-02T17:36:30+02:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+        <xhtml:link rel="alternate" hreflang="de" href="http://localhost/expertise/machine-learning/artificial-intelligence-engineer/"/>
+        <xhtml:link rel="alternate" hreflang="english" href="http://localhost/en/expertise/machine-learning/artificial-intelligence-engineer/"/>
+    </url>
+    <url>
+        <loc>http://localhost/en/expertise/machine-learning/artificial-intelligence-engineer/</loc>
+        <lastmod>2019-07-02T17:36:30+02:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+        <xhtml:link rel="alternate" hreflang="de" href="http://localhost/expertise/machine-learning/artificial-intelligence-engineer/"/>
+        <xhtml:link rel="alternate" hreflang="english" href="http://localhost/en/expertise/machine-learning/artificial-intelligence-engineer/"/>
+    </url>
+    <url>
+        <loc>http://localhost/categories/paltron-news/</loc>
+        <lastmod>2019-06-27T15:59:38+02:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+        <xhtml:link rel="alternate" hreflang="de" href="http://localhost/categories/paltron-news/"/>
+        <xhtml:link rel="alternate" hreflang="english" href="http://localhost/en/categories/paltron-news/"/>
+    </url>
+    <url>
+        <loc>http://localhost/en/categories/paltron-news/</loc>
+        <lastmod>2019-06-27T15:59:38+02:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+        <xhtml:link rel="alternate" hreflang="de" href="http://localhost/categories/paltron-news/"/>
+        <xhtml:link rel="alternate" hreflang="english" href="http://localhost/en/categories/paltron-news/"/>
+    </url>
+    <url>
+        <loc>http://localhost/authors/can-ulusoy/</loc>
+        <lastmod>2019-06-27T16:01:06+02:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+        <xhtml:link rel="alternate" hreflang="de" href="http://localhost/authors/can-ulusoy/"/>
+        <xhtml:link rel="alternate" hreflang="english" href="http://localhost/en/authors/can-ulusoy/"/>
+    </url>
+    <url>
+        <loc>http://localhost/en/authors/can-ulusoy/</loc>
+        <lastmod>2019-06-27T16:01:06+02:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+        <xhtml:link rel="alternate" hreflang="de" href="http://localhost/authors/can-ulusoy/"/>
+        <xhtml:link rel="alternate" hreflang="english" href="http://localhost/en/authors/can-ulusoy/"/>
+    </url>
+    <url>
+        <loc>http://localhost/expertise/machine-learning/computer-vision-experte/</loc>
+        <lastmod>2019-07-02T17:37:02+02:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+        <xhtml:link rel="alternate" hreflang="de" href="http://localhost/expertise/machine-learning/computer-vision-experte/"/>
+        <xhtml:link rel="alternate" hreflang="english" href="http://localhost/en/expertise/machine-learning/computer-vision-expert/"/>
+    </url>
+    <url>
+        <loc>http://localhost/en/expertise/machine-learning/computer-vision-expert/</loc>
+        <lastmod>2019-07-02T17:37:02+02:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+        <xhtml:link rel="alternate" hreflang="de" href="http://localhost/expertise/machine-learning/computer-vision-experte/"/>
+        <xhtml:link rel="alternate" hreflang="english" href="http://localhost/en/expertise/machine-learning/computer-vision-expert/"/>
+    </url>
+    <url>
+        <loc>http://localhost/expertise/machine-learning/deep-learning-experte/</loc>
+        <lastmod>2019-07-02T17:37:29+02:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+        <xhtml:link rel="alternate" hreflang="de" href="http://localhost/expertise/machine-learning/deep-learning-experte/"/>
+        <xhtml:link rel="alternate" hreflang="english" href="http://localhost/en/expertise/machine-learning/deep-learning-expert/"/>
+    </url>
+    <url>
+        <loc>http://localhost/en/expertise/machine-learning/deep-learning-expert/</loc>
+        <lastmod>2019-07-02T17:37:29+02:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+        <xhtml:link rel="alternate" hreflang="de" href="http://localhost/expertise/machine-learning/deep-learning-experte/"/>
+        <xhtml:link rel="alternate" hreflang="english" href="http://localhost/en/expertise/machine-learning/deep-learning-expert/"/>
+    </url>
+    <url>
+        <loc>http://localhost/expertise/cyber-security/it-security-engineer/</loc>
+        <lastmod>2019-07-02T18:53:39+02:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+        <xhtml:link rel="alternate" hreflang="de" href="http://localhost/expertise/cyber-security/it-security-engineer/"/>
+        <xhtml:link rel="alternate" hreflang="english" href="http://localhost/en/expertise/cyber-security/it-security-engineer/"/>
+    </url>
+    <url>
+        <loc>http://localhost/en/expertise/cyber-security/it-security-engineer/</loc>
+        <lastmod>2019-07-02T18:53:39+02:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+        <xhtml:link rel="alternate" hreflang="de" href="http://localhost/expertise/cyber-security/it-security-engineer/"/>
+        <xhtml:link rel="alternate" hreflang="english" href="http://localhost/en/expertise/cyber-security/it-security-engineer/"/>
+    </url>
+    <url>
+        <loc>http://localhost/expertise/cyber-security/devsecops-experte/</loc>
+        <lastmod>2019-07-02T18:55:39+02:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+        <xhtml:link rel="alternate" hreflang="de" href="http://localhost/expertise/cyber-security/devsecops-experte/"/>
+        <xhtml:link rel="alternate" hreflang="english" href="http://localhost/en/expertise/cyber-security/devsecops-expert/"/>
+    </url>
+    <url>
+        <loc>http://localhost/en/expertise/cyber-security/devsecops-expert/</loc>
+        <lastmod>2019-07-02T18:55:39+02:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+        <xhtml:link rel="alternate" hreflang="de" href="http://localhost/expertise/cyber-security/devsecops-experte/"/>
+        <xhtml:link rel="alternate" hreflang="english" href="http://localhost/en/expertise/cyber-security/devsecops-expert/"/>
+    </url>
+    <url>
+        <loc>http://localhost/expertise/cyber-security/security-auditor/</loc>
+        <lastmod>2019-07-02T17:39:15+02:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+        <xhtml:link rel="alternate" hreflang="de" href="http://localhost/expertise/cyber-security/security-auditor/"/>
+        <xhtml:link rel="alternate" hreflang="english" href="http://localhost/en/expertise/cyber-security/security-auditor/"/>
+    </url>
+    <url>
+        <loc>http://localhost/en/expertise/cyber-security/security-auditor/</loc>
+        <lastmod>2019-07-02T17:39:15+02:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+        <xhtml:link rel="alternate" hreflang="de" href="http://localhost/expertise/cyber-security/security-auditor/"/>
+        <xhtml:link rel="alternate" hreflang="english" href="http://localhost/en/expertise/cyber-security/security-auditor/"/>
+    </url>
+    <url>
+        <loc>http://localhost/expertise/cyber-security/chief-information-security-officer/</loc>
+        <lastmod>2019-07-02T18:57:20+02:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+        <xhtml:link rel="alternate" hreflang="de" href="http://localhost/expertise/cyber-security/chief-information-security-officer/"/>
+        <xhtml:link rel="alternate" hreflang="english" href="http://localhost/en/expertise/cyber-security/chief-information-security-officer/"/>
+    </url>
+    <url>
+        <loc>http://localhost/en/expertise/cyber-security/chief-information-security-officer/</loc>
+        <lastmod>2019-07-02T18:57:20+02:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+        <xhtml:link rel="alternate" hreflang="de" href="http://localhost/expertise/cyber-security/chief-information-security-officer/"/>
+        <xhtml:link rel="alternate" hreflang="english" href="http://localhost/en/expertise/cyber-security/chief-information-security-officer/"/>
+    </url>
+    <url>
+        <loc>http://localhost/expertise/iot/</loc>
+        <lastmod>2019-07-02T18:59:12+02:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+        <xhtml:link rel="alternate" hreflang="de" href="http://localhost/expertise/iot/"/>
+        <xhtml:link rel="alternate" hreflang="english" href="http://localhost/en/expertise/iot/"/>
+    </url>
+    <url>
+        <loc>http://localhost/en/expertise/iot/</loc>
+        <lastmod>2019-07-02T18:59:12+02:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+        <xhtml:link rel="alternate" hreflang="de" href="http://localhost/expertise/iot/"/>
+        <xhtml:link rel="alternate" hreflang="english" href="http://localhost/en/expertise/iot/"/>
+    </url>
+    <url>
+        <loc>http://localhost/expertise/iot/iiot-experte/</loc>
+        <lastmod>2019-07-02T19:02:40+02:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+        <xhtml:link rel="alternate" hreflang="de" href="http://localhost/expertise/iot/iiot-experte/"/>
+        <xhtml:link rel="alternate" hreflang="english" href="http://localhost/en/expertise/iot/iiot-expert/"/>
+    </url>
+    <url>
+        <loc>http://localhost/en/expertise/iot/iiot-expert/</loc>
+        <lastmod>2019-07-02T19:02:40+02:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+        <xhtml:link rel="alternate" hreflang="de" href="http://localhost/expertise/iot/iiot-experte/"/>
+        <xhtml:link rel="alternate" hreflang="english" href="http://localhost/en/expertise/iot/iiot-expert/"/>
+    </url>
+    <url>
+        <loc>http://localhost/expertise/mobile-internet/</loc>
+        <lastmod>2019-07-02T19:23:03+02:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+        <xhtml:link rel="alternate" hreflang="de" href="http://localhost/expertise/mobile-internet/"/>
+        <xhtml:link rel="alternate" hreflang="english" href="http://localhost/en/expertise/mobile-internet/"/>
+    </url>
+    <url>
+        <loc>http://localhost/en/expertise/mobile-internet/</loc>
+        <lastmod>2019-07-02T19:23:03+02:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+        <xhtml:link rel="alternate" hreflang="de" href="http://localhost/expertise/mobile-internet/"/>
+        <xhtml:link rel="alternate" hreflang="english" href="http://localhost/en/expertise/mobile-internet/"/>
+    </url>
+    <url>
+        <loc>http://localhost/expertise/robotik/</loc>
+        <lastmod>2019-07-02T19:22:32+02:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+        <xhtml:link rel="alternate" hreflang="de" href="http://localhost/expertise/robotik/"/>
+        <xhtml:link rel="alternate" hreflang="english" href="http://localhost/en/expertise/robots/"/>
+    </url>
+    <url>
+        <loc>http://localhost/en/expertise/robots/</loc>
+        <lastmod>2019-07-02T19:22:32+02:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+        <xhtml:link rel="alternate" hreflang="de" href="http://localhost/expertise/robotik/"/>
+        <xhtml:link rel="alternate" hreflang="english" href="http://localhost/en/expertise/robots/"/>
+    </url>
+    <url>
+        <loc>http://localhost/expertise/mobile-technologies/</loc>
+        <lastmod>2019-07-02T19:11:05+02:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+        <xhtml:link rel="alternate" hreflang="de" href="http://localhost/expertise/mobile-technologies/"/>
+        <xhtml:link rel="alternate" hreflang="english" href="http://localhost/en/expertise/mobile-technologies/"/>
+    </url>
+    <url>
+        <loc>http://localhost/en/expertise/mobile-technologies/</loc>
+        <lastmod>2019-07-02T19:11:05+02:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+        <xhtml:link rel="alternate" hreflang="de" href="http://localhost/expertise/mobile-technologies/"/>
+        <xhtml:link rel="alternate" hreflang="english" href="http://localhost/en/expertise/mobile-technologies/"/>
+    </url>
+    <url>
+        <loc>http://localhost/expertise/blockchain/</loc>
+        <lastmod>2019-07-02T19:11:31+02:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+        <xhtml:link rel="alternate" hreflang="de" href="http://localhost/expertise/blockchain/"/>
+        <xhtml:link rel="alternate" hreflang="english" href="http://localhost/en/expertise/blockchain/"/>
+    </url>
+    <url>
+        <loc>http://localhost/en/expertise/blockchain/</loc>
+        <lastmod>2019-07-02T19:11:31+02:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+        <xhtml:link rel="alternate" hreflang="de" href="http://localhost/expertise/blockchain/"/>
+        <xhtml:link rel="alternate" hreflang="english" href="http://localhost/en/expertise/blockchain/"/>
+    </url>
+    <url>
+        <loc>http://localhost/categories/cloud-technologien/</loc>
+        <lastmod>2019-06-28T12:53:42+02:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+        <xhtml:link rel="alternate" hreflang="de" href="http://localhost/categories/cloud-technologien/"/>
+        <xhtml:link rel="alternate" hreflang="english" href="http://localhost/en/categories/cloud-technologien/"/>
+    </url>
+    <url>
+        <loc>http://localhost/en/categories/cloud-technologien/</loc>
+        <lastmod>2019-06-28T12:53:42+02:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+        <xhtml:link rel="alternate" hreflang="de" href="http://localhost/categories/cloud-technologien/"/>
+        <xhtml:link rel="alternate" hreflang="english" href="http://localhost/en/categories/cloud-technologien/"/>
+    </url>
+    <url>
+        <loc>http://localhost/categories/internet-of-things/</loc>
+        <lastmod>2019-06-28T12:53:51+02:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+        <xhtml:link rel="alternate" hreflang="de" href="http://localhost/categories/internet-of-things/"/>
+        <xhtml:link rel="alternate" hreflang="english" href="http://localhost/en/categories/internet-of-things/"/>
+    </url>
+    <url>
+        <loc>http://localhost/en/categories/internet-of-things/</loc>
+        <lastmod>2019-06-28T12:53:51+02:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+        <xhtml:link rel="alternate" hreflang="de" href="http://localhost/categories/internet-of-things/"/>
+        <xhtml:link rel="alternate" hreflang="english" href="http://localhost/en/categories/internet-of-things/"/>
+    </url>
+    <url>
+        <loc>http://localhost/categories/it-consulting/</loc>
+        <lastmod>2019-06-28T12:54:35+02:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+        <xhtml:link rel="alternate" hreflang="de" href="http://localhost/categories/it-consulting/"/>
+        <xhtml:link rel="alternate" hreflang="english" href="http://localhost/en/categories/it-consulting/"/>
+    </url>
+    <url>
+        <loc>http://localhost/en/categories/it-consulting/</loc>
+        <lastmod>2019-06-28T12:54:35+02:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+        <xhtml:link rel="alternate" hreflang="de" href="http://localhost/categories/it-consulting/"/>
+        <xhtml:link rel="alternate" hreflang="english" href="http://localhost/en/categories/it-consulting/"/>
+    </url>
+    <url>
+        <loc>http://localhost/categories/machine-learning/</loc>
+        <lastmod>2019-06-28T12:54:57+02:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+        <xhtml:link rel="alternate" hreflang="de" href="http://localhost/categories/machine-learning/"/>
+        <xhtml:link rel="alternate" hreflang="english" href="http://localhost/en/categories/machine-learning/"/>
+    </url>
+    <url>
+        <loc>http://localhost/en/categories/machine-learning/</loc>
+        <lastmod>2019-06-28T12:54:57+02:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+        <xhtml:link rel="alternate" hreflang="de" href="http://localhost/categories/machine-learning/"/>
+        <xhtml:link rel="alternate" hreflang="english" href="http://localhost/en/categories/machine-learning/"/>
+    </url>
+    <url>
+        <loc>http://localhost/categories/allgemein/</loc>
+        <lastmod>2019-06-28T12:55:21+02:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+        <xhtml:link rel="alternate" hreflang="de" href="http://localhost/categories/allgemein/"/>
+        <xhtml:link rel="alternate" hreflang="english" href="http://localhost/en/categories/allgemein/"/>
+    </url>
+    <url>
+        <loc>http://localhost/en/categories/allgemein/</loc>
+        <lastmod>2019-06-28T12:55:21+02:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+        <xhtml:link rel="alternate" hreflang="de" href="http://localhost/categories/allgemein/"/>
+        <xhtml:link rel="alternate" hreflang="english" href="http://localhost/en/categories/allgemein/"/>
+    </url>
+    <url>
+        <loc>http://localhost/categories/architektur-infrastruktur/</loc>
+        <lastmod>2019-06-28T21:25:27+02:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+        <xhtml:link rel="alternate" hreflang="de" href="http://localhost/categories/architektur-infrastruktur/"/>
+        <xhtml:link rel="alternate" hreflang="english" href="http://localhost/en/categories/architektur-infrastruktur/"/>
+    </url>
+    <url>
+        <loc>http://localhost/en/categories/architektur-infrastruktur/</loc>
+        <lastmod>2019-06-28T21:25:27+02:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+        <xhtml:link rel="alternate" hreflang="de" href="http://localhost/categories/architektur-infrastruktur/"/>
+        <xhtml:link rel="alternate" hreflang="english" href="http://localhost/en/categories/architektur-infrastruktur/"/>
+    </url>
+    <url>
+        <loc>http://localhost/categories/big-data-data-science/</loc>
+        <lastmod>2019-06-28T12:56:43+02:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+        <xhtml:link rel="alternate" hreflang="de" href="http://localhost/categories/big-data-data-science/"/>
+        <xhtml:link rel="alternate" hreflang="english" href="http://localhost/en/categories/big-data-data-science/"/>
+    </url>
+    <url>
+        <loc>http://localhost/en/categories/big-data-data-science/</loc>
+        <lastmod>2019-06-28T12:56:43+02:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+        <xhtml:link rel="alternate" hreflang="de" href="http://localhost/categories/big-data-data-science/"/>
+        <xhtml:link rel="alternate" hreflang="english" href="http://localhost/en/categories/big-data-data-science/"/>
+    </url>
+    <url>
+        <loc>http://localhost/categories/blockchain/</loc>
+        <lastmod>2019-06-28T12:57:11+02:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+        <xhtml:link rel="alternate" hreflang="de" href="http://localhost/categories/blockchain/"/>
+        <xhtml:link rel="alternate" hreflang="english" href="http://localhost/en/categories/blockchain/"/>
+    </url>
+    <url>
+        <loc>http://localhost/en/categories/blockchain/</loc>
+        <lastmod>2019-06-28T12:57:11+02:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+        <xhtml:link rel="alternate" hreflang="de" href="http://localhost/categories/blockchain/"/>
+        <xhtml:link rel="alternate" hreflang="english" href="http://localhost/en/categories/blockchain/"/>
+    </url>
+    <url>
+        <loc>http://localhost/categories/cyber-security/</loc>
+        <lastmod>2019-06-28T12:57:30+02:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+        <xhtml:link rel="alternate" hreflang="de" href="http://localhost/categories/cyber-security/"/>
+        <xhtml:link rel="alternate" hreflang="english" href="http://localhost/en/categories/cyber-security/"/>
+    </url>
+    <url>
+        <loc>http://localhost/en/categories/cyber-security/</loc>
+        <lastmod>2019-06-28T12:57:30+02:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+        <xhtml:link rel="alternate" hreflang="de" href="http://localhost/categories/cyber-security/"/>
+        <xhtml:link rel="alternate" hreflang="english" href="http://localhost/en/categories/cyber-security/"/>
+    </url>
+    <url>
+        <loc>http://localhost/job/</loc>
+        <lastmod>2019-07-02T13:13:46+02:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+        <xhtml:link rel="alternate" hreflang="de" href="http://localhost/job/"/>
+        <xhtml:link rel="alternate" hreflang="english" href="http://localhost/en/job/"/>
+    </url>
+    <url>
+        <loc>http://localhost/en/job/</loc>
+        <lastmod>2019-07-02T13:13:46+02:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+        <xhtml:link rel="alternate" hreflang="de" href="http://localhost/job/"/>
+        <xhtml:link rel="alternate" hreflang="english" href="http://localhost/en/job/"/>
+    </url>
+    <url>
+        <loc>http://localhost/apply-job/</loc>
+        <lastmod>2019-07-12T09:23:39+02:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+        <xhtml:link rel="alternate" hreflang="de" href="http://localhost/apply-job/"/>
+        <xhtml:link rel="alternate" hreflang="english" href="http://localhost/en/apply-job/"/>
+    </url>
+    <url>
+        <loc>http://localhost/en/apply-job/</loc>
+        <lastmod>2019-07-12T09:23:39+02:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+        <xhtml:link rel="alternate" hreflang="de" href="http://localhost/apply-job/"/>
+        <xhtml:link rel="alternate" hreflang="english" href="http://localhost/en/apply-job/"/>
+    </url>
+</urlset>

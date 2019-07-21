@@ -17,7 +17,7 @@
  *
  */
 
-class FieldtypeStarRating extends \ProcessWire\Fieldtype {
+class FieldtypeStarRating extends Fieldtype {
 
   public static function getModuleInfo() {
     return array(
@@ -28,12 +28,12 @@ class FieldtypeStarRating extends \ProcessWire\Fieldtype {
     );
   }
 
-  public function ___getCompatibleFieldtypes(\ProcessWire\Field $field) {
+  public function ___getCompatibleFieldtypes(Field $field) {
     // there are no other fieldtypes compatible with this one
     return null;
   }
 
-  // public function isEmptyValue(\ProcessWire\Field $field, $value) {
+  // public function isEmptyValue(Field $field, $value) {
   //   // "0" is not a blank value
   //   if(($value === "0" || $value === 0)) {
   //     return false;
@@ -41,11 +41,11 @@ class FieldtypeStarRating extends \ProcessWire\Fieldtype {
   //   return empty($value);
   // }
 
-  // public function getBlankValue(\ProcessWire\Page $page, \ProcessWire\Field $field) {
+  // public function getBlankValue(Page $page, Field $field) {
   //   return '';
   // }
 
-  public function sanitizeValue(\ProcessWire\Page $page, \ProcessWire\Field $field, $value) {
+  public function sanitizeValue(Page $page, Field $field, $value) {
 
     if(is_string($value) && strlen($value) && !ctype_digit(ltrim($value, '-'))) {
       // string value with one or more non-digit characters
@@ -75,7 +75,7 @@ class FieldtypeStarRating extends \ProcessWire\Fieldtype {
         if(strpos($value, '.') !== false || strpos($value, ',') !== false || strpos($value, ' ') !== false) {
           // convert float values to rounded integers
           // also handles values with thousands separators
-          $value = round(\ProcessWire\FieldtypeFloat::strToFloat($value));
+          $value = round(FieldtypeFloat::strToFloat($value));
 
         } else if(is_numeric($value)) {
           // let PHP decide how to convert it
@@ -96,19 +96,19 @@ class FieldtypeStarRating extends \ProcessWire\Fieldtype {
     return $value;
   }
 
-  public function getInputfield(\ProcessWire\Page $page, \ProcessWire\Field $field) {
+  public function getInputfield(Page $page, Field $field) {
     $inputfield = $this->modules->get('InputfieldStarRating');
     $inputfield->star_count = $field->star_count;
     return $inputfield;
   }
 
-  public function getDatabaseSchema(\ProcessWire\Field $field) {
+  public function getDatabaseSchema(Field $field) {
     $schema = parent::getDatabaseSchema($field);
     $schema['data'] = 'int NOT NULL';
     return $schema;
   }
 
-  public function ___getConfigInputfields(\ProcessWire\Field $field) {
+  public function ___getConfigInputfields(Field $field) {
     $inputfields = parent::___getConfigInputfields($field);
 
     $f = $this->modules->get('InputfieldSelect');

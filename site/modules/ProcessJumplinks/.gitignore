@@ -1,0 +1,9 @@
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.lnk
+*.sublime-*
+.phpintel/
+.DS_Store
+

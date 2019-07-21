@@ -84,3 +84,83 @@
 2019-06-25 13:27:10	admin	http://localhost/admin/login/	Successful login for 'admin'
 2019-06-25 17:50:16	admin	http://localhost/admin/login/	Successful login for 'admin'
 2019-06-25 19:11:13	admin	http://localhost/admin/login/?id=1095	Successful login for 'admin'
+2019-06-26 13:18:23	admin	http://staging.paltron.com/admin/login/	Successful login for 'admin'
+2019-06-26 13:18:40	admin	http://staging.paltron.com/admin/login/	Successful login for 'admin'
+2019-06-26 13:28:56	admin	http://staging.paltron.com/admin/login/	Successful login for 'admin'
+2019-06-26 15:36:27	admin	http://staging.paltron.com/admin/login/	Successful login for 'admin'
+2019-06-27 00:39:22	?	?	User 'admin' - Error: Session fingerprint changed (IP address or useragent) (IP: 45.56.155.197)
+2019-06-27 01:12:00	admin	http://staging.paltron.com/admin/login/	Successful login for 'admin'
+2019-06-27 08:18:47	?	?	User 'admin' - Error: Session fingerprint changed (IP address or useragent) (IP: 84.46.7.254)
+2019-06-27 08:18:50	admin	http://staging.paltron.com/admin/login/?id=1268	Successful login for 'admin'
+2019-06-27 10:27:27	admin	http://staging.paltron.com/admin/login/	Successful login for 'admin'
+2019-06-27 15:58:14	admin	http://staging.paltron.com/admin/login/	Successful login for 'admin'
+2019-06-27 23:34:50	admin	http://staging.paltron.com/admin/login/	Successful login for 'admin'
+2019-06-28 08:22:19	?	?	User 'admin' - Error: Session fingerprint changed (IP address or useragent) (IP: 213.128.140.81)
+2019-06-28 08:22:30	admin	http://staging.paltron.com/admin/login/	Successful login for 'admin'
+2019-06-28 12:51:44	admin	http://staging.paltron.com/admin/login/	Successful login for 'admin'
+2019-06-28 12:55:31	admin	http://staging.paltron.com/admin/login/	Successful login for 'admin'
+2019-06-28 15:13:28	?	?	User 'admin' - Error: Session fingerprint changed (IP address or useragent) (IP: 45.41.181.4)
+2019-06-28 15:14:17	admin	http://staging.paltron.com/admin/login/	Successful login for 'admin'
+2019-06-29 10:44:49	admin	http://staging.paltron.com/admin/login/	Successful login for 'admin'
+2019-06-29 11:06:19	?	?	User 'admin' - Error: Session fingerprint changed (IP address or useragent) (IP: 88.77.45.114)
+2019-06-29 12:39:35	?	?	User 'admin' - Error: Session fingerprint changed (IP address or useragent) (IP: 45.41.181.4)
+2019-06-29 15:53:39	admin	http://staging.paltron.com/admin/login/?id=1	Successful login for 'admin'
+2019-06-30 04:23:17	?	?	User 'admin' - Error: Session fingerprint changed (IP address or useragent) (IP: 45.41.181.4)
+2019-06-30 04:27:02	admin	http://staging.paltron.com/admin/login/	Successful login for 'admin'
+2019-06-30 04:59:25	?	?	User 'admin' - Error: Session fingerprint changed (IP address or useragent) (IP: 45.41.181.4)
+2019-06-30 10:27:37	admin	http://staging.paltron.com/admin/login/	Successful login for 'admin'
+2019-06-30 11:41:30	?	?	User 'admin' - Session timed out (session older than 86400 seconds) (IP: 77.3.248.123)
+2019-06-30 11:41:33	admin	http://staging.paltron.com/admin/login/?id=1	Successful login for 'admin'
+2019-06-30 16:14:43	admin	http://staging.paltron.com/admin/login/?id=1	Successful login for 'admin'
+2019-06-30 16:19:31	?	?	User 'admin' - Error: Session fingerprint changed (IP address or useragent) (IP: 45.41.181.4)
+2019-06-30 17:36:40	admin	http://staging.paltron.com/admin/login/	Successful login for 'admin'
+2019-06-30 19:37:06	admin	http://staging.paltron.com/admin/login/	Successful login for 'admin'
+2019-06-30 19:43:44	?	?	User 'admin' - Error: Session fingerprint changed (IP address or useragent) (IP: 46.59.133.54)
+2019-06-30 19:43:46	admin	http://staging.paltron.com/admin/login/	Successful login for 'admin'
+2019-06-30 22:22:25	admin	http://staging.paltron.com/admin/login/	Successful login for 'admin'
+2019-07-01 08:57:20	?	?	User 'admin' - Error: Session fingerprint changed (IP address or useragent) (IP: 213.128.140.81)
+2019-07-01 08:57:20	?	?	User 'admin' - Error: Session fingerprint changed (IP address or useragent) (IP: 213.128.140.81)
+2019-07-01 08:57:20	?	?	User 'admin' - Error: Session fingerprint changed (IP address or useragent) (IP: 213.128.140.81)
+2019-07-01 08:57:20	?	?	User 'admin' - Error: Session fingerprint changed (IP address or useragent) (IP: 213.128.140.81)
+2019-07-01 08:57:20	?	?	User 'admin' - Error: Session fingerprint changed (IP address or useragent) (IP: 213.128.140.81)
+2019-07-01 08:57:20	?	?	User 'admin' - Error: Session fingerprint changed (IP address or useragent) (IP: 213.128.140.81)
+2019-07-01 10:15:30	admin	http://staging.paltron.com/admin/login/	Successful login for 'admin'
+2019-07-01 11:21:28	admin	http://staging.paltron.com/admin/login/	Successful login for 'admin'
+2019-07-01 12:54:26	?	?	User 'admin' - Error: Session fingerprint changed (IP address or useragent) (IP: 45.41.181.4)
+2019-07-01 14:28:19	admin	http://staging.paltron.com/admin/login/	Successful login for 'admin'
+2019-07-01 17:31:08	admin	http://staging.paltron.com/admin/login/	Successful login for 'admin'
+2019-07-01 17:43:35	guest	http://staging.paltron.com/admin/login/	Error: Failed login for 'admin' - Invalid password
+2019-07-01 17:43:40	admin	http://staging.paltron.com/admin/login/	Successful login for 'admin'
+2019-07-01 18:38:23	guest	http://staging.paltron.com/admin/login/	Error: Failed login for 'paltron' - Unknown user
+2019-07-02 04:43:28	admin	http://staging.paltron.com/admin/login/	Successful login for 'admin'
+2019-07-02 10:11:03	guest	http://staging.paltron.com/admin/login/	Error: Failed login for 'admin' - Invalid password
+2019-07-02 10:11:07	admin	http://staging.paltron.com/admin/login/	Successful login for 'admin'
+2019-07-02 16:51:54	admin	http://staging.paltron.com/admin/login/	Successful login for 'admin'
+2019-07-02 16:51:54	admin	http://staging.paltron.com/admin/login/	Successful login for 'admin'
+2019-07-02 17:20:04	admin	http://staging.paltron.com/admin/login/	Successful login for 'admin'
+2019-07-02 20:06:39	admin	http://staging.paltron.com/admin/login/	Successful login for 'admin'
+2019-07-03 11:15:02	admin	http://staging.paltron.com/admin/login/	Successful login for 'admin'
+2019-07-03 11:50:58	admin	http://staging.paltron.com/admin/login/?id=1	Successful login for 'admin'
+2019-07-03 12:14:46	?	?	User 'admin' - Error: Session fingerprint changed (IP address or useragent) (IP: 123.186.220.74)
+2019-07-03 13:30:09	admin	http://staging.paltron.com/admin/login/	Successful login for 'admin'
+2019-07-03 13:53:02	?	?	User 'admin' - Error: Session fingerprint changed (IP address or useragent) (IP: 147.75.111.252)
+2019-07-03 15:25:29	admin	http://staging.paltron.com/admin/login/	Successful login for 'admin'
+2019-07-03 15:50:44	admin	http://staging.paltron.com/admin/login/	Successful login for 'admin'
+2019-07-03 21:25:03	admin	http://staging.paltron.com/admin/login/	Successful login for 'admin'
+2019-07-04 12:20:39	?	?	User 'admin' - Error: Session fingerprint changed (IP address or useragent) (IP: 80.187.110.82)
+2019-07-04 12:54:19	admin	http://staging.paltron.com/admin/login/	Successful login for 'admin'
+2019-07-04 13:03:26	admin	http://staging.paltron.com/admin/login/	Successful login for 'admin'
+2019-07-04 15:12:24	admin	http://staging.paltron.com/admin/login/	Successful login for 'admin'
+2019-07-04 18:09:01	admin	http://staging.paltron.com/admin/login/	Successful login for 'admin'
+2019-07-05 12:32:52	admin	http://staging.paltron.com/admin/login/	Successful login for 'admin'
+2019-07-11 11:22:00	admin	http://localhost/admin/login/	Successful login for 'admin'
+2019-07-11 11:24:55	admin	http://localhost/admin/login/	Successful login for 'admin'
+2019-07-11 11:26:02	admin	http://localhost/admin/login/?id=1	Successful login for 'admin'
+2019-07-11 12:17:38	admin	http://localhost/admin/login/?id=1	Successful login for 'admin'
+2019-07-12 03:21:23	admin	http://localhost/admin/login/	Successful login for 'admin'
+2019-07-12 12:20:50	admin	http://localhost/admin/login/	Successful login for 'admin'
+2019-07-12 16:28:20	admin	http://localhost/admin/login/	Successful login for 'admin'
+2019-07-20 12:56:46	admin	http://localhost/admin/login/	Successful login for 'admin'
+2019-07-20 13:12:26	?	?	User 'admin' - Error: Session fingerprint changed (IP address or useragent) (IP: 0.0.0.0)
+2019-07-20 13:13:53	admin	http://localhost/admin/login/?id=1503	Successful login for 'admin'
+2019-07-20 13:34:04	admin	http://localhost/admin/login/?id=1503	Successful login for 'admin'

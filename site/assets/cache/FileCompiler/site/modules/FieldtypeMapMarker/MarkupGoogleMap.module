@@ -93,7 +93,7 @@
  *
  */
 
-class MarkupGoogleMap extends \ProcessWire\WireData implements \ProcessWire\Module {
+class MarkupGoogleMap extends WireData implements Module {
 
 	public static function getModuleInfo() {
 		return array(
@@ -109,7 +109,7 @@ class MarkupGoogleMap extends \ProcessWire\WireData implements \ProcessWire\Modu
 	 *
 	 */
 	public function init() {	
- require_once(\ProcessWire\wire('files')->compile(dirname(\ProcessWire\wire("config")->paths->root . 'site/modules/FieldtypeMapMarker/MarkupGoogleMap.module') . '/MapMarker.php',array('includes'=>true,'namespace'=>true,'modules'=>false,'skipIfNamespace'=>false))); 
+		require_once(dirname(__FILE__) . '/MapMarker.php'); 
 	}
 
 	/**
@@ -124,7 +124,7 @@ class MarkupGoogleMap extends \ProcessWire\WireData implements \ProcessWire\Modu
 
 		static $n = 0; 
 		$field = $this->fields->get($fieldName); 
-		if(!$field) throw new \ProcessWire\WireException("Unknown field: $fieldName"); 
+		if(!$field) throw new WireException("Unknown field: $fieldName"); 
 
 		return array(
 			'useStyles' => true, 
@@ -167,7 +167,7 @@ class MarkupGoogleMap extends \ProcessWire\WireData implements \ProcessWire\Modu
 	/**
 	 * Render map markup
 	 * 
-	 * @param PageArray|Page $pageArray \ProcessWire\page(or multiple pages in PageArray) containing map field
+	 * @param PageArray|Page $pageArray Page (or multiple pages in PageArray) containing map field
 	 * @param $fieldName Name of the map field
 	 * @param array $options Options to adjust behavior
 	 * @return string
@@ -182,9 +182,9 @@ class MarkupGoogleMap extends \ProcessWire\WireData implements \ProcessWire\Modu
 		$defaultOptions = $this->getOptions($fieldName); 
 		$options = array_merge($defaultOptions, $options); 
 		
-		if($pageArray instanceof \ProcessWire\Page) {
+		if($pageArray instanceof Page) {
 			$page = $pageArray; 
-			$pageArray = new \ProcessWire\PageArray();
+			$pageArray = new PageArray();
 			$pageArray->add($page); 
 		}
 

@@ -1,6 +1,6 @@
 <?php
 
-class MarkupGoogleRecaptcha extends \ProcessWire\WireData implements \ProcessWire\Module, \ProcessWire\ConfigurableModule {
+class MarkupGoogleRecaptcha extends WireData implements Module, ConfigurableModule {
 
     static function getModuleInfo() {
         return [
@@ -36,7 +36,7 @@ class MarkupGoogleRecaptcha extends \ProcessWire\WireData implements \ProcessWir
 
     public function render($form = null, $lang = "")
     {
-        if(!$form instanceof \ProcessWire\InputfieldForm)
+        if(!$form instanceof InputfieldForm)
         {
             $out = $this->buildGoogleDiv($lang);
             return $out;
@@ -192,16 +192,16 @@ class MarkupGoogleRecaptcha extends \ProcessWire\WireData implements \ProcessWir
 
     public function verifyResponse()
     {
-        if (!\ProcessWire\wire('input')->post['g-recaptcha-response'])
+        if (!wire('input')->post['g-recaptcha-response'])
             return false;
 
         $data = [
             'remoteip' => $_SERVER["REMOTE_ADDR"],
             'secret' => $this->secret_key,
-            'response' => \ProcessWire\wire('input')->post['g-recaptcha-response']
+            'response' => wire('input')->post['g-recaptcha-response']
         ];
 
-        $http = new \ProcessWire\WireHttp();
+        $http = new WireHttp();
         $query = http_build_query($data);
         $response = $http->get(self::SITE_VERIFY_URL."?{$query}");
         $response = json_decode($response, true);
@@ -211,21 +211,21 @@ class MarkupGoogleRecaptcha extends \ProcessWire\WireData implements \ProcessWir
 
     public static function getModuleConfigInputfields(array $data)
     {
-        $wrap = new \ProcessWire\InputfieldWrapper();
+        $wrap = new InputfieldWrapper();
         /*
          * api settings
          */
-        $form = \ProcessWire\wire('modules')->get('InputfieldFieldset');
-        $form->label = \ProcessWire\__('Google reCAPTCHA API Settings');
-        $form->notes = \ProcessWire\__('You can obtain the above information by creating an API key at [http://www.google.com/recaptcha/admin](http://www.google.com/recaptcha/admin)');
-        $form->collapsed = \ProcessWire\Inputfield::collapsedYes;
+        $form = wire('modules')->get('InputfieldFieldset');
+        $form->label = __('Google reCAPTCHA API Settings');
+        $form->notes = __('You can obtain the above information by creating an API key at [http://www.google.com/recaptcha/admin](http://www.google.com/recaptcha/admin)');
+        $form->collapsed = Inputfield::collapsedYes;
 
         $inputfields = [
-            'site_key'   => \ProcessWire\__('Site key'),
-            'secret_key' => \ProcessWire\__('Secret key')
+            'site_key'   => __('Site key'),
+            'secret_key' => __('Secret key')
         ];
         foreach($inputfields as $name => $label) {
-            $f = \ProcessWire\wire('modules')->get('InputfieldText');
+            $f = wire('modules')->get('InputfieldText');
             $f->attr('name', $name);
             $f->label = $label;
             $f->required = true;
@@ -238,14 +238,14 @@ class MarkupGoogleRecaptcha extends \ProcessWire\WireData implements \ProcessWir
         /*
          * mode
          */
-        $form = \ProcessWire\wire('modules')->get('InputfieldFieldset');
-        $form->label = \ProcessWire\__('Widget Mode');
+        $form = wire('modules')->get('InputfieldFieldset');
+        $form->label = __('Widget Mode');
 
-        $f = \ProcessWire\wire('modules')->get("InputfieldRadios");
+        $f = wire('modules')->get("InputfieldRadios");
         $options = array('recaptchav2' => 'reCaptcha V2', 'invisible' => 'Invisible');
         $f->name = 'data_recaptcha_type';
-        $f->label = \ProcessWire\__("Type of reCaptcha");
-        $f->description = \ProcessWire\__("Choose the type of reCaptcha.");
+        $f->label = __("Type of reCaptcha");
+        $f->description = __("Choose the type of reCaptcha.");
         $f->addOptions($options);
         isset($data['data_recaptcha_type']) ? $f->attr('value', $data['data_recaptcha_type']) : $f->attr('value', 'recaptchav2');
         $f->columnWidth = 100;
@@ -256,15 +256,15 @@ class MarkupGoogleRecaptcha extends \ProcessWire\WireData implements \ProcessWir
         /*
          * recapatcha invisible settings
          */
-        $form = \ProcessWire\wire('modules')->get('InputfieldFieldset');
-        $form->label = \ProcessWire\__('Invisible Widget Settings');
+        $form = wire('modules')->get('InputfieldFieldset');
+        $form->label = __('Invisible Widget Settings');
         $form->showIf = "data_recaptcha_type=invisible";
 
-        $f = \ProcessWire\wire('modules')->get("InputfieldSelect");
+        $f = wire('modules')->get("InputfieldSelect");
         $options = array('bottomright' => 'bottomright', 'bottomleft' => 'bottomleft' , 'inline' => 'inline');
         $f->name = 'data_badge';
-        $f->label = \ProcessWire\__("Badge");
-        $f->description = \ProcessWire\__("Reposition the reCAPTCHA badge. 'inline' allows you to control the CSS.");
+        $f->label = __("Badge");
+        $f->description = __("Reposition the reCAPTCHA badge. 'inline' allows you to control the CSS.");
         $f->addOptions($options);
         if($data['data_badge']) $f->attr('value', $data['data_badge']);
         $f->columnWidth = 100;
@@ -274,16 +274,16 @@ class MarkupGoogleRecaptcha extends \ProcessWire\WireData implements \ProcessWir
         /*
          * recapatcha v2 settings
          */
-        $form = \ProcessWire\wire('modules')->get('InputfieldFieldset');
-        $form->label = \ProcessWire\__('reCapatcha V2 Widget Settings');
+        $form = wire('modules')->get('InputfieldFieldset');
+        $form->label = __('reCapatcha V2 Widget Settings');
         $form->showIf = "data_recaptcha_type=recaptchav2";
 
         $inputfields = [
-            'data_theme' => ['label' => \ProcessWire\__("Use dark theme"),     'description' => \ProcessWire\__('The color theme of the widget. Default: light') ],
-            'data_size'  => ['label' => \ProcessWire\__('Use compact widget'), 'description' => \ProcessWire\__('The size of the widget. Default: normal') ]
+            'data_theme' => ['label' => __("Use dark theme"),     'description' => __('The color theme of the widget. Default: light') ],
+            'data_size'  => ['label' => __('Use compact widget'), 'description' => __('The size of the widget. Default: normal') ]
         ];
         foreach($inputfields as $name => $value) {
-            $f = \ProcessWire\wire('modules')->get("InputfieldCheckbox");
+            $f = wire('modules')->get("InputfieldCheckbox");
             $f->name = $name;
             $f->label = $value['label'];
             $f->description = $value['description'];
@@ -297,14 +297,14 @@ class MarkupGoogleRecaptcha extends \ProcessWire\WireData implements \ProcessWir
         /*
          * global settings
          */
-        $form = \ProcessWire\wire('modules')->get('InputfieldFieldset');
-        $form->label = \ProcessWire\__('Global Widget Settings');
+        $form = wire('modules')->get('InputfieldFieldset');
+        $form->label = __('Global Widget Settings');
 
         $inputfields = [
-            'data_type'  => ['label' => \ProcessWire\__('Use audio type'),     'description' => \ProcessWire\__('The type of CAPTCHA to serve. Default: image') ],
-            'data_index' => ['name' => 'data_index', 'label' => \ProcessWire\__('Tabindex '), 'description' => \ProcessWire\__('The tabindex of the widget and challenge. Default: 0') ]
+            'data_type'  => ['label' => __('Use audio type'),     'description' => __('The type of CAPTCHA to serve. Default: image') ],
+            'data_index' => ['name' => 'data_index', 'label' => __('Tabindex '), 'description' => __('The tabindex of the widget and challenge. Default: 0') ]
         ];
-        $f = \ProcessWire\wire('modules')->get('InputfieldText');
+        $f = wire('modules')->get('InputfieldText');
         $f->name = $inputfields['data_index']['name'];
         $f->label = $inputfields['data_index']['label'];
         $f->description = $inputfields['data_index']['description'];
@@ -312,7 +312,7 @@ class MarkupGoogleRecaptcha extends \ProcessWire\WireData implements \ProcessWir
         $f->columnWidth = 50;
         $form->add($f);
 
-        $f = \ProcessWire\wire('modules')->get("InputfieldCheckbox");
+        $f = wire('modules')->get("InputfieldCheckbox");
         $f->name = 'data_type';
         $f->label = $inputfields['data_type']['label'];
         $f->description = $inputfields['data_type']['description'];

@@ -40,6 +40,8 @@ if(!defined("PROCESSWIRE")) die();
  */
 $config->debug = false;
 
+$config->prependTemplateFile = '_init.php';
+
 /**
  * Allow core API variables to also be accessed as functions?
  *
@@ -108,6 +110,6 @@ $config->installed = 1559833633;
  * Installer: HTTP Hosts Whitelist
  * 
  */
-$config->httpHosts = array('');
+$config->httpHosts = array('localhost');
 
 

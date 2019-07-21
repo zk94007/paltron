@@ -1,5 +1,12 @@
 {
-    "file": "site\\templates\\includes\\foot.inc",
+    "file": "site\/templates\/includes\/foot.inc",
     "textdomain": "site--templates--includes--foot-inc",
-    "translations": []
+    "translations": {
+        "fd2648427fd682bc2a48d7cf5668b3db": {
+            "text": "Impress"
+        },
+        "3da775df8d065507c482a20bf7a93427": {
+            "text": "Data privacy"
+        }
+    }
 }

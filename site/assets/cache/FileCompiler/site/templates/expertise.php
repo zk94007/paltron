@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 
 /**
  * Expertise template
@@ -16,7 +16,9 @@
                 </div>
                 <div class="button-group">
                     <a class="btn btn-primary" href="#contact-people"><?php echo \ProcessWire\__("Kontakt"); ?></a>
+                    <?php if( !(isset($page->jobs) && $page->jobs->count() == 0) ) : ?>
                     <a class="btn btn-primary" href="#learn-more"><?php echo $page->btn_text ?></a>
+                    <?php endif ?>
                 </div>
             </div>
         </div>
@@ -24,54 +26,16 @@
     <section class="advantage">
         <h2><?php echo \ProcessWire\__("Ihre Vorteile mit PALTRON"); ?></h2>
         <div class="row">
-            <div class="col-lg-4 advantage-item">
+        <?php foreach($page->advantages as $item) : ?>
+            <div class="col-lg-4 col-md-6 col-sm-12 advantage-item">
                 <div class="image">
-                    <img src="<?php echo $td.'images/advantages/advantage1.jpg' ?>" alt="advantage">
+                    <img src="<?php echo $item->image->url; ?>" alt="advantage">
                 </div>
                 <div class="description">
-                    <p>Algorithmisierte Multi-Channel-Suche garantiert passgenaue Kand</p>
+                    <p><?php echo $item->advantage_text; ?></p>
                 </div>
             </div>
-            <div class="col-lg-4 advantage-item">
-                <div class="image">
-                    <img src="<?php echo $td.'images/advantages/advantage2.jpg' ?>" alt="advantage">
-                </div>
-                <div class="description">
-                    <p>Software gestützter Auswahlprozess mit zweistufigen Interviews</p>
-                </div>
-            </div>
-            <div class="col-lg-4 advantage-item">
-                <div class="image">
-                    <img src="<?php echo $td.'images/advantages/advantage3.jpg' ?>" alt="advantage">
-                </div>
-                <div class="description">
-                    <p>Netzwerk aus über 450.000 Digital- und IT-Experten</p>
-                </div>
-            </div>
-            <div class="col-lg-4 advantage-item">
-                <div class="image">
-                    <img src="<?php echo $td.'images/advantages/advantage4.jpg' ?>" alt="advantage">
-                </div>
-                <div class="description">
-                    <p>Einsatz von mehr als 60 Kanälen</p>
-                </div>
-            </div>
-            <div class="col-lg-4 advantage-item">
-                <div class="image">
-                    <img src="<?php echo $td.'images/advantages/advantage5.jpg' ?>" alt="advantage">
-                </div>
-                <div class="description">
-                    <p>Umfassende Marktanalysen in Echtzeit durch Maschine Learning</p>
-                </div>
-            </div>
-            <div class="col-lg-4 advantage-item">
-                <div class="image">
-                    <img src="<?php echo $td.'images/advantages/advantage6.jpg' ?>" alt="advantage">
-                </div>
-                <div class="description">
-                    <p>Passive Sourcing ergänzt unseren Executive Search Prozess</p>
-                </div>
-            </div>
+        <?php endforeach ?>
         </div>
     </section>
     <section class="main-content">
@@ -80,8 +44,8 @@
                 <div class="description">
                     <?php echo $page->expertise_description ?>
                 </div>
-                <?php if(isset($page->jobs)) : ?>
-                <div class="current-vacancies">
+                <?php if(isset($page->jobs) && $page->jobs->count()) : ?>
+                <div class="current-vacancies" id="learn-more">
                     <h2><?php echo \ProcessWire\__("Unsere aktuellen Stellenangebote"); ?></h2>
                     <div class="recommended-jobs"> 
                         <?php foreach($page->jobs as $job) : ?>
@@ -104,7 +68,7 @@
                                     </div>
                                 </div>
                                 <div class="go-to-job">
-                                    <a href="<?php echo $job->link_url ?>" class="btn btn-link ">
+                                    <a href="<?php echo $lang_url.$job->link_url ?>" class="btn btn-link ">
                                         <ion-icon name="ios-arrow-dropright-circle"></ion-icon>
                                     </a>
                                 </div>
@@ -113,14 +77,18 @@
                     </div>
                 </div>
                 <?php endif ?>
-                <?php if(isset($page->learn_more_title)) : ?>
+                <?php $expertise_l2 = $pages->find("parent=$page->url, template=expertise-level-2"); ?>
+                <?php if(isset($page->learn_more_title) && $page->learn_more_title != '' &&  $expertise_l2->count() ) : ?>
                 <div class="learn-more" id="learn-more">
                     <h2><?php echo $page->learn_more_title ?></h2>
                     <div class="row">
-                        <?php foreach($page->sub_expertise as $item) : ?>
-                            <div class="col-lg-4 sub-expertise-item">
-                                <a class="btn btn-grey" href="<?php echo $item->link_url ?>">
-                                    <?php echo $item->title ?>
+                        <?php foreach($expertise_l2 as $item) : ?>
+                            <div class="col-lg-4 col-md-6 col-sm-12 sub-expertise-item">
+                                <a class="btn btn-grey" href="<?php echo $lang_url.$item->url ?>">
+                                    <?php 
+                                        $item->title = str_replace('PALTRON | ', '', $item->title);
+                                        echo $item->title; 
+                                    ?>
                                 </a>
                             </div>
                         <?php endforeach ?>
@@ -135,132 +103,38 @@
                 <div class="expertise">
                     <h3><?php echo \ProcessWire\__("Expertise"); ?></h3>
                     <ul class="expertise-list">
-                        <li>
-                            <a href="/expertise/blockchain" title="Blockchain"><?php echo \ProcessWire\__("Blockchain"); ?></a>
-                        </li>
-
-                        <li>
-                            <a href="/expertise/cloud" title="Cloud"><?php echo \ProcessWire\__("Cloud"); ?></a>
-                        </li>
-
-                        <li>
-                            <a href="/expertise/cyber-security" title="Cyber Security"><?php echo \ProcessWire\__("Cyber Security"); ?></a>
-                        </li>
-
-                        <li>
-                            <a href="/expertise/data-science" title="Data Science"><?php echo \ProcessWire\__("Data Science"); ?></a>
-                        </li>
-
-                        <li>
-                            <a href="/expertise/energy-tech" title="Energy Tech"><?php echo \ProcessWire\__("Energy-Tech"); ?></a>
-                        </li>
-
-                        <li>
-                            <a href="/expertise/erp" title="ERP"><?php echo \ProcessWire\__("ERP"); ?></a>
-                        </li>
-
-                        <li>
-                            <a href="/expertise/geospatial-tech" title="Geospatial-Tech"><?php echo \ProcessWire\__("Geospatial-Tech"); ?></a>
-                        </li>
-
-                        <li>
-                            <a href="/expertise/immersive-media" title="Immersive Media">Immersive Media</a>
-                        </li>
-
-                        <li>
-                            <a href="/expertise/it-architektur" title="IT-Architektur">IT-Architektur</a>
-                        </li>
-
-                        <li>
-                            <a href="/expertise/it-consulting" title="IT-Consulting">IT-Consulting</a>
-                        </li>
-
-                        <li>
-                            <a href="/expertise/it-infrastruktur" title="IT-Infrastruktur">IT-Infrastruktur</a>
-                        </li>
-
-                        <li>
-                            <a href="/expertise/it-leadership" title="IT-Leadership">IT-Leadership</a>
-                        </li>
-                        
-                        <li>
-                            <a href="/expertise/internet-of-things" title="Internet of Things">Internet of Things</a>
-                        </li>
-                        
-                        <li>
-                            <a href="/expertise/maschine-learning" title="Maschine Learning">Maschine Learning</a>
-                        </li>
-                        
-                        <li>
-                            <a href="/expertise/mobile-internet" title="Mobile Internet">Mobile Internet</a>
-                        </li>
-                        
-                        <li>
-                            <a href="/expertise/mobile-technologies" title="Mobile Technologies">Mobile Technologies</a>
-                        </li>
-                        
-                        <li>
-                            <a href="/expertise/robots" title="Robots">Robots</a>
-                        </li>
+                        <!-- expertise level1 list here -->
+                        <?php
+                            $expertise_l1_list = $pages->find("parent=/expertise/, template=expertise-level-1");
+                            foreach($expertise_l1_list as $expertise_l1) {
+                                $expertise_l1->title = str_replace('PALTRON | ', '', $expertise_l1->title);
+                                echo '<li>';
+                                echo '<a href="'.$expertise_l1->url.'" title="'.$expertise_l1->title.'">'.$expertise_l1->title.'</a>';
+                                echo '</li>';
+                            }
+                        ?>
                     </ul>
-                </div>
-                <div class="testimonials">
-                    <h3><?php echo \ProcessWire\__("Testimonials"); ?></h3>
-                    <div class="testimonial">
-                        <div class="image">
-                            <img src="<?php echo $td.'images/josef.jpg' ?>" alt="josef" >
-                            <div class="title">
-                                <span><?php echo \ProcessWire\__("Sed ut Perspiciatis"); ?></span>
-                                <p><?php echo \ProcessWire\__("Doloremque Laudantium"); ?></p>
-                                <img class="logo-image" src="<?php echo $td.'images/logo-paltron.svg' ?>" alt="logo" >
-                            </div>
-                        </div>
-                        <div class="description">
-                            <p>
-                                <?php echo \ProcessWire\__("Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium  oloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. "); ?>
-                            </p>
-                        </div>
-                    </div>
                 </div>
                 <div class="news-feed">
                     <h3><?php echo \ProcessWire\__("News Feed"); ?></h3>
+                    <!-- four recent news -->
+                    <?php
+                        $news_feed = $pages->get("/news-feed/");
+                        $news_list = $pages->find("parent=/news-feed/, template=news, sort=-date, limit=4, title|header_title|header_description|content_text|news_summary%=$q");
+                    ?>
                     <div class="news-feed-list">
+                        <?php foreach($news_list as $news) : ?>
                         <div class="news-feed-item">
-                            <img src="<?php echo $td.'images/news/news1.jpg' ?>" alt="news-feed" >
-                            <div class="description">
-                                <p>
-                                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem 
-                                    <a href="">[...]</a>
-                                </p>
-                            </div>
+                            <a href="<?php echo $lang_url ;?>/news-feed/<?php echo $news->name; ?>">
+                                <img src="<?php echo $news->list_image->url; ?>" alt="<?php echo $news->title ?>" >
+                                <div class="description">
+                                    <p>
+                                        <?php echo $news->news_summary; ?>
+                                    </p>
+                                </div>
+                            </a>
                         </div>
-                        <div class="news-feed-item">
-                            <img src="<?php echo $td.'images/news/news2.jpg' ?>" alt="news-feed" >
-                            <div class="description">
-                                <p>
-                                    magni dolores eos qui ratione voluptatem sequi nesciunt. 
-                                    <a href="">[...]</a>
-                                </p>
-                            </div>
-                        </div>
-                        <div class="news-feed-item">
-                            <img src="<?php echo $td.'images/news/news3.jpg' ?>" alt="news-feed" >
-                            <div class="description">
-                                <p>
-                                    Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, 
-                                    <a href="">[...]</a>
-                                </p>
-                            </div>
-                        </div>
-                        <div class="news-feed-item">
-                            <img src="<?php echo $td.'images/news/news1.jpg' ?>" alt="news-feed" >
-                            <div class="description">
-                                <p>
-                                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem  
-                                    <a href="">[...]</a>
-                                </p>
-                            </div>
-                        </div>
+                        <?php endforeach ?>
                     </div>
                 </div>
             </div>
@@ -268,7 +142,16 @@
         <div class="contact-people" id="contact-people">
             <h2><?php echo \ProcessWire\__("Ihre Ansprechpartner"); ?></h2>
             <div class="row">
+            <?php foreach($page->contact_people as $item) : ?>
                 <div class="col-lg-4 contact-person">
+                    <img src="<?php echo $item->contact_image->url; ?>" alt="<?php echo $item->contact_name; ?>" >
+                    <h3><?php echo $item->contact_name; ?></h3>
+                    <p><?php echo $item->contact_role; ?></p>
+                    <p><?php echo $item->contact_email; ?></p>
+                    <p>+49 (0) 40 180 241 180</p>
+                </div>
+            <?php endforeach ?>
+                <!-- <div class="col-lg-4 contact-person">
                     <img src="<?php echo $td.'images/josef.jpg' ?>" alt="Josef Gunthner" >
                     <h3>Josef Günthner</h3>
                     <p>Co-founder & Managing Director</p>
@@ -283,21 +166,21 @@
                     <p>+49 (0) 40 180 241 180</p>
                 </div>
                 <div class="col-lg-4 contact-person">
-                    <img src="<?php echo $td.'images/josef2.jpg' ?>" alt="Josef Gunthner" >
-                    <h3>Günthner</h3>
-                    <p>Managing Director</p>
+                    <img src="<?php echo $td.'images/verena.jpg' ?>" alt="Verena Netscher" >
+                    <h3>Verena Netscher</h3>
+                    <p>Director</p>
                     <p>contact@paltron.com</p>
                     <p>+49 (0) 40 180 241 180</p>
-                </div>
+                </div> -->
             </div>
         </div>
-        <div class="contact">
+        <div class="contact" id="contact">
             <h2><?php echo \ProcessWire\__("Kontakt"); ?></h2>
             <p><?php echo \ProcessWire\__("Sie würden gerne in Kontakt mit uns treten? Füllen Sie einfach das Kontaktformular aus oder schreiben uns eine E-Mail. Wir melden uns innerhalb der nächsten Stunde bei Ihnen! Alternativ rufen Sie gerne an oder starten einen Chat mit unseren Mitarbeitern!"); ?></p>
             <div class="contact-method">
                 <div class="email">
                     <span class="red"><ion-icon name="mail"></ion-icon>E-Mail: </span>
-                    <span>contact@paltron.com</span>
+                    <span><a href="mailto:contact@paltron.com">contact@paltron.com</a></span>
                 </div>
                 <div class="telephone">
                     <span class="red"><ion-icon name="call"></ion-icon><?php echo \ProcessWire\__("Telefon: "); ?></span>
@@ -307,53 +190,54 @@
             <div class="contact-form">
                 <h3><?php echo \ProcessWire\__("Kontaktformular"); ?></h3>
                 <?php 
-                $captcha = $modules->get("MarkupGoogleRecaptcha");
-                $out = '';
-                if ($captcha->verifyResponse() === true) {
-                    $out .= "Thank you!";
-                } 
-                else {
-                    $out .= '<form id="contact-form">';
-                    $out .= '<div class="form-group">';
-                    $out .= '<input type="text" name="first-given-name" id="first-given-name" placeholder="'. \ProcessWire\__("Vorname") .'" >';
-                    $out .= '</div>';
+                    // $captcha = $modules->get("MarkupGoogleRecaptcha");
+                    // $out = '';
+                    // if ($captcha->verifyResponse() === true) {
+                    //     $out .= 'Thank you!';
+                    // } 
+                    // else {
+                        $out .= '<form id="contact-form2" method="post" action="" data-ga-event="form-submit">';
+                        $out .= '<div id="alert" role="alert"></div>';
+                        $out .= '<div class="form-group">';
+                        $out .= '<input type="text" name="first_given_name" id="first_given_name" placeholder="'. \ProcessWire\__("Vorname") .'" required >';
+                        $out .= '</div>';
 
-                    $out .= '<div class="form-group">';
-                    $out .= '<input type="text" name="surname" id="surname" placeholder="'. \ProcessWire\__("Nachname") .'" >';
-                    $out .= '</div>';
-                    
-                    $out .= '<div class="form-group">';
-                    $out .= '<input type="text" name="telephone-number" id="telephone-number" placeholder="'. \ProcessWire\__("Telefonnummer") .'" >';
-                    $out .= '</div>';
-                    
-                    $out .= '<div class="form-group">';
-                    $out .= '<input type="text" name="email" id="email" placeholder="'. \ProcessWire\__("E-mail") .'" >';
-                    $out .= '</div>';
-                    
-                    $out .= '<div class="form-group">';
-                    $out .= '<textarea name="message" id="message" placeholder="'. \ProcessWire\__("Nachricht") .'" ></textarea>';
-                    $out .= '</div>';
+                        $out .= '<div class="form-group">';
+                        $out .= '<input type="text" name="surname" id="surname" placeholder="'. \ProcessWire\__("Nachname") .'" required >';
+                        $out .= '</div>';
+                        
+                        $out .= '<div class="form-group">';
+                        $out .= '<input type="number" name="telephone_number" id="telephone_number" placeholder="'. \ProcessWire\__("Telefonnummer") .'" required >';
+                        $out .= '</div>';
+                        
+                        $out .= '<div class="form-group">';
+                        $out .= '<input type="email" name="email" id="email" placeholder="'. \ProcessWire\__("E-mail") .'" required >';
+                        $out .= '</div>';
+                        
+                        $out .= '<div class="form-group">';
+                        $out .= '<textarea name="message" id="message" placeholder="'. \ProcessWire\__("Nachricht") .'" ></textarea>';
+                        $out .= '</div>';
 
-                    $out .= '<div class="confirm-group">';
-                    $out .= '<div class="terms-conditions">';
-                    $out .= '<input type="checkbox" name="terms-conditions" >';
-                    $out .= '<label for="terms-conditions">'. \ProcessWire\__("Ich erkläre mich mit den AGBs von PALTRON einverstanden.").'</label>';
-                    $out .= '</div>';
+                        $out .= '<div class="confirm-group">';
+                        $out .= '<div class="terms-conditions">';
+                        $out .= '<input type="checkbox" name="terms-conditions" required >';
+                        $out .= '<label for="terms-conditions">'. \ProcessWire\__("Ich erkläre mich mit den AGBs von PALTRON einverstanden.").'</label>';
+                        $out .= '</div>';
 
-                    $out .= '<div class="recaptcha">';
-                    $out .= '<label>CAPTCHA</label>';
-                    $out .= $captcha->render();
-                    $out .= '</div>';
+                        // $out .= '<div class="recaptcha">';
+                        // $out .= '<label>CAPTCHA</label>';
+                        // $out .= $captcha->render();
+                        // $out .= '</div>';
 
-                    $out .= '</div>';
+                        $out .= '</div>';
 
-                    $out .= '<div class="button-group">';
-                    $out .= '<input class="btn btn-primary" type="submit" name="send_form" value="'. \ProcessWire\__('Absenden').'">';
-                    $out .= '</div>';
-                    $out .= '</form>';
-                    $out .= $captcha->getScript();
-                }
-                echo $out;
+                        $out .= '<div class="button-group">';
+                        $out .= '<input class="btn btn-primary" type="submit" name="send_form" value="'. \ProcessWire\__('Absenden').'">';
+                        $out .= '</div>';
+                        $out .= '</form>';
+                    //     $out .= $captcha->getScript();
+                    // }
+                    echo $out;
                 ?>
             </div>
         </div>

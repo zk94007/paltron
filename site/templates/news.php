@@ -12,7 +12,7 @@ include("./includes/head.inc");
         <div class="container">
             <div class="col-lg-4 col-md-6 col-sm-12 header-wrapper">
                 <div class="header-title">
-                    <?php echo $page->header_title ?>
+                    <h1><?php echo $page->header_title; ?></h1>
                 </div>
                 <div class="header-description">
                     <?php echo $page->header_description ?>
@@ -21,9 +21,14 @@ include("./includes/head.inc");
         </div>
     </section>
     <section class="news-post-info">
-        <p><?php echo $page->author; ?></p>
+        <p>
+            <?php echo  $page->author->last()->title; ?>
+        </p>
         <p><?php echo $page->date; ?></p>
-        <?php include("./includes/social-links.inc");  ?>
+        <?php // include("./includes/social-links.inc");  ?>
+        <div class="social-links">
+            <div class="sharethis-inline-share-buttons"></div>
+        </div>
     </section>
     <section class="news-content">
         <div class="row">
@@ -33,10 +38,11 @@ include("./includes/head.inc");
                 </div>
                 <div class="col-lg-6 col-md-9 col-sm-12 share-news">
                     <p><?php echo __("Wenn Ihnen unser Beitrag gefallen hat, freuen wir uns,wenn Sie diesen weiterempfehlen!"); ?></p>
-                    <?php include("./includes/social-links.inc");  ?>
+                    <?php // include("./includes/social-links.inc");  ?>
+                    <div class="sharethis-inline-share-buttons"></div>
                     <div class="button-group">
                         <a class="col-lg-12 btn btn-primary" href="javascript: window.history.back();">
-                            <?php echo __("Zuruck zur Ubersicht"); ?>
+                            <?php echo __("Zurück zur Übersicht"); ?>
                             <ion-icon name="ios-arrow-forward"></ion-icon>
                         </a>
                     </div>
@@ -44,8 +50,8 @@ include("./includes/head.inc");
             </diV>
             <div class="col-lg-3 col-md-12 contact-info">
                 <h3><?php echo __("Ansprechpartner") ?></h3>
-                <p>Daniel Stojanovic</p>
-                <p>Partner</p>
+                <p>Josef Günthner</p>
+                <p>Co-founder & Managing Director</p>
                 <div class="contact-method">
                     <p><ion-icon name="call"></ion-icon> +49 (0) 40 180 241 180</p>
                     <p><ion-icon name="mail"></ion-icon> contact@paltron.com</p>
@@ -54,7 +60,7 @@ include("./includes/head.inc");
         </div>
     </section>
 
-    <?php include("./includes/related_new.inc"); ?>
+    <?php  include("./includes/recent_news.inc");  ?>
 </main>
 <?php
 include("./includes/foot.inc");

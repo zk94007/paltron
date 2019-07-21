@@ -21,7 +21,7 @@
  *
  */
 
-class InputfieldMapMarker extends \ProcessWire\Inputfield {
+class InputfieldMapMarker extends Inputfield {
 
 	public static function getModuleInfo() {
 		return array(
@@ -40,7 +40,7 @@ class InputfieldMapMarker extends \ProcessWire\Inputfield {
 	 *
 	 */
 	public function __construct() {
- require_once(\ProcessWire\wire('files')->compile(dirname(\ProcessWire\wire("config")->paths->root . 'site/modules/FieldtypeMapMarker/InputfieldMapMarker.module') . '/MapMarker.php',array('includes'=>true,'namespace'=>true,'modules'=>false,'skipIfNamespace'=>false))); 
+		require_once(dirname(__FILE__) . '/MapMarker.php'); 
 		$this->set('defaultAddr', self::defaultAddr); 
 		$this->set('defaultZoom', 12); 
 		$this->set('defaultType', 'HYBRID');  
@@ -65,7 +65,7 @@ class InputfieldMapMarker extends \ProcessWire\Inputfield {
 	public function setAttribute($key, $value) {
 
 		if($key == 'value' && !$value instanceof MapMarker && !is_null($value)) {
-			throw new \ProcessWire\WireException("This input only accepts a MapMarker for it's value"); 
+			throw new WireException("This input only accepts a MapMarker for it's value"); 
 		}
 
 		return parent::setAttribute($key, $value); 
@@ -75,7 +75,7 @@ class InputfieldMapMarker extends \ProcessWire\Inputfield {
 		return (!$this->value || ((float) $this->value->lat) === 0.0); 
 	}
 	
-	public function renderReady(\ProcessWire\Inputfield $parent = null, $renderValueMode = false) {
+	public function renderReady(Inputfield $parent = null, $renderValueMode = false) {
 		$url = 'https://maps.google.com/maps/api/js';
 		$key = $this->get('googleApiKey');
 		if($key) $url .= "?key=$key";
@@ -172,7 +172,7 @@ _OUT;
 			if($this->wire('user')->isSuperuser()) {
 				$link = "<a href='{$this->config->urls->admin}module/edit?name=FieldtypeMapMarker'>";
 				$msg = "$link$msg</a>";
-				$this->warning($msg, \ProcessWire\Notice::allowMarkup);
+				$this->warning($msg, Notice::allowMarkup);
 			} else {
 				$this->warning($msg);
 			}
@@ -188,7 +188,7 @@ _OUT;
 	 * @return $this
 	 *
 	 */
-	public function ___processInput(\ProcessWire\WireInputData $input) {
+	public function ___processInput(WireInputData $input) {
 
 		$name = $this->attr('name'); 
 		$marker = $this->attr('value');
@@ -211,7 +211,7 @@ _OUT;
 			$marker->set('lat', $lat); 
 			$marker->set('lng', $lng); 
 		} else {
-			// $this->message("Kept lat/lng at unset value", \ProcessWire\Notice::debug); 
+			// $this->message("Kept lat/lng at unset value", Notice::debug); 
 		}
 
 		$zoom = $input["_{$name}_zoom"]; 
@@ -231,7 +231,7 @@ _OUT;
 			if($input["_{$name}_js_geocode_address"] == $marker->address) {
 				// prevent the geocoder from running in the fieldtype
 				$marker->skipGeocode = true; 
-				$this->message('Skipping geocode (already done by JS geocoder)', \ProcessWire\Notice::debug); 
+				$this->message('Skipping geocode (already done by JS geocoder)', Notice::debug); 
 			} else {
 				$marker->geocode();
 			}

@@ -12,7 +12,7 @@ include("./includes/head.inc");
         <div class="container">
             <div class="header-wrapper">
                 <div class="header-title">
-                    <?php echo $page->header_title ?>
+                    <h1><?php echo $page->header_title ?></h1>
                 </div>
                 <div class="row job-classify-content">
                     <?php foreach($page->job_classify_item as $item) : ?>
@@ -27,9 +27,7 @@ include("./includes/head.inc");
     </section>
     <section class="job-application">
         <div class="description">
-            <h2><?php echo __("Hier gehts zu deiner Initiativbewerbung"); ?></h2>
-            <p><?php echo __("Hier treten Sie unserem Unternehmensnetzwerk bei und wir kommen bei passenden Angeboten auf Sie zu. Natürlich ist dieser Service für Sie kostenfrei. "); ?></p>
-            <p><?php echo __("Um Ihnen das Ausfüllen zu erleichtern können Sie auch auf die Autofill-Funktion via Xing oder LinkedIn nutzen."); ?></p>
+            <?php echo $page->content_text; ?>
         </div>
         <div class="button-group">
             <a class="btn btn-green" href="">
@@ -50,41 +48,46 @@ include("./includes/head.inc");
                     <div class="content">
                         <div class="form-group">
                             <label for="salutation"><?php echo __("Anrede *"); ?></label>
-                            <select type="text" name="salutation" >
+                            <select type="text" name="salutation" required >
                                 <option val="">-</option>
+                                <option val=""><?php echo __("Herr"); ?></option>
+                                <option val=""><?php echo __("Frau"); ?></option>
                             </select>
                         </div>
                         <div class="form-group">
                             <label for="gender"><?php echo __("Geschlecht *"); ?></label>
-                            <select type="text" name="gender" >
+                            <select type="text" name="gender" required >
                                 <option val="">-</option>
+                                <option val=""><?php echo __("männlich"); ?></option>
+                                <option val=""><?php echo __("weiblich"); ?></option>
+                                <option val=""><?php echo __("divers"); ?></option>
                             </select>
                         </div>
                         <div class="form-group">
                             <label for="first-given-name"><?php echo __("Vorname *"); ?></label>
-                            <input type="text" name="first-given-name" >
+                            <input type="text" name="first-given-name" id="first-given-name" required >
                         </div>
                         <div class="form-group">
                             <label for="surname"><?php echo __("Nachname *"); ?></label>
-                            <input type="text" name="surname" >
+                            <input type="text" name="surname" id="surname" required >
                         </div>
                         <div class="form-group">
                             <label for="email-address"><?php echo __("Email-Adresse *"); ?></label>
-                            <input type="text" name="email-address" >
+                            <input type="text" name="email-address" id="email-address" required >
                         </div>
                         <div class="form-group">
                             <label for="phone-number"><?php echo __("Telefonnummer"); ?></label>
-                            <input type="text" name="phone-number" >
+                            <input type="number" name="phone-number" id="phone-number" >
                         </div>
                         <div class="form-group">
-                            <label for="street-and-house-number"><?php echo __("Straße und hausnummer"); ?></label>
-                            <input type="text" name="street-and-house-number" >
+                            <label for="street-and-house-number"><?php echo __("Straße und Hausnummer"); ?></label>
+                            <input type="text" name="street-and-house-number" id="street-and-house-number" >
                         </div>
                         <div class="form-group">
-                            <label><?php echo __("Telefonnummer"); ?></label>
+                            <label><?php echo __("Mobilnummer"); ?></label>
                             <div class="phone-number-group">
-                                <input type="text" name="country-number" class="country-number" >
-                                <input type="text" name="phone-number" class="phone-number" >
+                                <input type="number" name="country-number" id="country-number" class="country-number" >
+                                <input type="number" name="phone-number" id="phone-number" class="phone-number" >
                             </div>
                         </div>
                     </div>
@@ -95,8 +98,28 @@ include("./includes/head.inc");
                     </div>
                     <div class="content">
                         <div class="form-group">
-                            <label for="cv"><?php echo __("Lebenslauf"); ?></label>
-                            <input type="text" name="cv" >
+                            <div class="left-side">
+                                <label for="cv"><?php echo __("Lebenslauf"); ?></label>
+                                <div class="file-upload-input">
+                                    <a class="btn btn-attached" id="choose-files"><?php echo __("Choose Files"); ?></a>
+                                    <input type="text" class="upload-files" name="uploaded-files" id="uploaded-files" placeholder="No file chosen" disabled >
+                                    <input type="file" class="cv-upload" name="cv-upload" id="cv-upload" onchange="handleFiles(this.files)" multiple >
+                                </div>
+                            </div>
+                            <div class="right-side">
+                                <a class="btn btn-outline" id="file-from-selector">
+                                    <ion-icon name="cloud-upload"></ion-icon>
+                                    <?php echo __("Datei auswählen von"); ?>
+                                    <i class="fa fa-caret-down" aria-hidden="true"></i>
+                                </a>
+                                <ul class="file-from" id="file-from">
+                                    <li>Storage</li>
+                                    <li>Cloud</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <a class="btn btn-outline" href=""><ion-icon name="add"></ion-icon><?php echo __("Weitere Dokumente hinzufügen"); ?></a>
                         </div>
                     </div>
                 </div>
@@ -105,14 +128,14 @@ include("./includes/head.inc");
                         <h3><?php echo __("Karrierewünsche"); ?></h3>
                     </div>
                     <div class="form-group">
-                        <label for="cv"><?php echo __("Lebenslauf"); ?></label>
+                        <label><?php echo __("Bitte erzählen Sie uns, nach welcher Art von Job Sie suchen (max. 500 Wörter)"); ?></label>
                         <textarea ></textarea>
                     </div>
                 </div>
                 <div class="confirm-policy">
                     <div>
                         <input type="checkbox" id="confirm-policy" name="confirm-policy">
-                        <label for="confirm-policy"><?php echo __("Ich habe die Datenschutzinformation gelesen."); ?></label>
+                        <label for="confirm-policy" required ><?php echo __("Ich habe die Datenschutzinformation gelesen."); ?></label>
                     </div>
                     <p><?php echo __("* bedeutet, dass dieses Feld ein Pflichtfeld ist."); ?></p>
                 </div>

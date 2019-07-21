@@ -5,13 +5,13 @@
  *
  */
 
- include(\ProcessWire\wire('files')->compile(\ProcessWire\wire("config")->paths->root . "site/templates/includes/head.inc",array('includes'=>true,'namespace'=>true,'modules'=>true,'skipIfNamespace'=>true))); 
+include("./includes/head.inc"); 
 ?>
 <main class="about-us">
     <section class="about-us-header" id="about-us-header">
         <div class="container">
             <div class="header-title">
-                <?php echo $page->header_title ?>
+                <h1><?php echo $page->header_title; ?></h1>
             </div>
             <div class="header-description">
                 <?php echo $page->header_description ?>
@@ -33,7 +33,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-md-12 content-text">
-                    <h2><?php echo \ProcessWire\__("Unsere Erfolgsgeschichte") ?></h2>
+                    <h2><?php echo __("Unsere Erfolgsgeschichte") ?></h2>
                     <?php echo $page->success_story ?>
                 </div>
                 <div class="col-lg-3 offset-lg-1 col-md-12 image-list">
@@ -55,7 +55,7 @@
     </section>
     <section class="status-quo">
         <div class="container">
-            <h2><?php echo \ProcessWire\__("Status Quo") ?></h2>
+            <h2><?php echo __("Status Quo"); ?></h2>
             <div class="row">
                 <?php foreach($page->status_quo as $status) : ?>
                     <div class="col-lg-3 col-md-6 col-sm-12 status-item">
@@ -67,8 +67,13 @@
         </div>
     </section>
     
-    <?php include(\ProcessWire\wire('files')->compile(\ProcessWire\wire("config")->paths->root . "site/templates/includes/related_news.inc",array('includes'=>true,'namespace'=>true,'modules'=>true,'skipIfNamespace'=>true))); ?>
-
+    <div class="recent-news">
+        <div class="container">
+            <h2><?php echo __("PALTRON News"); ?></h2>
+            <?php include("./includes/recent_news.inc"); ?>
+        </div>
+        
+    </div>
 </main>
 <?php
- include(\ProcessWire\wire('files')->compile(\ProcessWire\wire("config")->paths->root . "site/templates/includes/foot.inc",array('includes'=>true,'namespace'=>true,'modules'=>true,'skipIfNamespace'=>true)));
+include("./includes/foot.inc");

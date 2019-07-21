@@ -2,42 +2,45 @@
     <section class="contact" id="contact">
         <div class="container">
             <div class="contact-wrapper">
-                <h1><?php echo __('Wie können wir Sie am besten unterstützen?'); ?></h1>
+                <h3><?php echo $page->contact_subject; ?></h3>
                 <hr class="short-divider">
-                <form action="" class="contact-form">
+                <div id="alert" role="alert"></div>
+                <form action="" method="post" class="contact-form" name="contact" id="contact-form" data-ga-event="form-submit">
                     <div class="form-group">
                         <label class="form-label" for="name">Name</label>
-                        <input class="form-input" id="name" name="name" type="text">
+                        <input class="form-input" id="name" name="name" type="text" placeholder="Name" required>
                     </div>
                     <div class="form-group">
                         <label class="form-label" for="email">Email</label>
-                        <input class="form-input" id="email" name="email" type="email">
+                        <input class="form-input" id="email" name="email" type="email" placeholder="someone@abc.com" required>
                     </div>
                     <div class="form-group">
                         <label class="form-label" for="phone"><?php echo __('Telefon'); ?></label>
-                        <input class="form-input" id="phone" name="phone" type="text">
+                        <input class="form-input" id="phone" name="phone" type="number" placeholder="(1)23 456 789" required>
                     </div>
                     <div class="form-group">
                         <label class="form-label float-left" for="message"><?php echo __('Ihre Nachricht'); ?></label><span class="optional">optional</span>
-                        <textarea class="form-input" name="message" id="message"></textarea>
+                        <textarea class="form-input" name="message" id="message" placeholder="<?php echo __('Ihre Nachricht'); ?>" ></textarea>
                     </div>
                     <div class="button-group">
-                        <input class="btn btn-primary" type="button" name="send_form" value="<?php echo __('Absenden'); ?>">
+                        <input class="btn btn-primary" type="submit" name="send_form" value="<?php echo __('Absenden'); ?>">
                     </div>
                 </form>
             </div>
             <div class="contact-person">
-                <img class="contact-person-image" src="<?php echo $config->urls->templates?>images/gf-josef-guenthner.jpg" alt="">
+                <div class="image">
+                    <img class="contact-person-image" src="<?php echo $page->contact_image->url; ?>" alt="contact person image">
+                </div>
                 <div class="info">
                     <strong><?php echo __('Ihr Ansprechpartner'); ?></strong>
-                    <p>Josef Günthner</p>
+                    <p><?php echo $page->contact_name; ?></p>
                     <p>
-                        <?php echo __('Geschäftsführer'); ?><br />
-                        <span><ion-icon name="call"></ion-icon> 040 180 241 180</span><br />
-                        <span>partners@paltron.com</span><br />
+                        <?php echo $page->contact_role; ?><br />
+                        <span><ion-icon name="call"></ion-icon> <?php echo $page->contact_phone; ?></span><br />
+                        <span><a href="mailto:contact@paltron.com"><?php echo $page->contact_email; ?></a></span><br />
                     </p>
                 </div>
             </div>
         </div>
-    </section>  
+    </section>
 </div>

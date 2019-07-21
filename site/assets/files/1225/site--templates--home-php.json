@@ -1,5 +1,27 @@
 {
-    "file": "site\\templates\\home.php",
+    "file": "site\/templates\/home.php",
     "textdomain": "site--templates--home-php",
-    "translations": []
+    "translations": {
+        "6e66fd8b9f373e2a3263074e051077ed": {
+            "text": "Show jobs"
+        },
+        "7128184bc844ad088b76d329994e7428": {
+            "text": "Register now"
+        },
+        "1753b894ce986dc7369790b95d8303e6": {
+            "text": "Let us know how we can <br>support you best."
+        },
+        "f94ba3530f34b65318d7c2fb576aa10b": {
+            "text": "Our expertise"
+        },
+        "607ee5eba9414d08cf91e6ed3428a8bb": {
+            "text": "We help you build up a digital advantage"
+        },
+        "df7b1b11dee72be95b9f58e395ec78a8": {
+            "text": "How can we support you?"
+        },
+        "ecc5db47ad77efe9bbc606ecaa5c4d54": {
+            "text": "This is how we find your employees"
+        }
+    }
 }

@@ -11,7 +11,7 @@ include("./includes/head.inc");
     <section class="about-us-header" id="about-us-header">
         <div class="container">
             <div class="header-title">
-                <?php echo $page->header_title ?>
+                <h1><?php echo $page->header_title; ?></h1>
             </div>
             <div class="header-description">
                 <?php echo $page->header_description ?>
@@ -55,7 +55,7 @@ include("./includes/head.inc");
     </section>
     <section class="status-quo">
         <div class="container">
-            <h2><?php echo __("Status Quo") ?></h2>
+            <h2><?php echo __("Status Quo"); ?></h2>
             <div class="row">
                 <?php foreach($page->status_quo as $status) : ?>
                     <div class="col-lg-3 col-md-6 col-sm-12 status-item">
@@ -67,8 +67,13 @@ include("./includes/head.inc");
         </div>
     </section>
     
-    <?php include("./includes/related_news.inc"); ?>
-
+    <div class="recent-news">
+        <div class="container">
+            <h2><?php echo __("PALTRON News"); ?></h2>
+            <?php include("./includes/recent_news.inc"); ?>
+        </div>
+        
+    </div>
 </main>
 <?php
 include("./includes/foot.inc");

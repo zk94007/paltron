@@ -1,0 +1,7 @@
+2019-07-03 15:32:43	admin	http://staging.paltron.com/send-mail/	Error in hnsmtp::send : cannot connect to smtp-server!
+2019-07-03 15:34:05	admin	http://staging.paltron.com/send-mail/	Error in hnsmtp::send : cannot connect to smtp-server!
+2019-07-03 15:45:58	admin	http://staging.paltron.com/send-mail/	Error in hnsmtp::send : cannot connect to smtp-server!
+2019-07-03 18:43:28	admin	http://staging.paltron.com/send-mail/	Error in hnsmtp::send : cannot connect to smtp-server!
+2019-07-03 20:37:54	admin	http://staging.paltron.com/send-mail/	Error in hnsmtp::send : cannot connect to smtp-server!
+2019-07-11 16:51:10	admin	http://localhost/send-mail/	Error in hnsmtp::send : cannot connect to smtp-server!
+2019-07-11 16:51:55	admin	http://localhost/send-mail/	Error in hnsmtp::send : cannot connect to smtp-server!

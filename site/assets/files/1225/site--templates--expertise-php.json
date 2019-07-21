@@ -1,5 +1,69 @@
 {
-    "file": "site\\templates\\expertise.php",
+    "file": "site\/templates\/expertise.php",
     "textdomain": "site--templates--expertise-php",
-    "translations": []
+    "translations": {
+        "92316d41c56daf9140fc04509aecaaca": {
+            "text": "Contact"
+        },
+        "20d3c1201f09714d650dda006db22596": {
+            "text": "Your contact persons"
+        },
+        "6d3468ff047b56bc2997de4fb26095cc": {
+            "text": "Your Benefits With PALTRON"
+        },
+        "f37da64c8812dbd7de35be5c198cda88": {
+            "text": "Algorithmized multi channel search guarantees perfectly fitting candidates"
+        },
+        "9e5a489dd4ef8fae4a3fc0ff6012f479": {
+            "text": "Software-Supported Evaluation Process with Two-Step Interviews"
+        },
+        "9d76f0ba96ea26433509ff279b89cae2": {
+            "text": "A network with more than 450,000 digital and IT experts"
+        },
+        "677a20687efeaed260ff8c015746a7f0": {
+            "text": "Using over 60 channels"
+        },
+        "bffdbf1a046eac9bfb56fdf3fabc7729": {
+            "text": "Detailed real-time market analysis through machine learning"
+        },
+        "3373ac4d0498690f4f2cd6224871047d": {
+            "text": "Passive sourcing compliments our executive search process"
+        },
+        "26299cb395dccbf8cf05579ef239c365": {
+            "text": "Our current job offerings"
+        },
+        "d2f96aba47038fb922c5fea35fe4b23d": {
+            "text": "News feed"
+        },
+        "4421cc8dbfb7598c590183f7ad3b46ae": {
+            "text": "Would you like to contact us? Simply fill out the contact form or send us an e-mail. We will get back to you within the next hour! Alternatively you can call us or start a chat with our employees!"
+        },
+        "d024762d2e648e44433b873a527ff003": {
+            "text": "Phone:"
+        },
+        "7efaebc4bb56d2f2b82d2fee774409ac": {
+            "text": "Contact form"
+        },
+        "fecc7b92efa313ac8de08d4094455c9e": {
+            "text": "First name"
+        },
+        "43895f9ec69cb177446921df9828c680": {
+            "text": "Last name"
+        },
+        "ff3c1f3348a08407e43c1ef54ffbab4e": {
+            "text": "Phone number"
+        },
+        "1e884e3078d9978e216a027ecd57fb34": {
+            "text": "E-mail"
+        },
+        "d87d49ade9a44cfe4e05485dd581d4e4": {
+            "text": "Message"
+        },
+        "d7774f58ad3f20ec7575ab8a8881c8bb": {
+            "text": "I agree with the terms and conditions of PALTRON."
+        },
+        "835fa50f2ec0534ff436a484bf001db5": {
+            "text": "Send"
+        }
+    }
 }

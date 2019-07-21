@@ -17,12 +17,12 @@
  *
  */
 
-class InputfieldStarRating extends \ProcessWire\Inputfield {
+class InputfieldStarRating extends Inputfield {
 
   public static function getModuleInfo() {
     return array(
-      'title' => \ProcessWire\__('Star Rating Integer', 'C:/My workspace/processwire-dev/site/modules/FieldtypeStarRating/InputfieldStarRating.module'), // Module Title
-      'summary' => \ProcessWire\__('Star Rating Integer', 'C:/My workspace/processwire-dev/site/modules/FieldtypeStarRating/InputfieldStarRating.module'), // Module Summary
+      'title' => __('Star Rating Integer', __FILE__), // Module Title
+      'summary' => __('Star Rating Integer', __FILE__), // Module Summary
       'version' => 100,
     );
   }

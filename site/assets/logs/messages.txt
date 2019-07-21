@@ -228,3 +228,32 @@
 2019-06-25 19:18:56	admin	http://localhost/admin/setup/field/save	Deleted field &quot;images&quot; data in 10 row(s) from 10 page(s) using template &quot;repeater_news_tabs&quot;. [page-by-page]
 2019-06-25 19:18:56	admin	http://localhost/admin/setup/field/save	Deleted field &quot;link_url&quot; data in 0 row(s) from 0 page(s) using template &quot;repeater_news_tabs&quot;. [page-by-page]
 2019-06-25 19:23:35	admin	http://localhost/admin/setup/field/save	Deleted field &quot;images&quot; data in 4 row(s) from 4 page(s) using template &quot;repeater_status_quo&quot;. [page-by-page]
+2019-06-26 17:52:26	admin	http://staging.paltron.com/admin/page/sort/	Updated sort for 5 pages
+2019-06-26 17:53:32	admin	http://staging.paltron.com/admin/page/sort/	Updated sort for 6 pages
+2019-06-26 17:53:43	admin	http://staging.paltron.com/admin/page/sort/	Updated sort for 6 pages
+2019-06-26 17:53:47	admin	http://staging.paltron.com/admin/page/sort/	Updated sort for 7 pages
+2019-06-26 17:53:56	admin	http://staging.paltron.com/admin/page/sort/	Updated sort for 5 pages
+2019-06-27 16:04:35	admin	http://staging.paltron.com/admin/setup/template/removeFields	Deleted field &quot;author&quot; data in 4 row(s) from 4 page(s) using template &quot;news&quot;. [page-by-page]
+2019-06-27 16:06:31	admin	http://staging.paltron.com/admin/setup/template/removeFields	Deleted field &quot;paltron_news&quot; data in 10 row(s) from 10 page(s) using template &quot;news&quot;. [page-by-page]
+2019-06-29 03:25:11	admin	http://staging.paltron.com/admin/page/sort/	Updated sort for 2 pages
+2019-06-29 03:25:29	admin	http://staging.paltron.com/admin/page/sort/	Updated sort for 2 pages
+2019-06-29 03:30:39	admin	http://staging.paltron.com/admin/page/sort/	Updated sort for 10 pages
+2019-06-29 03:31:12	admin	http://staging.paltron.com/admin/page/sort/	Updated sort for 1 pages
+2019-06-29 03:31:18	admin	http://staging.paltron.com/admin/page/sort/	Updated sort for 2 pages
+2019-06-29 03:35:37	admin	http://staging.paltron.com/admin/page/sort/	Updated sort for 2 pages
+2019-06-29 03:35:45	admin	http://staging.paltron.com/admin/page/sort/	Updated sort for 2 pages
+2019-06-29 03:37:23	admin	http://staging.paltron.com/admin/page/sort/	Updated sort for 2 pages
+2019-06-29 03:37:29	admin	http://staging.paltron.com/admin/page/sort/	Updated sort for 1 pages
+2019-06-29 19:10:58	admin	http://staging.paltron.com/admin/setup/template/removeFields	Deleted field &quot;sub_expertise&quot; data in 12 row(s) from 12 page(s) using template &quot;expertise-level-1&quot;. [page-by-page]
+2019-07-11 12:34:51	admin	http://localhost/admin/setup/template/removeFields	Deleted field &quot;contact_person_list&quot; data in 0 row(s) from 0 page(s) using template &quot;expertise-level-1&quot;. [page-by-page]
+2019-07-11 12:48:21	admin	http://localhost/admin/setup/template/removeFields	Deleted field &quot;contact_person_list&quot; data in 0 row(s) from 0 page(s) using template &quot;contact-people&quot;. [page-by-page]
+2019-07-11 12:59:22	admin	http://localhost/admin/setup/template/removeFields	Deleted field &quot;contact_people&quot; data in 0 row(s) from 0 page(s) using template &quot;expertise-level-1&quot;. [page-by-page]
+2019-07-11 13:04:14	admin	http://localhost/admin/setup/template/removeFields	Deleted field &quot;contact_image&quot; data in 2 row(s) from 2 page(s) using template &quot;contact-people&quot;. [page-by-page]
+2019-07-11 13:04:14	admin	http://localhost/admin/setup/template/removeFields	Deleted field &quot;contact_name&quot; data in 2 row(s) from 2 page(s) using template &quot;contact-people&quot;. [page-by-page]
+2019-07-11 13:04:14	admin	http://localhost/admin/setup/template/removeFields	Deleted field &quot;contact_role&quot; data in 2 row(s) from 2 page(s) using template &quot;contact-people&quot;. [page-by-page]
+2019-07-11 13:04:14	admin	http://localhost/admin/setup/template/removeFields	Deleted field &quot;contact_phone&quot; data in 2 row(s) from 2 page(s) using template &quot;contact-people&quot;. [page-by-page]
+2019-07-11 13:04:14	admin	http://localhost/admin/setup/template/removeFields	Deleted field &quot;contact_email&quot; data in 2 row(s) from 2 page(s) using template &quot;contact-people&quot;. [page-by-page]
+2019-07-11 13:11:48	admin	http://localhost/admin/setup/template/removeFields	Deleted field &quot;contact_people&quot; data in 1 row(s) from 1 page(s) using template &quot;contact-people&quot;. [page-by-page]
+2019-07-11 13:12:30	admin	http://localhost/admin/setup/template/removeFields	Deleted field &quot;contact_people&quot; data in 0 row(s) from 0 page(s) using template &quot;contact-people&quot;. [page-by-page]
+2019-07-11 19:48:16	admin	http://localhost/admin/setup/template/removeFields	Deleted field &quot;content_text&quot; data in 6 row(s) from 6 page(s) using template &quot;advantage&quot;. [page-by-page]
+2019-07-11 19:48:16	admin	http://localhost/admin/setup/template/removeFields	Deleted field &quot;summary&quot; data in 0 row(s) from 0 page(s) using template &quot;advantage&quot;. [page-by-page]

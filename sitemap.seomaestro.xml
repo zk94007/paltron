@@ -1,0 +1,403 @@
+<?xml version="1.0" encoding="utf-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+    <url>
+        <loc>http://localhost/</loc>
+        <lastmod>2019-07-02T11:06:18+02:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+        <xhtml:link rel="alternate" hreflang="de" href="http://localhost/"/>
+        <xhtml:link rel="alternate" hreflang="english" href="http://localhost/en/"/>
+    </url>
+    <url>
+        <loc>http://localhost/en/</loc>
+        <lastmod>2019-07-02T11:06:18+02:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+        <xhtml:link rel="alternate" hreflang="de" href="http://localhost/"/>
+        <xhtml:link rel="alternate" hreflang="english" href="http://localhost/en/"/>
+    </url>
+    <url>
+        <loc>http://localhost/job/</loc>
+        <lastmod>2019-06-27T06:42:37+02:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+        <xhtml:link rel="alternate" hreflang="de" href="http://localhost/job/"/>
+        <xhtml:link rel="alternate" hreflang="english" href="http://localhost/en/job/"/>
+    </url>
+    <url>
+        <loc>http://localhost/en/job/</loc>
+        <lastmod>2019-06-27T06:42:37+02:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+        <xhtml:link rel="alternate" hreflang="de" href="http://localhost/job/"/>
+        <xhtml:link rel="alternate" hreflang="english" href="http://localhost/en/job/"/>
+    </url>
+    <url>
+        <loc>http://localhost/data-policy/</loc>
+        <lastmod>2019-06-27T17:09:20+02:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+        <xhtml:link rel="alternate" hreflang="de" href="http://localhost/data-policy/"/>
+        <xhtml:link rel="alternate" hreflang="english" href="http://localhost/en/data-policy/"/>
+    </url>
+    <url>
+        <loc>http://localhost/en/data-policy/</loc>
+        <lastmod>2019-06-27T17:09:20+02:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+        <xhtml:link rel="alternate" hreflang="de" href="http://localhost/data-policy/"/>
+        <xhtml:link rel="alternate" hreflang="english" href="http://localhost/en/data-policy/"/>
+    </url>
+    <url>
+        <loc>http://localhost/impressum/</loc>
+        <lastmod>2019-06-25T04:02:15+02:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+        <xhtml:link rel="alternate" hreflang="de" href="http://localhost/impressum/"/>
+        <xhtml:link rel="alternate" hreflang="english" href="http://localhost/en/impressum/"/>
+    </url>
+    <url>
+        <loc>http://localhost/en/impressum/</loc>
+        <lastmod>2019-06-25T04:02:15+02:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+        <xhtml:link rel="alternate" hreflang="de" href="http://localhost/impressum/"/>
+        <xhtml:link rel="alternate" hreflang="english" href="http://localhost/en/impressum/"/>
+    </url>
+    <url>
+        <loc>http://localhost/job/head-of-people-operations/</loc>
+        <lastmod>2019-06-24T11:09:11+02:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+        <xhtml:link rel="alternate" hreflang="de" href="http://localhost/job/head-of-people-operations/"/>
+        <xhtml:link rel="alternate" hreflang="english" href="http://localhost/en/job/head-of-people-operations/"/>
+    </url>
+    <url>
+        <loc>http://localhost/en/job/head-of-people-operations/</loc>
+        <lastmod>2019-06-24T11:09:11+02:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+        <xhtml:link rel="alternate" hreflang="de" href="http://localhost/job/head-of-people-operations/"/>
+        <xhtml:link rel="alternate" hreflang="english" href="http://localhost/en/job/head-of-people-operations/"/>
+    </url>
+    <url>
+        <loc>http://localhost/news-feed/</loc>
+        <lastmod>2019-07-02T11:06:47+02:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+        <xhtml:link rel="alternate" hreflang="de" href="http://localhost/news-feed/"/>
+        <xhtml:link rel="alternate" hreflang="english" href="http://localhost/en/news-feed/"/>
+    </url>
+    <url>
+        <loc>http://localhost/en/news-feed/</loc>
+        <lastmod>2019-07-02T11:06:47+02:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+        <xhtml:link rel="alternate" hreflang="de" href="http://localhost/news-feed/"/>
+        <xhtml:link rel="alternate" hreflang="english" href="http://localhost/en/news-feed/"/>
+    </url>
+    <url>
+        <loc>http://localhost/news-feed/paltron-news/</loc>
+        <lastmod>2019-06-27T21:56:53+02:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+        <xhtml:link rel="alternate" hreflang="de" href="http://localhost/news-feed/paltron-news/"/>
+        <xhtml:link rel="alternate" hreflang="english" href="http://localhost/en/news-feed/paltron-news/"/>
+    </url>
+    <url>
+        <loc>http://localhost/en/news-feed/paltron-news/</loc>
+        <lastmod>2019-06-27T21:56:53+02:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+        <xhtml:link rel="alternate" hreflang="de" href="http://localhost/news-feed/paltron-news/"/>
+        <xhtml:link rel="alternate" hreflang="english" href="http://localhost/en/news-feed/paltron-news/"/>
+    </url>
+    <url>
+        <loc>http://localhost/about-us/</loc>
+        <lastmod>2019-06-26T01:25:12+02:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+        <xhtml:link rel="alternate" hreflang="de" href="http://localhost/about-us/"/>
+        <xhtml:link rel="alternate" hreflang="english" href="http://localhost/en/about-us/"/>
+    </url>
+    <url>
+        <loc>http://localhost/en/about-us/</loc>
+        <lastmod>2019-06-26T01:25:12+02:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+        <xhtml:link rel="alternate" hreflang="de" href="http://localhost/about-us/"/>
+        <xhtml:link rel="alternate" hreflang="english" href="http://localhost/en/about-us/"/>
+    </url>
+    <url>
+        <loc>http://localhost/find-job/</loc>
+        <lastmod>2019-06-22T18:44:05+02:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+        <xhtml:link rel="alternate" hreflang="de" href="http://localhost/find-job/"/>
+        <xhtml:link rel="alternate" hreflang="english" href="http://localhost/en/find-job/"/>
+    </url>
+    <url>
+        <loc>http://localhost/en/find-job/</loc>
+        <lastmod>2019-06-22T18:44:05+02:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+        <xhtml:link rel="alternate" hreflang="de" href="http://localhost/find-job/"/>
+        <xhtml:link rel="alternate" hreflang="english" href="http://localhost/en/find-job/"/>
+    </url>
+    <url>
+        <loc>http://localhost/apply-job/</loc>
+        <lastmod>2019-06-23T09:44:35+02:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+        <xhtml:link rel="alternate" hreflang="de" href="http://localhost/apply-job/"/>
+        <xhtml:link rel="alternate" hreflang="english" href="http://localhost/en/apply-job/"/>
+    </url>
+    <url>
+        <loc>http://localhost/en/apply-job/</loc>
+        <lastmod>2019-06-23T09:44:35+02:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+        <xhtml:link rel="alternate" hreflang="de" href="http://localhost/apply-job/"/>
+        <xhtml:link rel="alternate" hreflang="english" href="http://localhost/en/apply-job/"/>
+    </url>
+    <url>
+        <loc>http://localhost/news-feed/news1/</loc>
+        <lastmod>2019-06-27T21:15:10+02:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+        <xhtml:link rel="alternate" hreflang="de" href="http://localhost/news-feed/news1/"/>
+        <xhtml:link rel="alternate" hreflang="english" href="http://localhost/en/news-feed/news1/"/>
+    </url>
+    <url>
+        <loc>http://localhost/en/news-feed/news1/</loc>
+        <lastmod>2019-06-27T21:15:10+02:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+        <xhtml:link rel="alternate" hreflang="de" href="http://localhost/news-feed/news1/"/>
+        <xhtml:link rel="alternate" hreflang="english" href="http://localhost/en/news-feed/news1/"/>
+    </url>
+    <url>
+        <loc>http://localhost/news-feed/news2/</loc>
+        <lastmod>2019-06-27T21:52:54+02:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+        <xhtml:link rel="alternate" hreflang="de" href="http://localhost/news-feed/news2/"/>
+        <xhtml:link rel="alternate" hreflang="english" href="http://localhost/en/news-feed/news2/"/>
+    </url>
+    <url>
+        <loc>http://localhost/en/news-feed/news2/</loc>
+        <lastmod>2019-06-27T21:52:54+02:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+        <xhtml:link rel="alternate" hreflang="de" href="http://localhost/news-feed/news2/"/>
+        <xhtml:link rel="alternate" hreflang="english" href="http://localhost/en/news-feed/news2/"/>
+    </url>
+    <url>
+        <loc>http://localhost/news-feed/new3/</loc>
+        <lastmod>2019-06-27T20:17:40+02:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+        <xhtml:link rel="alternate" hreflang="de" href="http://localhost/news-feed/new3/"/>
+        <xhtml:link rel="alternate" hreflang="english" href="http://localhost/en/news-feed/new3/"/>
+    </url>
+    <url>
+        <loc>http://localhost/en/news-feed/new3/</loc>
+        <lastmod>2019-06-27T20:17:40+02:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+        <xhtml:link rel="alternate" hreflang="de" href="http://localhost/news-feed/new3/"/>
+        <xhtml:link rel="alternate" hreflang="english" href="http://localhost/en/news-feed/new3/"/>
+    </url>
+    <url>
+        <loc>http://localhost/news-feed/news4/</loc>
+        <lastmod>2019-06-27T20:17:12+02:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+        <xhtml:link rel="alternate" hreflang="de" href="http://localhost/news-feed/news4/"/>
+        <xhtml:link rel="alternate" hreflang="english" href="http://localhost/en/news-feed/news4/"/>
+    </url>
+    <url>
+        <loc>http://localhost/en/news-feed/news4/</loc>
+        <lastmod>2019-06-27T20:17:12+02:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+        <xhtml:link rel="alternate" hreflang="de" href="http://localhost/news-feed/news4/"/>
+        <xhtml:link rel="alternate" hreflang="english" href="http://localhost/en/news-feed/news4/"/>
+    </url>
+    <url>
+        <loc>http://localhost/news-feed/news5/</loc>
+        <lastmod>2019-06-27T20:16:57+02:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+        <xhtml:link rel="alternate" hreflang="de" href="http://localhost/news-feed/news5/"/>
+        <xhtml:link rel="alternate" hreflang="english" href="http://localhost/en/news-feed/news5/"/>
+    </url>
+    <url>
+        <loc>http://localhost/en/news-feed/news5/</loc>
+        <lastmod>2019-06-27T20:16:57+02:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+        <xhtml:link rel="alternate" hreflang="de" href="http://localhost/news-feed/news5/"/>
+        <xhtml:link rel="alternate" hreflang="english" href="http://localhost/en/news-feed/news5/"/>
+    </url>
+    <url>
+        <loc>http://localhost/news-feed/news6/</loc>
+        <lastmod>2019-06-27T20:26:57+02:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+        <xhtml:link rel="alternate" hreflang="de" href="http://localhost/news-feed/news6/"/>
+        <xhtml:link rel="alternate" hreflang="english" href="http://localhost/en/news-feed/news6/"/>
+    </url>
+    <url>
+        <loc>http://localhost/en/news-feed/news6/</loc>
+        <lastmod>2019-06-27T20:26:57+02:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+        <xhtml:link rel="alternate" hreflang="de" href="http://localhost/news-feed/news6/"/>
+        <xhtml:link rel="alternate" hreflang="english" href="http://localhost/en/news-feed/news6/"/>
+    </url>
+    <url>
+        <loc>http://localhost/news-feed/news8/</loc>
+        <lastmod>2019-06-27T20:18:49+02:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+        <xhtml:link rel="alternate" hreflang="de" href="http://localhost/news-feed/news8/"/>
+        <xhtml:link rel="alternate" hreflang="english" href="http://localhost/en/news-feed/news8/"/>
+    </url>
+    <url>
+        <loc>http://localhost/en/news-feed/news8/</loc>
+        <lastmod>2019-06-27T20:18:49+02:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+        <xhtml:link rel="alternate" hreflang="de" href="http://localhost/news-feed/news8/"/>
+        <xhtml:link rel="alternate" hreflang="english" href="http://localhost/en/news-feed/news8/"/>
+    </url>
+    <url>
+        <loc>http://localhost/news-feed/news9/</loc>
+        <lastmod>2019-06-27T20:17:54+02:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+        <xhtml:link rel="alternate" hreflang="de" href="http://localhost/news-feed/news9/"/>
+        <xhtml:link rel="alternate" hreflang="english" href="http://localhost/en/news-feed/news9/"/>
+    </url>
+    <url>
+        <loc>http://localhost/en/news-feed/news9/</loc>
+        <lastmod>2019-06-27T20:17:54+02:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+        <xhtml:link rel="alternate" hreflang="de" href="http://localhost/news-feed/news9/"/>
+        <xhtml:link rel="alternate" hreflang="english" href="http://localhost/en/news-feed/news9/"/>
+    </url>
+    <url>
+        <loc>http://localhost/news-feed/lorem-ipsum-dolor-sit-amet-consectetur-adipiscing-elit/</loc>
+        <lastmod>2019-06-27T20:18:33+02:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+        <xhtml:link rel="alternate" hreflang="de" href="http://localhost/news-feed/lorem-ipsum-dolor-sit-amet-consectetur-adipiscing-elit/"/>
+        <xhtml:link rel="alternate" hreflang="english" href="http://localhost/en/news-feed/lorem-ipsum-dolor-sit-amet-consectetur-adipiscing-elit/"/>
+    </url>
+    <url>
+        <loc>http://localhost/en/news-feed/lorem-ipsum-dolor-sit-amet-consectetur-adipiscing-elit/</loc>
+        <lastmod>2019-06-27T20:18:33+02:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+        <xhtml:link rel="alternate" hreflang="de" href="http://localhost/news-feed/lorem-ipsum-dolor-sit-amet-consectetur-adipiscing-elit/"/>
+        <xhtml:link rel="alternate" hreflang="english" href="http://localhost/en/news-feed/lorem-ipsum-dolor-sit-amet-consectetur-adipiscing-elit/"/>
+    </url>
+    <url>
+        <loc>http://localhost/categories/paltron-news/</loc>
+        <lastmod>2019-06-27T18:10:37+02:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+        <xhtml:link rel="alternate" hreflang="de" href="http://localhost/categories/paltron-news/"/>
+        <xhtml:link rel="alternate" hreflang="english" href="http://localhost/en/categories/paltron-news/"/>
+    </url>
+    <url>
+        <loc>http://localhost/en/categories/paltron-news/</loc>
+        <lastmod>2019-06-27T18:10:37+02:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+        <xhtml:link rel="alternate" hreflang="de" href="http://localhost/categories/paltron-news/"/>
+        <xhtml:link rel="alternate" hreflang="english" href="http://localhost/en/categories/paltron-news/"/>
+    </url>
+    <url>
+        <loc>http://localhost/categories/cat1/</loc>
+        <lastmod>2019-06-27T18:10:55+02:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+        <xhtml:link rel="alternate" hreflang="de" href="http://localhost/categories/cat1/"/>
+        <xhtml:link rel="alternate" hreflang="english" href="http://localhost/en/categories/cat1/"/>
+    </url>
+    <url>
+        <loc>http://localhost/en/categories/cat1/</loc>
+        <lastmod>2019-06-27T18:10:55+02:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+        <xhtml:link rel="alternate" hreflang="de" href="http://localhost/categories/cat1/"/>
+        <xhtml:link rel="alternate" hreflang="english" href="http://localhost/en/categories/cat1/"/>
+    </url>
+    <url>
+        <loc>http://localhost/authors/can-ulusoy/</loc>
+        <lastmod>2019-06-27T18:20:24+02:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+        <xhtml:link rel="alternate" hreflang="de" href="http://localhost/authors/can-ulusoy/"/>
+        <xhtml:link rel="alternate" hreflang="english" href="http://localhost/en/authors/can-ulusoy/"/>
+    </url>
+    <url>
+        <loc>http://localhost/en/authors/can-ulusoy/</loc>
+        <lastmod>2019-06-27T18:20:24+02:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+        <xhtml:link rel="alternate" hreflang="de" href="http://localhost/authors/can-ulusoy/"/>
+        <xhtml:link rel="alternate" hreflang="english" href="http://localhost/en/authors/can-ulusoy/"/>
+    </url>
+    <url>
+        <loc>http://localhost/authors/daniel/</loc>
+        <lastmod>2019-06-27T18:28:35+02:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+        <xhtml:link rel="alternate" hreflang="de" href="http://localhost/authors/daniel/"/>
+        <xhtml:link rel="alternate" hreflang="english" href="http://localhost/en/authors/daniel/"/>
+    </url>
+    <url>
+        <loc>http://localhost/en/authors/daniel/</loc>
+        <lastmod>2019-06-27T18:28:35+02:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+        <xhtml:link rel="alternate" hreflang="de" href="http://localhost/authors/daniel/"/>
+        <xhtml:link rel="alternate" hreflang="english" href="http://localhost/en/authors/daniel/"/>
+    </url>
+    <url>
+        <loc>http://localhost/authors/josef/</loc>
+        <lastmod>2019-06-27T21:48:24+02:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+        <xhtml:link rel="alternate" hreflang="de" href="http://localhost/authors/josef/"/>
+        <xhtml:link rel="alternate" hreflang="english" href="http://localhost/en/authors/josef/"/>
+    </url>
+    <url>
+        <loc>http://localhost/en/authors/josef/</loc>
+        <lastmod>2019-06-27T21:48:24+02:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+        <xhtml:link rel="alternate" hreflang="de" href="http://localhost/authors/josef/"/>
+        <xhtml:link rel="alternate" hreflang="english" href="http://localhost/en/authors/josef/"/>
+    </url>
+    <url>
+        <loc>http://localhost/office-opening/</loc>
+        <lastmod>2019-07-02T03:16:16+02:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+        <xhtml:link rel="alternate" hreflang="de" href="http://localhost/office-opening/"/>
+        <xhtml:link rel="alternate" hreflang="english" href="http://localhost/en/office-opening/"/>
+    </url>
+    <url>
+        <loc>http://localhost/en/office-opening/</loc>
+        <lastmod>2019-07-02T03:16:16+02:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+        <xhtml:link rel="alternate" hreflang="de" href="http://localhost/office-opening/"/>
+        <xhtml:link rel="alternate" hreflang="english" href="http://localhost/en/office-opening/"/>
+    </url>
+</urlset>

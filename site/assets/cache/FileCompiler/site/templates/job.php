@@ -1,124 +1,154 @@
 <?php
 
-/**
- * Job overview template
- *
- */
+ require_once(\ProcessWire\wire('files')->compile("libs/Erecruiterfeed.php",array('includes'=>true,'namespace'=>true,'modules'=>true,'skipIfNamespace'=>true)));
+$id = $input->urlSegment1;
+$joblang = ltrim(htmlspecialchars($input->queryString(), ENT_QUOTES),"lang=");
+$availableLanguages = array ("de","en");
+
+if (!in_array($joblang, $availableLanguages)) {
+    $joblang = "de";
+}
+
+$feed = new \Erecruiterfeed($joblang);
+$ad = $feed->getAd($id);
+
+$langArr = array (
+    "de" => array (
+        "title_addon" => "Stellenangebote bei PALTRON",
+        "h_aufgaben" => "Ihre Aufgaben",
+        "h_profil" => "Ihr Profil",
+        "h_benefits" => "Ihre Benefits",
+        "h_ansprechpartner" => "Ansprechpartner",
+        "h_standort" => "Standort",
+        "kennziffer" => "Kennziffer",
+        "einsatzort" => "Einsatzort",
+        "beschaeftigungsart" => "Beschäftigungsart",
+        "btn_bewerben" => "Jetzt bewerben",
+        "btn_zurueck" => "zurück zur Übersicht",
+        "btn_empfehlen" => "Weiterempfehlen" 
+    ),
+    "en" => array (
+        "title_addon" => "Job offers at PALTRON",
+        "h_aufgaben" => "Your tasks",
+        "h_profil" => "Your profile",
+        "h_benefits" => "Your Benefits",
+        "h_ansprechpartner" => "Contact Person",
+        "h_standort" => "Location",
+        "kennziffer" => "Job ID",
+        "einsatzort" => "Job Location",
+        "beschaeftigungsart" => "Occupation Type",
+        "btn_bewerben" => "Apply now!",
+        "btn_zurueck" => "Back to overview",
+        "btn_empfehlen" => "Recommend"
+    )
+);
+
+if (is_null($ad)) {
+    $session->redirect($pages->get(1174)->url);
+}
+
+$page->seo->meta->title = $ad["name"] . " " . $ad['location'] . " | " . $langArr[$joblang]["title_addon"];
+$page->seo->meta->description = substr(strip_tags($ad["company_description"]), 0, 299) . "...";
+$apply_url = "https://paltron.kandidatenportal.eu/Register/" . $ad["id"] . "?referrer=PALTRON_Website";
+$canonicalUrl = $page->httpUrl . $ad["id"] . "/" . $ad["slug_url"] . "-" . $ad["slug_einsatzort"] . "?lang=" . $ad["language"];
+
+$header_image = $ad["header_img"] ? ($ad["header_img"] . "-Header.jpg") : "default-Header-bw.jpg";
+$recruiter_image = $ad["recruiter_img"] ? $ad["recruiter_img"] : "Default";
+
 
  include(\ProcessWire\wire('files')->compile(\ProcessWire\wire("config")->paths->root . "site/templates/includes/head.inc",array('includes'=>true,'namespace'=>true,'modules'=>true,'skipIfNamespace'=>true))); 
 ?>
-<main class="job-detail-page">
-    <section class="job-detail-header" id="job-detail-header">
-        <div class="job-title-overlay">
-            <div class="container">
-                <h1><?php echo $page->title ?></h1>
+
+<main class="job-description" id="job-description">
+    <section class="hero-banner" style="background-image:url(https://paltron.kandidatenportal.eu/Content/jobAd/Header/<?php echo $header_image; ?>);">
+        <div class="hero-banner-overlay">
+            <div class="container grid-xl">
+                <div class="columns">
+                    <div class="column col-12">
+                        <h1><?php echo $ad["name"] . " " . $ad["gender"]; ?></h1>
+                    </div>
+                </div>
             </div>
-        </div>
-        <div class="job-detail-info">
-            <div class="container">
-                <div>Consectetur: <?php echo $page->job_consectetur ?></div>
-                <div>Eiusmod: <?php echo $page->job_eiusmod ?></div>
-                <div>Tempor: <?php echo $page->job_tempor ?></div>
+        </div> 
+    </section>
+
+    <section class="info-bar">
+        <div class="container grid-xl">
+            <div class="columns">
+                <div class="column col-12">
+                    <p class="info-field"><?php echo $langArr[$joblang]["kennziffer"]; ?>: <span><?php echo $ad["id"]; ?></span></p>
+                    <p class="info-field"><?php echo $langArr[$joblang]["einsatzort"]; ?>: <span><?php echo $ad["location"]; ?></span></p>
+                    <p class="info-field"><?php echo $langArr[$joblang]["beschaeftigungsart"]; ?>: <span><?php echo $ad["occupation_type"]; ?></span></p>
+                </div>
             </div>
         </div>
     </section>
-     
-    <div class="container">
-        <div class="row">
-            <section class="col-lg-8 col-md-12 job-description">
-                <div class="job-summary">
-                    <?php echo $page->job_summary ?>
-                </div>
-                <div class="job-obligation">
-                    <h1>Deine Aufgaben</h1>
-                    <?php echo $page->job_obligation ?>
-                </div>
-                <div class="job-profit">
-                    <h1>Dein Profit</h1>
-                    <?php echo $page->job_profit ?>
-                </div>
-                <div class="job-benefit">
-                    <h1>Deine Benefits</h1>
-                    <?php echo $page->job_benefit ?>
-                </div>
-                <div class="job-action">
-                    <a href="/apply-job" class="btn btn-primary">
-                        <ion-icon name="clipboard"></ion-icon>
-                        <?php echo \ProcessWire\__("Jetzt bewerben"); ?>
-                    </a>
-                    <a href="/find-job" class="btn btn-black">
-                        <ion-icon name="arrow-round-up"></ion-icon>
-                        <?php echo \ProcessWire\__("Zurikk zur Obersicht"); ?>
-                    </a>
-                </div>
-                <div class="note">
-                    <p>Gemifl Art. 14 DSGVO informieten win tinter Ziffer 9 unserer Datenschutzerklanmg Ube, die Einzelheiten der dutch Korrespondenz mit potenziellen Kandidaten generierten Oaten: </p>
-                    <a href="/data-policy">www.careerteam.de/datenschutz</a>
-                </div>
-            </section>
-            <section class="col-lg-4 col-md-12 job-contact-section">
-                <div class="job-contact">
-                    <div class="contact-info">
-                        <h3><?php echo \ProcessWire\__("Ansprechpartner"); ?></h3>
-                        <div class="contact-image">
-                            <img src="<?php echo $td.'images/'.$page->contact_image ?>" alt="">
-                        </div>
-                        <div class="contact-name">
-                            <h6><?php echo $page->contact_name ?></h6>
-                        </div>
-                        <div class="contact-description">
-                            <?php echo $page->contact_description ?>
-                        </div>
-                        <div class="job-action">
-                            <a href="/apply-job" class="btn btn-primary">
-                                <ion-icon name="clipboard"></ion-icon>
-                                <?php echo \ProcessWire\__("Jetzt bewerben"); ?>
-                            </a>
-                        </div>
+
+    <section class="job-description-container">
+        <div class="container grid-xl">
+            <div class="columns">
+                <div class="column col-8 col-md-12 job-description-body">
+                    <p class="strong"><?php echo $ad["company_description"]; ?></p>
+
+                    <h3 class="h4"><?php echo $langArr[$joblang]["h_aufgaben"]; ?></h3>
+                    <p><?php echo $ad["description"] ?></p>
+
+                    <h3 class="h4"><?php echo $langArr[$joblang]["h_profil"]; ?></h3>
+                    <p><?php echo $ad["requirements"] ?></p>
+
+                    <h3 class="h4"><?php echo $langArr[$joblang]["h_benefits"]; ?></h3>
+                    <p><?php echo $ad["additional_info"] ?></p>
+                    
+                    <p><?php echo $ad["job_footer"]; ?></p>
+
+                    <div class="button-container">
+                        <a class="btn btn-primary" href="<?php echo $apply_url ?>" title="<?php echo $ad['name'] . " | " . $langArr[$joblang]["btn_bewerben"]; ?>" target="_blank" rel="noopener"><ion-icon name="ios-checkmark-circle-outline"></ion-icon><?php echo $langArr[$joblang]["btn_bewerben"]; ?></a>
+                        <a class="btn btn-primary-outline" href="<?php echo $pages->get(1174)->url; ?>" title="<?php echo $langArr[$joblang]["btn_zurueck"]; ?>"><ion-icon name="ios-return-left"></ion-icon><?php echo $langArr[$joblang]["btn_zurueck"]; ?></a>
                     </div>
-                    <div class="location">
-                        <h3><?php echo \ProcessWire\__("Standort"); ?></h3>
-                        <div class="map-maker">
-                            <?php
-                                $map = $modules->get('MarkupGoogleMap'); 
-                                echo $map->render($page, 'location');  
-                            ?>
-                        </div>
-                    </div>
-                    <div class="share">
-                        <h3><?php echo \ProcessWire\__("Share"); ?></h3>
-                        <div class="job-action">
-                            <a href="" class="btn btn-black">
-                                <ion-icon name="mail"></ion-icon>
-                                <?php echo \ProcessWire\__("Weiterempfehten"); ?>
-                            </a>
-                        </div>
-                        <div class="social-links">
-                            <a href="" class="btn btn-link"><ion-icon name="logo-facebook"></ion-icon></a>
-                            <a href="" class="btn btn-link"><ion-icon name="logo-twitter"></ion-icon></a>
-                            <a href="" class="btn btn-link"><ion-icon name="logo-googleplus"></ion-icon></a>
-                            <a href="" class="btn btn-link"><ion-icon name="logo-linkedin"></ion-icon></a>
-                            <a href="" class="btn btn-link"><ion-icon name="logo-instagram"></ion-icon></a>
-                        </div>
+                    <br />
+                    <br />
+                    <div class="dsgvo-box notice default">
+                        <?php echo $page->body; ?>
                     </div>
                 </div>
-            </section>
-        </div>
-        <section class="about-careerteam">
-            <div>
-                <div class="description">
-                    <?php echo $page->content_text ?>
+                <div class="column col-4 col-md-12 job-description-sidebar">
+                    <h3 class="h4"><?php echo $langArr[$joblang]["h_ansprechpartner"]; ?>:</h3>
+                    <div class="recruiter">
+                        <img src="https://numeris-consulting.kandidatenportal.eu/Content/jobAd/Contact/<?php echo $recruiter_image; ?>.jpg" alt="<?php echo $ad["recruiter"]; ?>">
+                        <p class="recruiter-name"><?php echo $ad["recruiter"]; ?></p>
+                        <p class="recruiter-venture">PALTRON</p>
+                    </div>
+                    <p>
+                        <a class="btn btn-primary" href="<?php echo $apply_url ?>" title="<?php echo $ad['name'] . " | " . $langArr[$joblang]["btn_bewerben"]; ?>" target="_blank" rel="noopener"><ion-icon name="ios-checkmark-circle-outline"></ion-icon><?php echo $langArr[$joblang]["btn_bewerben"]; ?></a>
+                    </p>
+
+                    
+                    <h4><?php echo $langArr[$joblang]["h_standort"]; ?>:</h4>
+                    <?php if ($ad["location"]): ?>
+                        <div class="responsive-iframe-container">
+                        <iframe
+                          width="100%"
+                          height="250"
+                          frameborder="0" style="border:0"
+                          src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBXWSiMpYGhh3mowdZbpZJVnSqcNa1DDbs&q=<?php echo $ad["location"]; ?>" allowfullscreen>
+                        </iframe>
+                    </div>
+                    <?php else: ?>
+                        <p class="no-map-available">
+                            Sorry, no map available.
+                        </p>
+                    <?php endif ?>
+
+                    <h4>Share:</h4>
+                    <div class="social-share-buttons">
+                        <a href="mailto:name@domain.de?subject=Jobangebot - <?php echo $page->httpUrl; ?>" title="<?php echo $langArr[$joblang]["btn_empfehlen"]; ?>" target="_blank" rel="noopener"><ion-icon name="ios-mail"></ion-icon></a>
+                        <a href="https://twitter.com/share?url=<?php echo $page->httpUrl; ?>" target="_blank" title="Share on Twitter"><ion-icon name="logo-twitter"></ion-icon></a>
+                        <a href="https://www.facebook.com/sharer/sharer.php?u=<?php echo $page->httpUrl; ?>" target="_blank" title="Share on Facebook" target="_blank" rel="noopener"><ion-icon name="logo-facebook"></ion-icon></a>
+                    </div>
                 </div>
-                <div class="rating">
-                    <div><?php echo $page->rating; ?></div>
-                    <img src="<?php echo $td.'images/rating.jpg' ?>" alt="" >
-                </div>
-            </div>
-            <div class="careerteam-image">
-                <img src="<?php echo $td.'images/'.$page->careerteam_image ?>" alt="">
-            </div>
-        </section>
-    </div>
+            </div>    
+        </div>     
+    </section>
 </main>
-<?php
- include(\ProcessWire\wire('files')->compile(\ProcessWire\wire("config")->paths->root . "site/templates/includes/foot.inc",array('includes'=>true,'namespace'=>true,'modules'=>true,'skipIfNamespace'=>true)));
+
+<?php include(\ProcessWire\wire('files')->compile(\ProcessWire\wire("config")->paths->root . "site/templates/includes/foot.inc",array('includes'=>true,'namespace'=>true,'modules'=>true,'skipIfNamespace'=>true)));

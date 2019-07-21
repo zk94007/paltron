@@ -1,0 +1,205 @@
+/*!
+ * Jumplinks for ProcessWire
+ * Manage permanent and temporary redirects. Uses named wildcards and mapping collections.
+ *
+ * Process module for ProcessWire 2.6.1+
+ *
+ * @author Mike Rockett
+ * @copyright (c) 2015, Mike Rockett. All Rights Reserved.
+ * @license ISC
+ *
+ * @see Documentation:     https://jumplinks.rockett.pw
+ * @see Modules Directory: https://mods.pw/92
+ * @see Forum Thred:       https://processwire.com/talk/topic/8697-jumplinks/
+ * @see Donate:            https://rockett.pw/donate
+ */
+
+#pjInputForm {
+    textarea {
+        font-family: "Consolas", "Courier New", monospace;
+    }
+    p.notes {
+        string {
+            white-space: pre;
+        }
+    }
+    table.old-redirects {
+        td:first-child {
+            width: 2em;
+        }
+        tr > td:first-child {
+            padding-left: 1.5em;
+        }
+    }
+}
+#pjInputFieldLinks {
+    span.prefix {
+        display: inline-block;
+        float: left;
+        font-weight: bold;
+        @media screen and (max-width: 1080px) {
+            display: block !important;
+            width: 100%;
+        }
+    }
+    a {
+        display: inline-block;
+        padding: 0 8px;
+        border-right: 2px solid #eee;
+        float: left;
+        &:first-child {
+            padding-left: 0;
+        }
+        &:last-child {
+            padding-right: 0;
+            border-right: 0;
+        }
+        @media screen and (max-width: 1080px) {
+            display: block !important;
+            width: 100%;
+            border: 0;
+            padding: 0;
+        }
+    }
+}
+#pjTabs .InputfieldContent, #pjTabs .Inputfields {
+    margin-top: 0;
+    table.jumplinks {
+        font-size: 14px;
+        &.redirects {
+            th:last-child, td:last-child {
+                text-align: center;
+            }
+            td:last-child {
+                width: 5em;
+                border-left: 1px solid fade(black, 5%);
+                color: lighten(black, 60%);
+                abbr {
+                    text-decoration: none;
+                    border-bottom: none;
+                    padding: 3px 5px;
+                    color: #4797db;
+                }
+            }
+            td:nth-last-child(2), td:nth-last-child(3) {
+                width: 7em;
+                border-left: 1px solid fade(black, 5%);
+            }
+        }
+        &.mapping-collections {
+            td:last-child, td:nth-last-child(2) {
+                width: 20%;
+            }
+            td:nth-last-child(3) {
+                width: 5%;
+            }
+        }
+        tbody {
+            tr {
+                & > td {
+                    border-left: none;
+                    border-bottom-style: solid;
+                    border-bottom-color: lighten(#c8d4e1, 10%);
+                    cursor: default;
+                    padding: 4px 8px !important;
+                    abbr {
+                        text-decoration: none;
+                        border-bottom: 1px dotted #ccc;
+                        cursor: help;
+                    }
+                    span.ellipses {
+                        background-color: fade(black, 2%);
+                        border: 1px solid fade(black, 4%);
+                        padding: 2px 4px;
+                        -webkit-border-radius: 4px;
+                        -moz-border-radius: 4px;
+                        border-radius: 4px;
+                        font-weight: 400;
+                        cursor: help;
+                        &:hover {
+                            background-color: fade(black, 4%);
+                            border-color: fade(black, 8%);
+                        }
+                    }
+                }
+                &.affected td {
+                    -webkit-animation: affected 1.8s 1 forwards;
+                    -moz-animation: affected 1.8s 1 forwards;
+                    -o-animation: affected 1.8s 1 forwards;
+                    animation: affected 1.8s 1 forwards;
+                }
+            }
+        }
+        thead {
+            tr {
+                & > th {
+                    border-left: none;
+                    border-bottom-style: solid;
+                    padding: 8px 8px !important;
+                    line-height: 1em;
+                }
+            }
+        }
+        tfoot {
+            tr {
+                > td {
+                    border-top: 2px solid #bbb;
+                    border-bottom: 1px solid #bbb;
+                    font-weight: bold;
+                    padding: 4px 8px !important;
+                    &:last-child {
+                        color: black !important;
+                    }
+                }
+            }
+        }
+    }
+    button.ui-button-float-right {
+        float: right;
+        margin-left: .3em;
+    }
+}
+.InputfieldMarkup#staleJumplink {
+    background-color: #fff3f3;
+    color: #db4747;
+}
+div.pjHelpLink {
+    margin-top: 1em;
+    overflow: hidden;
+    a {
+        font-size: 13px;
+        float: right;
+        margin-left: 12px;
+        &.paypal {
+            color: orange;
+        }
+        &:not(:last-child):before {
+            content: "";
+            height: 8px;
+            margin-right: 12px;
+            border-left: 1px solid #eee;
+            width: 1px;
+            display: inline-block;
+        }
+    }
+}
+p.pjInfo {
+    background-color: lightyellow;
+    border: 1px solid desaturate(darken(lightyellow, 10%), 50%);
+    color: #555;
+    cursor: default;
+    font-size: 1.1em;
+    line-height: 1em;
+    padding: 16px;
+}
+
+@media only screen and (max-width: 767px) {
+    table.jumplinks {
+        tfoot {
+            display: none;
+        }
+        tbody tr > td {
+            border-bottom-style: none !important;
+        }
+    }
+}

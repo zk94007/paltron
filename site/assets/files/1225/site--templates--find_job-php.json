@@ -1,5 +1,60 @@
 {
-    "file": "site\\templates\\find_job.php",
+    "file": "site\/templates\/find_job.php",
     "textdomain": "site--templates--find_job-php",
-    "translations": []
+    "translations": {
+        "3e3f47f5d03de9c5f73a5583e1352362": {
+            "text": "Job title \/ search phrase"
+        },
+        "7f1bbc7cf1f0ba0ddf5b2db664ced00b": {
+            "text": "e.g. UX Designer"
+        },
+        "473390974397014edf78846c8f0e93b3": {
+            "text": "Location"
+        },
+        "954ff05de304b126db4b9a45141cb52f": {
+            "text": "show all"
+        },
+        "6a6cf08f57879c00914b46a19588d628": {
+            "text": "Senior management and c-level"
+        },
+        "c2bd5d23f81f64edef261a7858e9f88a": {
+            "text": "Specialist IT"
+        },
+        "a867540df472e44b370ba6657f833480": {
+            "text": "Junior management and trainee"
+        },
+        "78554fea2cbbe84efe124a1ed92e3497": {
+            "text": "Intern"
+        },
+        "1e660baf8d4c7070f8c137895375fffa": {
+            "text": "Internal positions"
+        },
+        "a0db49ba470c1c9ae2128c3470339153": {
+            "text": "Seniority"
+        },
+        "29a17629fe4863c2db751c3204eaf48b": {
+            "text": "Expertise"
+        },
+        "36a4101e452333ba6b69ac69f55e9f30": {
+            "text": "Available jobs"
+        },
+        "f957eb55e853dc3bc209a996f3b7de7c": {
+            "text": "Full-time"
+        },
+        "b84fd8eedf295e46a87dc20abf9cf0e1": {
+            "text": "Staff responsibility without P+L responsibility"
+        },
+        "fe4dbcab9b910577e5035e97ac068dae": {
+            "text": "Management"
+        },
+        "ca5e8455876f15fab5331d96be08b689": {
+            "text": "Consulting"
+        },
+        "330f49df8243756a8a4dc7f7f7ee6dfe": {
+            "text": "Development"
+        },
+        "1933ba5f9776b5ed64cbb2244d46d4ed": {
+            "text": "Available jobs"
+        }
+    }
 }
